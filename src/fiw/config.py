@@ -34,6 +34,13 @@ class Settings:
     gdelt_user_agent: str
     newsapi_key: str | None
 
+    # Optional LLM (DeepSeek / OpenAI-compatible)
+    llm_mode: str  # off|hybrid|llm
+    deepseek_api_key: str | None
+    deepseek_base_url: str
+    deepseek_model: str
+    llm_max_items_per_day: int
+
 
 def load_settings() -> Settings:
     project_root = Path(_env("FIW_PROJECT_ROOT", str(Path(__file__).resolve().parents[2]))).resolve()
@@ -56,4 +63,9 @@ def load_settings() -> Settings:
         gdelt_user_agent=_env("FIW_GDELT_UA", "FutureIndustryWeeklyBot/0.1 (contact: you@example.com)")
         or "FutureIndustryWeeklyBot/0.1",
         newsapi_key=_env("FIW_NEWSAPI_KEY"),
+        llm_mode=_env("FIW_LLM_MODE", "hybrid") or "hybrid",
+        deepseek_api_key=_env("FIW_DEEPSEEK_API_KEY"),
+        deepseek_base_url=_env("FIW_DEEPSEEK_BASE_URL", "https://api.deepseek.com") or "https://api.deepseek.com",
+        deepseek_model=_env("FIW_DEEPSEEK_MODEL", "deepseek-chat") or "deepseek-chat",
+        llm_max_items_per_day=int(_env("FIW_LLM_MAX_ITEMS_PER_DAY", "120") or 120),
     )

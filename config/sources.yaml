@@ -122,6 +122,26 @@ rss_sources:
     country: US
     lang: en
     type: media
+  - name: Financial Times - World
+    url: https://www.ft.com/world?format=rss
+    country: UK
+    lang: en
+    type: media
+  - name: CNBC - Top News
+    url: https://www.cnbc.com/id/100003114/device/rss/rss.html
+    country: US
+    lang: en
+    type: media
+  - name: Forbes - Innovation
+    url: https://www.forbes.com/innovation/feed/
+    country: US
+    lang: en
+    type: media
+  - name: Bloomberg (public pages)
+    url: https://www.bloomberg.com/feed/podcast/etf-report.xml
+    country: US
+    lang: en
+    type: media
   - name: Reuters - Top News
     url: https://www.reuters.com/rssFeed/topNews
     country: GB
@@ -189,6 +209,91 @@ rss_sources:
     country: US
     lang: en
     type: company
+  - name: Anthropic Newsroom
+    url: https://www.anthropic.com/news/rss.xml
+    country: US
+    lang: en
+    type: company
+  - name: Meta AI
+    url: https://ai.meta.com/blog/rss/
+    country: US
+    lang: en
+    type: company
+  - name: IBM Research
+    url: https://research.ibm.com/blog/rss.xml
+    country: US
+    lang: en
+    type: company
+  - name: Hugging Face Blog
+    url: https://huggingface.co/blog/feed.xml
+    country: FR
+    lang: en
+    type: company
+  - name: Mistral AI News
+    url: https://mistral.ai/news/rss.xml
+    country: FR
+    lang: en
+    type: company
+  - name: Stability AI
+    url: https://stability.ai/news/rss.xml
+    country: UK
+    lang: en
+    type: company
+  - name: xAI
+    url: https://x.ai/blog/rss.xml
+    country: US
+    lang: en
+    type: company
+  - name: AMD Newsroom
+    url: https://www.amd.com/en/corporate/newsroom/rss.xml
+    country: US
+    lang: en
+    type: company
+  - name: Intel Newsroom
+    url: https://www.intel.com/content/www/us/en/newsroom/rss.html
+    country: US
+    lang: en
+    type: company
+  - name: Qualcomm Newsroom
+    url: https://www.qualcomm.com/news/releases/rss
+    country: US
+    lang: en
+    type: company
+  - name: MIT Technology Review
+    url: https://www.technologyreview.com/feed/
+    country: US
+    lang: en
+    type: media
+  - name: BAIR Blog
+    url: https://bair.berkeley.edu/blog/feed.xml
+    country: US
+    lang: en
+    type: academic
+  - name: Berkeley AI Research (BAIR) - News
+    url: https://bair.berkeley.edu/feed.xml
+    country: US
+    lang: en
+    type: academic
+  - name: AI Now Institute
+    url: https://ainowinstitute.org/rss.xml
+    country: US
+    lang: en
+    type: thinktank
+  - name: Future of Life Institute
+    url: https://futureoflife.org/feed/
+    country: US
+    lang: en
+    type: thinktank
+  - name: Gartner (public)
+    url: https://www.gartner.com/en/newsroom/rss
+    country: US
+    lang: en
+    type: analysis
+  - name: McKinsey - Technology
+    url: https://www.mckinsey.com/featured-insights/rss
+    country: US
+    lang: en
+    type: analysis
 
   # --- 国内（可继续补充更多部委/企业/学术） ---
   - name: 工信部

@@ -17,6 +17,7 @@ CSV_COLUMNS = [
     "language",
     "title",
     "summary",
+    "summary_zh",
     "url",
     "authors",
     "tags",

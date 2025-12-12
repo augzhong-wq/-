@@ -39,8 +39,11 @@ def _parse_week_start(s: str | None) -> date:
 def build_daily_views(settings: Settings, day: date) -> tuple[Path, Path]:
     raw_path = settings.raw_dir / day.isoformat() / "articles_raw.csv"
     df = read_articles_csv(raw_path)
+    print(f"[fiw] read raw: {raw_path} rows={len(df)}")
     df = dedupe_by_title_url(df)
-    df = enrich_importance(df)
+    print(f"[fiw] after dedupe rows={len(df)}")
+    df = enrich_importance(settings, df)
+    print(f"[fiw] after importance rows={len(df)}")
     # 补充 week_id 便于周聚合
     monday = _monday_of(day)
     wid = week_id_from_monday(monday)
@@ -51,6 +54,7 @@ def build_daily_views(settings: Settings, day: date) -> tuple[Path, Path]:
     full_path = settings.daily_dir / day.isoformat() / "full.csv"
     full_path.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(full_path, index=False, encoding="utf-8-sig")
+    print(f"[fiw] wrote: {full_path} rows={len(df)}")
 
     # 精简版：只保留 B以上 + 每类最多 N 条
     keep = df[df["importance_level"].isin(["S", "A", "B"])].copy()
@@ -65,6 +69,7 @@ def build_daily_views(settings: Settings, day: date) -> tuple[Path, Path]:
 
     brief_path = settings.daily_dir / day.isoformat() / "brief.csv"
     brief.to_csv(brief_path, index=False, encoding="utf-8-sig")
+    print(f"[fiw] wrote: {brief_path} rows={len(brief)}")
 
     return full_path, brief_path
 
@@ -88,7 +93,7 @@ def build_weekly_package(settings: Settings, week_start: str | None = None) -> W
 
     if not df.empty:
         df = dedupe_by_title_url(df)
-        df = enrich_importance(df)
+        df = enrich_importance(settings, df)
 
     out_dir = settings.weekly_dir / wid
     out_dir.mkdir(parents=True, exist_ok=True)

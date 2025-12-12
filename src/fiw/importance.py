@@ -5,6 +5,8 @@ import re
 
 import pandas as pd
 
+from fiw.config import Settings
+from fiw.llm import analyze_item
 from fiw.sources import CATEGORY_RULES
 
 
@@ -115,7 +117,25 @@ def level_from_score(score: float) -> str:
     return "C"
 
 
-def enrich_importance(df: pd.DataFrame) -> pd.DataFrame:
+def _should_llm_refine(settings: Settings, title: str, summary: str | None, base_score: float, base_level: str) -> bool:
+    if settings.llm_mode == "off":
+        return False
+    if not settings.deepseek_api_key:
+        return False
+    if settings.llm_mode == "llm":
+        return True
+    # hybrid：只对高信号条目调用LLM，控制成本
+    text = f"{title} {summary or ''}".lower()
+    if base_level in ("S", "A"):
+        return True
+    if base_score >= 6.2:
+        return True
+    if re.search(r"executive order|bill|act|sanction|export control|entity list|ofac|cfius|行政令|法案|制裁|出口管制|实体清单", text):
+        return True
+    return False
+
+
+def enrich_importance(settings: Settings, df: pd.DataFrame) -> pd.DataFrame:
     if df.empty:
         return df
     df = df.copy()
@@ -124,16 +144,34 @@ def enrich_importance(df: pd.DataFrame) -> pd.DataFrame:
     scores = []
     levels = []
     reasons = []
+    summaries_zh = []
 
+    llm_budget = settings.llm_max_items_per_day
     for _, r in df.iterrows():
         title = str(r.get("title", ""))
         summary = r.get("summary")
         source_name = str(r.get("source_name", ""))
         domain = r.get("domain")
+        url = str(r.get("url", ""))
 
         cat = infer_category(title, summary if isinstance(summary, str) else None)
         score, reason = score_importance(title, summary if isinstance(summary, str) else None, source_name, str(domain) if domain else None)
         lvl = level_from_score(score)
+
+        # LLM 精炼（可选）：补中文摘要、修正栏目与重要性解释
+        if llm_budget > 0 and _should_llm_refine(settings, title, summary if isinstance(summary, str) else None, score, lvl):
+            llm_budget -= 1
+            llm = analyze_item(settings, title=title, summary=summary if isinstance(summary, str) else None, source_name=source_name, url=url)
+            if llm.category:
+                cat = llm.category
+            if llm.importance_score is not None:
+                score = float(llm.importance_score)
+                lvl = level_from_score(score)
+            if llm.importance_reason:
+                reason = llm.importance_reason
+            summaries_zh.append(llm.summary_zh)
+        else:
+            summaries_zh.append(None)
 
         cats.append(cat)
         scores.append(f"{score:.2f}")
@@ -144,4 +182,5 @@ def enrich_importance(df: pd.DataFrame) -> pd.DataFrame:
     df["importance_score"] = scores
     df["importance_level"] = levels
     df["importance_reason"] = reasons
+    df["summary_zh"] = summaries_zh
     return df

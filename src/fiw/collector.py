@@ -21,11 +21,29 @@ def _safe_get(d: dict, *keys: str):
     return None
 
 
-def _parse_rss(rss_sources: list[dict], day: date, max_items: int = 800) -> list[Article]:
+def _fetch_feed(url: str, ua: str) -> bytes | None:
+    try:
+        r = requests.get(url, headers={"User-Agent": ua}, timeout=15)
+        r.raise_for_status()
+        return r.content
+    except Exception:
+        return None
+
+
+def _parse_rss(settings: Settings, rss_sources: list[dict], day: date, max_items: int = 800) -> list[Article]:
     out: list[Article] = []
     now = iso_now()
-    for src in rss_sources:
-        feed = feedparser.parse(src["url"])
+    for idx_src, src in enumerate(rss_sources, start=1):
+        if idx_src % 10 == 0:
+            print(f"[fiw] rss progress: {idx_src}/{len(rss_sources)}", flush=True)
+
+        data = _fetch_feed(src["url"], ua=settings.gdelt_user_agent)
+        if not data:
+            continue
+        try:
+            feed = feedparser.parse(data)
+        except Exception:
+            continue
         entries = getattr(feed, "entries", []) or []
         for e in entries[: max_items // max(1, len(rss_sources)) + 50]:
             link = _safe_get(e, "link")
@@ -140,8 +158,11 @@ def _parse_gdelt(gdelt_queries: list[str], settings: Settings, day: date, max_it
 
 def collect_for_date(settings: Settings, day: date, max_items: int = 800) -> Path:
     rss_sources, gdelt_queries = load_sources(settings.project_root)
-    rss = _parse_rss(rss_sources=rss_sources, day=day, max_items=max_items)
+    print(f"[fiw] sources: rss={len(rss_sources)} gdelt_queries={len(gdelt_queries)}")
+    rss = _parse_rss(settings=settings, rss_sources=rss_sources, day=day, max_items=max_items)
+    print(f"[fiw] rss collected: {len(rss)}")
     gd = _parse_gdelt(gdelt_queries=gdelt_queries, settings=settings, day=day, max_items=max_items)
+    print(f"[fiw] gdelt collected: {len(gd)}")
 
     # 简单合并（后续会有dedupe/importance再处理）
     seen: set[str] = set()
@@ -154,4 +175,5 @@ def collect_for_date(settings: Settings, day: date, max_items: int = 800) -> Pat
 
     out_path = settings.raw_dir / day.isoformat() / "articles_raw.csv"
     write_articles_csv(out_path, merged)
+    print(f"[fiw] wrote: {out_path} rows={len(merged)}")
     return out_path
