@@ -1,0 +1,6 @@
+[console_scripts]
+fiw-build-daily = fiw.cli:build_daily
+fiw-build-weekly = fiw.cli:build_weekly
+fiw-collect = fiw.cli:collect
+fiw-push-weekly = fiw.cli:push_weekly
+fiw-serve = fiw.cli:serve
