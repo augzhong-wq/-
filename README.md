@@ -48,7 +48,13 @@ python3 -m fiw build-site --max-days 60
 ### GitHub Pages（推荐：全自动分享）
 
 仓库已内置工作流：
-- `.github/workflows/daily.yml`：每天 08:00（北京时间）采集 + 构建 `site/` 并部署到 Pages
+- `.github/workflows/daily.yml`：每天 08:00（北京时间）采集 + 构建 `site/` 并推送到 `gh-pages` 分支（用于 Pages 发布）
 - `.github/workflows/weekly.yml`：周一 08:00（北京时间）生成周报 PDF，并可通过 SMTP 邮件发送
 
 你需要在仓库 `Settings -> Secrets and variables -> Actions` 配置（发邮件才需要）：`FIW_SMTP_HOST/FIW_SMTP_PORT/FIW_SMTP_USER/FIW_SMTP_PASS/FIW_SMTP_FROM`，以及可选 `FIW_DEEPSEEK_API_KEY`。
+
+Pages 设置方式（适配你看到的老界面）：
+- `Settings -> Pages`
+- `Source` 选择 **Deploy from a branch**
+- `Branch` 选择 **gh-pages**，目录选择 **/ (root)**  
+首次需要先跑一次 `Daily Collect, Build Site & Publish Pages (gh-pages)` 工作流来生成 `gh-pages` 分支。
