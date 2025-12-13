@@ -8,6 +8,7 @@
 - **采集结果全部落地 CSV**：可追溯、可审计、可二次分析
 - **每日 HTML 看板**：分“精简版 / 完整版”，支持筛选与搜索
 - **每周一 08:00 自动生成周报 PDF**：版式与栏目对标你提供的样例（第一版已实现，后续可继续逼近字体/间距/栏目映射）
+- **GitHub Pages 发布**：每日构建静态站点到 `site/` 并自动部署，方便对外分享
 
 ### 快速开始
 
@@ -27,6 +28,9 @@ python3 -m fiw serve --port 8080
 
 # 生成本周周报（默认本周一）
 python3 -m fiw build-weekly
+
+# 生成静态站点（用于 GitHub Pages）
+python3 -m fiw build-site --max-days 60
 ```
 
 ### 定时（cron 示例）
@@ -40,3 +44,11 @@ python3 -m fiw build-weekly
 ```
 
 > 推送通道：目前内置 SMTP 邮件与企业微信机器人（可选配置 .env）。
+
+### GitHub Pages（推荐：全自动分享）
+
+仓库已内置工作流：
+- `.github/workflows/daily.yml`：每天 08:00（北京时间）采集 + 构建 `site/` 并部署到 Pages
+- `.github/workflows/weekly.yml`：周一 08:00（北京时间）生成周报 PDF，并可通过 SMTP 邮件发送
+
+你需要在仓库 `Settings -> Secrets and variables -> Actions` 配置（发邮件才需要）：`FIW_SMTP_HOST/FIW_SMTP_PORT/FIW_SMTP_USER/FIW_SMTP_PASS/FIW_SMTP_FROM`，以及可选 `FIW_DEEPSEEK_API_KEY`。

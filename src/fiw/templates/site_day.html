@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ day }} - {{ '完整版' if view=='full' else '精简版' }}</title>
+  <style>
+    :root{--bg:#0b1730;--muted:#93a4c7;--text:#e7eefc;--blue:#4ea1ff;--border:rgba(148,163,184,.12);--card:rgba(16,27,51,.55)}
+    body{margin:0;padding:14px;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);}
+    .top{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:10px}
+    .pill{display:inline-block;background:var(--card);border:1px solid rgba(148,163,184,.25);border-radius:999px;padding:4px 10px;color:var(--muted);font-size:12px}
+    a{color:var(--blue);text-decoration:none}
+    table{width:100%;border-collapse:collapse;font-size:13px;background:var(--card);border:1px solid rgba(148,163,184,.15);border-radius:14px;overflow:hidden}
+    th,td{padding:10px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+    th{color:var(--muted);font-weight:600;text-align:left;background:rgba(16,27,51,.75)}
+    .lvl{display:inline-block;padding:2px 8px;border-radius:999px;font-weight:700;font-size:12px}
+    .S{background:#ff4d4f22;color:#ff9aa0;border:1px solid #ff4d4f55}
+    .A{background:#ffb02022;color:#ffd08a;border:1px solid #ffb02055}
+    .B{background:#4ea1ff22;color:#a7d0ff;border:1px solid #4ea1ff55}
+    .C{background:#93a4c722;color:#cbd6f0;border:1px solid #93a4c755}
+    .tag{color:var(--muted);font-size:12px;margin-top:6px}
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div>
+      <span class="pill">{{ day }}</span>
+      <span class="pill">{{ '完整版' if view=='full' else '精简版' }}</span>
+      <span class="pill">记录：{{ total }}</span>
+    </div>
+    <div>
+      <a class="pill" href="./brief.html">精简版</a>
+      <a class="pill" href="./full.html">完整版</a>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:70px">等级</th>
+        <th>标题</th>
+        <th style="width:160px">来源</th>
+        <th style="width:90px">栏目</th>
+        <th style="width:140px">理由</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in rows %}
+      <tr>
+        <td>
+          <span class="lvl {{r.importance_level}}">{{ r.importance_level or '-' }}</span>
+          <div class="tag">{{ r.importance_score or '' }}</div>
+        </td>
+        <td>
+          <div><a href="{{ r.url }}" target="_blank" rel="noreferrer">{{ r.title }}</a></div>
+          {% if r.summary_zh %}<div class="tag" style="margin-top:6px">{{ r.summary_zh }}</div>
+          {% elif r.summary %}<div class="tag" style="margin-top:6px">{{ r.summary }}</div>{% endif %}
+          <div class="tag">{{ r.day_id }} · {{ r.domain }}</div>
+        </td>
+        <td>{{ r.source_name }}</td>
+        <td>{{ r.category }}</td>
+        <td class="tag">{{ r.importance_reason }}</td>
+      </tr>
+      {% endfor %}
+      {% if rows|length == 0 %}
+      <tr><td colspan="5" class="tag">暂无数据</td></tr>
+      {% endif %}
+    </tbody>
+  </table>
+</body>
+</html>
+

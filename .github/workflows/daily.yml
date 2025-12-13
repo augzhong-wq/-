@@ -1,4 +1,4 @@
-name: Daily Collect & Dashboard Data
+name: Daily Collect, Build Site & Deploy Pages
 
 on:
   schedule:
@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
 
@@ -28,10 +30,23 @@ jobs:
         run: |
           python -m fiw collect --max-items 1200
           python -m fiw build-daily
+          python -m fiw build-site --max-days 60
 
       - name: Commit data/
         uses: EndBug/add-and-commit@v9
         with:
-          add: "data"
-          message: "chore(data): daily collect & rebuild dashboard data"
+          add: "data site"
+          message: "chore(data): daily collect + build site"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 

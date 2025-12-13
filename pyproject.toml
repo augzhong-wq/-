@@ -18,5 +18,6 @@ where = ["src"]
 fiw-collect = "fiw.cli:collect"
 fiw-build-daily = "fiw.cli:build_daily"
 fiw-build-weekly = "fiw.cli:build_weekly"
+fiw-build-site = "fiw.cli:build_site"
 fiw-serve = "fiw.cli:serve"
 fiw-push-weekly = "fiw.cli:push_weekly"

@@ -27,12 +27,28 @@ jobs:
       - name: Build weekly package (uses last 7 days in data/daily)
         run: |
           python -m fiw build-weekly
+        env:
+          FIW_LLM_MODE: hybrid
+          FIW_DEEPSEEK_API_KEY: ${{ secrets.FIW_DEEPSEEK_API_KEY }}
 
       - name: Upload weekly PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: weekly-pdf
           path: data/weekly/**/未来产业周度要闻_*.pdf
+
+      - name: Email weekly PDF (SMTP)
+        run: |
+          python -m fiw push-weekly
+        env:
+          FIW_SMTP_HOST: ${{ secrets.FIW_SMTP_HOST }}
+          FIW_SMTP_PORT: ${{ secrets.FIW_SMTP_PORT }}
+          FIW_SMTP_USER: ${{ secrets.FIW_SMTP_USER }}
+          FIW_SMTP_PASS: ${{ secrets.FIW_SMTP_PASS }}
+          FIW_SMTP_FROM: ${{ secrets.FIW_SMTP_FROM }}
+          FIW_SMTP_TO: 269393411@qq.com
+          FIW_LLM_MODE: hybrid
+          FIW_DEEPSEEK_API_KEY: ${{ secrets.FIW_DEEPSEEK_API_KEY }}
 
       - name: Commit data/weekly
         uses: EndBug/add-and-commit@v9

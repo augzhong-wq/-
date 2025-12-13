@@ -9,9 +9,11 @@ src/fiw/dashboard.py
 src/fiw/dedupe.py
 src/fiw/importance.py
 src/fiw/io_csv.py
+src/fiw/llm.py
 src/fiw/models.py
 src/fiw/pdf.py
 src/fiw/push.py
+src/fiw/site.py
 src/fiw/sources.py
 src/fiw/utils.py
 src/fiw/weekly.py

@@ -10,6 +10,7 @@ from fiw.collector import collect_for_date
 from fiw.dashboard import run_server
 from fiw.weekly import build_daily_views, build_weekly_package
 from fiw.push import push_weekly_package
+from fiw.site import build_static_site
 
 
 def _parse_date(s: str) -> date:
@@ -75,3 +76,16 @@ def push_weekly() -> None:
 
     pkg = build_weekly_package(settings=settings, week_start=args.week_start)
     push_weekly_package(settings=settings, weekly_package=pkg)
+
+
+def build_site() -> None:
+    load_dotenv()
+    settings = load_settings()
+
+    p = argparse.ArgumentParser()
+    p.add_argument("--max-days", type=int, default=60)
+    p.add_argument("--out", default=None)
+    args = p.parse_args()
+
+    out = build_static_site(settings=settings, out_dir=(None if not args.out else __import__("pathlib").Path(args.out)), max_days=args.max_days)
+    print(f"[fiw] site: {out.index_path}")
