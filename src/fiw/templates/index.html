@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>未来产业周度要闻 - 每日采集看板</title>
+  <style>
+    :root{--bg:#0b1220;--card:#101b33;--muted:#93a4c7;--text:#e7eefc;--accent:#ff4d4f;--blue:#4ea1ff;}
+    body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;background:linear-gradient(180deg,#070b14, var(--bg));color:var(--text);}
+    .wrap{max-width:1200px;margin:0 auto;padding:24px;}
+    .top{display:flex;gap:16px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;}
+    h1{margin:0;font-size:20px;}
+    .sub{color:var(--muted);font-size:12px;margin-top:6px;}
+    .card{background:rgba(16,27,51,.85);border:1px solid rgba(148,163,184,.15);border-radius:14px;padding:16px;}
+    .filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    input,select{background:#0b1730;color:var(--text);border:1px solid rgba(148,163,184,.25);border-radius:10px;padding:8px 10px;}
+    .btn{background:var(--accent);color:white;border:none;border-radius:10px;padding:9px 12px;cursor:pointer}
+    .btn.secondary{background:#16284d;border:1px solid rgba(148,163,184,.25)}
+    .meta{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin-top:8px}
+    table{width:100%;border-collapse:collapse;margin-top:14px;font-size:13px}
+    th,td{padding:10px 8px;border-bottom:1px solid rgba(148,163,184,.12);vertical-align:top}
+    th{color:var(--muted);font-weight:600;text-align:left}
+    a{color:var(--blue);text-decoration:none}
+    .lvl{display:inline-block;padding:2px 8px;border-radius:999px;font-weight:700;font-size:12px}
+    .S{background:#ff4d4f22;color:#ff9aa0;border:1px solid #ff4d4f55}
+    .A{background:#ffb02022;color:#ffd08a;border:1px solid #ffb02055}
+    .B{background:#4ea1ff22;color:#a7d0ff;border:1px solid #4ea1ff55}
+    .C{background:#93a4c722;color:#cbd6f0;border:1px solid #93a4c755}
+    .tag{color:var(--muted);font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <h1>每日采集看板（{{ '完整版' if view=='full' else '精简版' }}）</h1>
+        <div class="sub">展示当日全量采集记录与重要性评分；周一 08:00 会基于一周数据生成“周度要闻”PDF。</div>
+        <div class="meta">
+          <div>日期：<b>{{ day }}</b></div>
+          <div>记录数：<b>{{ total }}</b></div>
+        </div>
+      </div>
+      <form class="card" method="get" action="/">
+        <div class="filters">
+          <label class="tag">日期 <input name="day" value="{{ day }}" placeholder="YYYY-MM-DD" /></label>
+          <label class="tag">视图
+            <select name="view">
+              <option value="brief" {{ 'selected' if view=='brief' else '' }}>精简版</option>
+              <option value="full" {{ 'selected' if view=='full' else '' }}>完整版</option>
+            </select>
+          </label>
+          <label class="tag">栏目
+            <select name="cat">
+              <option value="" {{ 'selected' if not cat else '' }}>全部</option>
+              {% for c in cats %}
+                <option value="{{c}}" {{ 'selected' if cat==c else '' }}>{{c}}</option>
+              {% endfor %}
+            </select>
+          </label>
+          <label class="tag">等级
+            <select name="lvl">
+              <option value="" {{ 'selected' if not lvl else '' }}>全部</option>
+              {% for l in lvls %}
+                <option value="{{l}}" {{ 'selected' if lvl==l else '' }}>{{l}}</option>
+              {% endfor %}
+            </select>
+          </label>
+          <label class="tag">搜索 <input name="q" value="{{ q }}" placeholder="标题/摘要关键词" /></label>
+          <button class="btn" type="submit">更新</button>
+          <a class="btn secondary" href="/?day={{day}}&view=brief">精简</a>
+          <a class="btn secondary" href="/?day={{day}}&view=full">完整</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:70px">等级</th>
+            <th>标题</th>
+            <th style="width:160px">来源</th>
+            <th style="width:90px">栏目</th>
+            <th style="width:120px">理由</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in rows %}
+          <tr>
+            <td>
+              <span class="lvl {{r.importance_level}}">{{ r.importance_level or '-' }}</span>
+              <div class="tag">{{ r.importance_score or '' }}</div>
+            </td>
+            <td>
+              <div><a href="{{ r.url }}" target="_blank" rel="noreferrer">{{ r.title }}</a></div>
+              {% if r.summary %}<div class="tag" style="margin-top:6px">{{ r.summary }}</div>{% endif %}
+              <div class="tag" style="margin-top:6px">{{ r.day_id }} · {{ r.domain }}</div>
+            </td>
+            <td>{{ r.source_name }}</td>
+            <td>{{ r.category }}</td>
+            <td class="tag">{{ r.importance_reason }}</td>
+          </tr>
+          {% endfor %}
+          {% if rows|length == 0 %}
+          <tr><td colspan="5" class="tag">暂无数据：请先运行当日采集与每日构建。</td></tr>
+          {% endif %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
