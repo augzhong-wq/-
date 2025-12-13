@@ -1,4 +1,4 @@
-name: Daily Collect, Build Site & Publish Pages (gh-pages)
+name: Daily Collect, Build Site & Deploy Pages
 
 on:
   schedule:
@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
 
@@ -29,6 +31,9 @@ jobs:
           python -m fiw collect --max-items 1200
           python -m fiw build-daily
           python -m fiw build-site --max-days 60
+        env:
+          FIW_LLM_MODE: hybrid
+          FIW_DEEPSEEK_API_KEY: ${{ secrets.FIW_DEEPSEEK_API_KEY }}
 
       - name: Commit data/
         uses: EndBug/add-and-commit@v9
@@ -36,11 +41,15 @@ jobs:
           add: "data site"
           message: "chore(data): daily collect + build site"
 
-      - name: Publish to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./site
-          force_orphan: true
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 

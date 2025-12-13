@@ -55,6 +55,5 @@ python3 -m fiw build-site --max-days 60
 
 Pages 设置方式（适配你看到的老界面）：
 - `Settings -> Pages`
-- `Source` 选择 **Deploy from a branch**
-- `Branch` 选择 **gh-pages**，目录选择 **/ (root)**  
-首次需要先跑一次 `Daily Collect, Build Site & Publish Pages (gh-pages)` 工作流来生成 `gh-pages` 分支。
+- `Source` 选择 **GitHub Actions**
+然后手动跑一次 `Daily Collect, Build Site & Deploy Pages` 工作流完成首次部署。
