@@ -7,8 +7,9 @@
 """
 
 import logging
+import re
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from src.curators.deduplicator import Deduplicator
 from src.curators.filter import RelevanceFilter
@@ -18,6 +19,9 @@ from src.database.models import RawArticle, CuratedArticle
 from src.database.store import DatabaseStore
 from src.llm.client import LLMClient
 from src.config.settings import MIN_IMPORTANCE_FOR_REPORT
+
+# 时效性：只保留N天内的文章
+FRESHNESS_DAYS = 2
 
 logger = logging.getLogger(__name__)
 
@@ -74,8 +78,13 @@ class CurationCommander:
         self.stats["after_dedup"] = len(deduped)
         logger.info("步骤1: 去重 %d → %d", len(raw_articles), len(deduped))
 
+        # 步骤2.5: 时效性过滤（只保留2天内的文章）
+        fresh = self._filter_by_freshness(deduped, report_date)
+        logger.info("步骤1.5: 时效性过滤 %d → %d（仅保留%d天内）",
+                     len(deduped), len(fresh), FRESHNESS_DAYS)
+
         # 步骤3: AI相关性过滤
-        filtered = self.filter.filter_articles(deduped)
+        filtered = self.filter.filter_articles(fresh)
         self.stats["after_filter"] = len(filtered)
         logger.info("步骤2: 过滤 %d → %d", len(deduped), len(filtered))
 
@@ -131,6 +140,83 @@ class CurationCommander:
         )
 
         return [a for a in curated_articles if a.is_selected_for_report]
+
+    def _filter_by_freshness(
+        self, articles: list[RawArticle], report_date: str
+    ) -> list[RawArticle]:
+        """时效性过滤：只保留FRESHNESS_DAYS天内的文章
+
+        判定逻辑：
+        1. 优先用 published_date 判断
+        2. published_date 不可用时，用 collected_at 判断
+        3. 无法解析日期的文章默认保留（宁可多收不可漏）
+        """
+        try:
+            ref_date = datetime.strptime(report_date, "%Y-%m-%d")
+        except ValueError:
+            ref_date = datetime.utcnow()
+
+        cutoff = ref_date - timedelta(days=FRESHNESS_DAYS)
+        fresh = []
+
+        for art in articles:
+            article_date = self._parse_article_date(art.published_date)
+            if article_date is None:
+                # 无法解析日期，用采集时间
+                article_date = self._parse_article_date(art.collected_at)
+            if article_date is None:
+                # 完全无法判断日期，默认保留
+                fresh.append(art)
+                continue
+            if article_date >= cutoff:
+                fresh.append(art)
+
+        removed = len(articles) - len(fresh)
+        if removed > 0:
+            logger.info("时效性过滤移除 %d 条过期文章（超过%d天）", removed, FRESHNESS_DAYS)
+        return fresh
+
+    @staticmethod
+    def _parse_article_date(date_str: str | None) -> datetime | None:
+        """尝试解析各种日期格式"""
+        if not date_str or len(date_str.strip()) < 4:
+            return None
+
+        date_str = date_str.strip()
+
+        # 常见格式
+        formats = [
+            "%Y-%m-%d",
+            "%Y-%m-%dT%H:%M:%S",
+            "%Y-%m-%dT%H:%M:%S.%f",
+            "%Y-%m-%dT%H:%M:%SZ",
+            "%Y-%m-%d %H:%M:%S",
+            "%Y/%m/%d",
+            "%d %b %Y",
+            "%b %d, %Y",
+            "%B %d, %Y",
+            "%Y年%m月%d日",
+        ]
+        for fmt in formats:
+            try:
+                return datetime.strptime(date_str[:len(date_str)], fmt)
+            except ValueError:
+                continue
+
+        # 尝试只取前10个字符 YYYY-MM-DD
+        try:
+            return datetime.strptime(date_str[:10], "%Y-%m-%d")
+        except ValueError:
+            pass
+
+        # 尝试用 dateutil
+        try:
+            from dateutil import parser as dateutil_parser
+            return dateutil_parser.parse(date_str, fuzzy=True)
+        except Exception:
+            pass
+
+        return None
 
     def get_stats(self) -> dict:
         """获取筛选统计"""
