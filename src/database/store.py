@@ -386,6 +386,68 @@ class DatabaseStore:
         finally:
             conn.close()
 
+    # ─── CSV Export ───────────────────────────────────────
+
+    def export_daily_csv(self, report_date: str, output_dir: str = "data/csv"):
+        """将当日采集和筛选数据导出为CSV
+
+        生成两个CSV文件:
+        - raw_YYYY-MM-DD.csv: 当日所有采集的原始文章
+        - curated_YYYY-MM-DD.csv: 当日筛选后的文章
+        """
+        import csv
+        out = Path(output_dir)
+        out.mkdir(parents=True, exist_ok=True)
+
+        conn = self._get_conn()
+        try:
+            # 导出原始文章
+            raw_path = out / f"raw_{report_date}.csv"
+            rows = conn.execute(
+                "SELECT * FROM raw_articles WHERE collected_at LIKE ?",
+                (f"{report_date}%",)
+            ).fetchall()
+            if rows:
+                with open(raw_path, "w", newline="", encoding="utf-8-sig") as f:
+                    writer = csv.writer(f)
+                    writer.writerow([
+                        "ID", "信息源", "大类", "子类", "URL",
+                        "标题", "摘要", "发布日期", "采集时间", "哈希"
+                    ])
+                    for r in rows:
+                        writer.writerow([
+                            r["id"], r["source_name"], r["source_category"],
+                            r["source_sub_category"], r["url"], r["title"],
+                            r["content_snippet"][:200], r["published_date"],
+                            r["collected_at"], r["content_hash"]
+                        ])
+                logger.info("原始数据CSV已导出: %s (%d条)", raw_path, len(rows))
+
+            # 导出筛选文章
+            curated_path = out / f"curated_{report_date}.csv"
+            rows = conn.execute(
+                "SELECT * FROM curated_articles WHERE report_date = ?",
+                (report_date,)
+            ).fetchall()
+            if rows:
+                with open(curated_path, "w", newline="", encoding="utf-8-sig") as f:
+                    writer = csv.writer(f)
+                    writer.writerow([
+                        "ID", "中文标题", "中文摘要", "分类", "重要性",
+                        "入选报送", "信息源", "原文URL", "发布日期", "报送日期"
+                    ])
+                    for r in rows:
+                        writer.writerow([
+                            r["id"], r["title_zh"], r["summary_zh"],
+                            r["category"], r["importance_score"],
+                            "是" if r["is_selected_for_report"] else "否",
+                            r["source_name"], r["source_url"],
+                            r["published_date"], r["report_date"]
+                        ])
+                logger.info("筛选数据CSV已导出: %s (%d条)", curated_path, len(rows))
+        finally:
+            conn.close()
+
     # ─── Private Helpers ─────────────────────────────────
 
     @staticmethod

@@ -90,6 +90,10 @@ async def run_daily(test_mode: bool = False):
     )
     logger.info("▶ Agent 3 完成: %s", html_path)
 
+    # 导出每日CSV数据
+    logger.info("\n▶ 导出每日CSV数据...")
+    db.export_daily_csv(report_date)
+
     # 清理过期数据
     db.cleanup_old_raw_articles(days=90)
 
