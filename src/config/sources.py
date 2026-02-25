@@ -1700,6 +1700,36 @@ SOURCES: list[Source] = [
         priority=3,
         notes="AI产业和具身智能报道",
     ),
+
+    # ═════════════════════════════════════════════════════
+    # 十五、AI领域关键人物博客（Karpathy推荐）
+    # ═════════════════════════════════════════════════════
+
+    # 113. Gary Marcus（AI批评家代表，言论常引发业界争议）
+    Source(
+        name="Gary Marcus",
+        category="高校与研究机构",
+        sub_category="学者言论",
+        urls=[
+            "https://garymarcus.substack.com/",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="AI批评家代表人物，NYU教授，言论经常引发业界广泛争议",
+    ),
+
+    # 114. Dwarkesh Patel（知名AI播客，常采访黄仁勋/扎克伯格等）
+    Source(
+        name="Dwarkesh Patel",
+        category="高校与研究机构",
+        sub_category="学者言论",
+        urls=[
+            "https://www.dwarkeshpatel.com/",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="知名AI播客主持人，经常采访Zuckerberg、黄仁勋、Altman等关键人物",
+    ),
 ]
 
 
