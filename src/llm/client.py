@@ -209,7 +209,7 @@ class LLMClient:
         return articles
 
     def score_importance(self, articles: list[dict]) -> list[dict]:
-        """批量评估文章重要性
+        """批量评估文章重要性（高层领导视角）
 
         Args:
             articles: [{"title": ..., "snippet": ..., "source": ..., "index": ...}, ...]
@@ -221,13 +221,25 @@ class LLMClient:
             return self._fallback_score(articles)
 
         system_prompt = (
-            "你是面向政府领导的AI动态简报编辑。请根据以下标准评估每条新闻的重要性（1-5分）：\n"
-            "5分：重大技术突破/重磅政策/行业变革性事件（如GPT-5发布、主要国家AI立法）\n"
-            "4分：重要产品发布/关键政策动向/大额融资（如10亿美元以上）\n"
-            "3分：值得关注的行业动态（新功能、合作、中等融资）\n"
-            "2分：一般性行业新闻（常规更新、小型活动）\n"
-            "1分：边缘信息（个人观点、轻微更新）\n\n"
-            "评分维度：事件影响力、涉及企业量级、政策关联度、时效性、领导关注度。\n"
+            "你是一位面向国家高层领导的AI动态简报编辑。领导没有技术专业背景，"
+            "负责综合事务，但对AI产业有浓厚兴趣。\n\n"
+            "请站在领导的角度评估每条新闻的重要性（1-5分）。领导关心的是：\n"
+            "- 对国际社会和全球AI格局有广泛影响的事件\n"
+            "- 头部企业（OpenAI、Google、NVIDIA、微软、Meta等）的重大战略动作\n"
+            "- 标志性的产品发布（必须是业界广泛关注的，不是普通功能更新）\n"
+            "- 重大技术突破（必须是行业公认的里程碑，不是普通学术论文）\n"
+            "- 权威机构发布的重大行业数据/报告（麦肯锡、高盛等）\n"
+            "- 重要人物的关键言论（马斯克、奥特曼、黄仁勋等）\n"
+            "- 主要国家的AI政策/法案（美国行政令、欧盟AI法案、出口管制等）\n"
+            "- 大额投融资（10亿美元以上）或重大并购\n\n"
+            "评分标准（严格执行，宁缺毋滥）：\n"
+            "5分：改变行业格局的重大事件（如GPT新一代发布、主要国家AI立法、百亿级交易）\n"
+            "4分：业界广泛关注的重要事件（头部企业重大发布、关键人物重要表态、大额融资）\n"
+            "3分：值得领导了解的行业动态（中等规模事件、区域性政策、行业趋势）\n"
+            "2分：一般性行业新闻（常规更新、小型合作、普通研究成果）\n"
+            "1分：不值得领导关注（纯学术论文、个别技术细节、小型活动、招聘信息）\n\n"
+            "注意：普通学术论文、个别算法改进、小型产品更新一律评为1-2分。\n"
+            "只有引起业界广泛关注的才给3分以上。\n"
             "输出格式：每行一个结果，格式为 '序号:分数'"
         )
 
@@ -350,6 +362,123 @@ class LLMClient:
         )
         user_prompt = f"本月各周综述：\n{weekly_text}"
         return self.chat(system_prompt, user_prompt, temperature=0.3)
+
+    # ─── 精选报送筛选 ────────────────────────────────────
+
+    def screen_elite_picks(self, articles: list[dict],
+                            max_per_category: int = 5) -> list[dict]:
+        """精选报送筛选 — 模拟高层领导的信息筛选思维
+
+        从已评分文章中，按照领导视角进行二次精筛，
+        每个分类原则上不超过5条，除非确实影响力巨大。
+
+        Args:
+            articles: [{"title_zh":..., "summary_zh":..., "category":...,
+                        "importance_score":..., "source_name":..., ...}]
+            max_per_category: 每类最大条数
+
+        Returns:
+            标注了 is_elite(bool) 的文章列表
+        """
+        if not self.is_available:
+            return self._fallback_elite(articles, max_per_category)
+
+        system_prompt = (
+            "你是一位服务国家高层领导的AI动态简报总编辑。\n"
+            "领导没有技术专业背景，处理综合事务，但对AI高度关注。\n\n"
+            "你的任务：从以下已筛选的AI动态中，精选出真正值得领导阅读的条目。\n\n"
+            "领导的关注逻辑（按优先级）：\n"
+            "1️⃣ 重点国家AI政策/法案 — 美国、欧盟、英国、中国等重大AI立法或行政令\n"
+            "2️⃣ 重大企业动作 — OpenAI/Google/NVIDIA等头部企业的战略级动作（非普通更新）\n"
+            "3️⃣ 标志性产品发布 — 引起全行业关注的里程碑式发布（非小版本迭代）\n"
+            "4️⃣ 行业关键数据/报告 — 麦肯锡、高盛等权威机构的重大行业报告\n"
+            "5️⃣ 重要人物言论 — 马斯克、奥特曼、黄仁勋等的关键公开表态\n"
+            "6️⃣ 大额投融资/并购 — 10亿美元以上的标志性交易\n"
+            "7️⃣ 重大技术突破 — 必须是业界公认的里程碑（非普通论文或算法改进）\n"
+            "8️⃣ AI安全/伦理重大事件 — 影响广泛的安全事件或伦理争议\n\n"
+            "筛选原则：\n"
+            "- 宁缺毋滥，每个分类原则上不超过5条\n"
+            "- 普通学术论文、个别技术细节、小型活动一律不入选\n"
+            "- 只留下'领导看了会觉得值得了解'的内容\n"
+            "- 如果某条确实影响力巨大，可以突破5条限制\n\n"
+            "输出格式：每行输出入选条目的序号，格式为 '序号:入选'\n"
+            "不入选的不用输出。"
+        )
+
+        # 分批处理
+        batch_size = 20
+        for i in range(0, len(articles), batch_size):
+            batch = articles[i:i + batch_size]
+            prompt_lines = []
+            for j, art in enumerate(batch):
+                idx = i + j + 1
+                prompt_lines.append(
+                    f"{idx}. [{art.get('category', '')}] [{art.get('source_name', '')}] "
+                    f"{art.get('title_zh', '')}\n"
+                    f"   摘要：{art.get('summary_zh', '')[:150]}"
+                )
+            user_prompt = (
+                f"请从以下{len(batch)}条动态中精选出值得领导阅读的条目：\n\n"
+                + "\n\n".join(prompt_lines)
+            )
+
+            response = self.chat(system_prompt, user_prompt)
+            if response:
+                self._parse_elite_response(response, articles, i)
+            else:
+                # LLM失败时，降级为按分数筛选
+                for art in batch:
+                    art.setdefault("is_elite", art.get("importance_score", 0) >= 4)
+
+        return articles
+
+    def _parse_elite_response(self, response: str, articles: list[dict],
+                               offset: int):
+        """解析精选筛选响应"""
+        elite_indices = set()
+        for line in response.strip().split("\n"):
+            line = line.strip()
+            if not line:
+                continue
+            for sep in [":", "：", ".", "、"]:
+                if sep in line:
+                    prefix = line.split(sep, 1)[0].strip()
+                    try:
+                        idx = int(prefix) - 1
+                        if "入选" in line or "选" in line or idx >= 0:
+                            elite_indices.add(idx)
+                        break
+                    except ValueError:
+                        continue
+
+        for idx in elite_indices:
+            if 0 <= idx < len(articles):
+                articles[idx]["is_elite"] = True
+
+    def _fallback_elite(self, articles: list[dict],
+                         max_per_category: int) -> list[dict]:
+        """精选降级方案：按分数+规则筛选"""
+        from collections import Counter
+        cat_count: dict[str, int] = Counter()
+
+        # 按分数降序排列
+        sorted_arts = sorted(
+            enumerate(articles),
+            key=lambda x: x[1].get("importance_score", 0),
+            reverse=True
+        )
+
+        for idx, art in sorted_arts:
+            cat = art.get("category", "")
+            score = art.get("importance_score", 0)
+            if score >= 4 and cat_count[cat] < max_per_category:
+                art["is_elite"] = True
+                cat_count[cat] += 1
+            elif score >= 5:  # 5分的即使超限也入选
+                art["is_elite"] = True
+                cat_count[cat] += 1
+
+        return articles
 
     # ─── 降级方案 ────────────────────────────────────────
 
