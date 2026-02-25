@@ -13,9 +13,10 @@ DB_PATH = os.getenv("DB_PATH", str(PROJECT_ROOT / "data" / "monitor.db"))
 DOCS_DIR = PROJECT_ROOT / "docs"
 TEMPLATES_DIR = PROJECT_ROOT / "templates"
 
-# LLM 配置
+# LLM 配置（支持 OpenAI / DeepSeek 等兼容接口）
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.deepseek.com")  # DeepSeek默认
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "deepseek-chat")  # DeepSeek默认模型
 OPENAI_MAX_TOKENS = 4096
 OPENAI_TEMPERATURE = 0.3
 

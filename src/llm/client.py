@@ -14,7 +14,7 @@ import time
 from typing import Optional
 
 from src.config.settings import (
-    OPENAI_API_KEY, OPENAI_MODEL, OPENAI_MAX_TOKENS,
+    OPENAI_API_KEY, OPENAI_BASE_URL, OPENAI_MODEL, OPENAI_MAX_TOKENS,
     OPENAI_TEMPERATURE, MAX_RETRIES, RETRY_BACKOFF
 )
 
@@ -49,18 +49,22 @@ class LLMClient:
         self._init_client()
 
     def _init_client(self):
-        """初始化OpenAI客户端"""
+        """初始化LLM客户端（支持OpenAI/DeepSeek等兼容接口）"""
         if not self.api_key:
             logger.warning("未设置OPENAI_API_KEY，将使用关键词降级方案")
             return
         try:
             from openai import OpenAI
-            self.client = OpenAI(api_key=self.api_key)
-            logger.info("OpenAI客户端初始化成功，模型: %s", self.model)
+            self.client = OpenAI(
+                api_key=self.api_key,
+                base_url=OPENAI_BASE_URL,
+            )
+            logger.info("LLM客户端初始化成功，接口: %s，模型: %s",
+                         OPENAI_BASE_URL, self.model)
         except ImportError:
             logger.warning("未安装openai库，将使用关键词降级方案")
         except Exception as e:
-            logger.warning("OpenAI客户端初始化失败: %s，将使用降级方案", e)
+            logger.warning("LLM客户端初始化失败: %s，将使用降级方案", e)
 
     @property
     def is_available(self) -> bool:
