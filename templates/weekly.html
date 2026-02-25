@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block page_title %}{{ title }} - 周报{% endblock %}
+{% block accent_color %}#003366{% endblock %}
+{% block title_color %}#003366{% endblock %}
+
+{% block extra_styles %}
+.overview-section {
+    background: #f0f4f8;
+    border-left: 4px solid #003366;
+    padding: 15px 20px;
+    margin: 20px 0;
+}
+.overview-title { color: #003366; font-size: 16px; font-weight: bold; margin-bottom: 10px; }
+.overview-text { font-size: 14px; line-height: 1.8; }
+.section-divider { border-top: 2px solid #003366; }
+.category-title { color: #003366; }
+.footer-section { border-top: 2px solid #003366; }
+{% endblock %}
+
+{% block content %}
+<h1 class="report-title">{{ title }} · 周报</h1>
+<p class="report-subtitle">AI WEEKLY INTELLIGENCE BRIEF</p>
+<div class="report-meta">
+    {{ year }}年第{{ week_number }}周 &nbsp;|&nbsp; {{ start_display }} — {{ end_display }}
+</div>
+
+{% if overview %}
+<div class="overview-section">
+    <div class="overview-title">【本周综述】</div>
+    <p class="overview-text">{{ overview }}</p>
+</div>
+{% endif %}
+
+<div class="section-divider"></div>
+
+{% set nums = ["一","二","三","四","五","六","七","八","九","十"] %}
+{% set ns = namespace(section=0) %}
+{% for cat in category_order %}
+    {% if cat in categories %}
+    {% set ns.section = ns.section + 1 %}
+    <div class="category-section">
+        <h2 class="category-title">{{ nums[ns.section - 1] if ns.section <= 10 else ns.section }}、{{ cat }}</h2>
+        <div class="category-divider"></div>
+        {% for art in categories[cat] %}
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">{{ "★" * art.importance_score }}</span>
+                <span class="article-title">{{ art.title_zh }}</span>
+            </div>
+            <p class="article-summary">{{ art.summary_zh }}</p>
+            <div class="article-meta">来源：{{ art.source_name }}</div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+{% endfor %}
+
+<div class="footer-section">
+    <p class="footer-text">本周共汇集{{ article_count }}条动态。</p>
+</div>
+{% endblock %}
