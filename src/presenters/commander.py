@@ -13,6 +13,7 @@ from pathlib import Path
 
 from src.presenters.summarizer import Summarizer
 from src.presenters.daily_builder import DailyReportBuilder
+from src.presenters.elite_builder import EliteReportBuilder
 from src.presenters.weekly_builder import WeeklyReportBuilder
 from src.presenters.monthly_builder import MonthlyReportBuilder
 from src.database.models import CuratedArticle
@@ -31,6 +32,7 @@ class PresentationCommander:
         self.llm = llm
         self.summarizer = Summarizer(llm)
         self.daily_builder = DailyReportBuilder(db)
+        self.elite_builder = EliteReportBuilder(db, llm)
         self.weekly_builder = WeeklyReportBuilder(db, llm)
         self.monthly_builder = MonthlyReportBuilder(db, llm)
 
@@ -81,9 +83,17 @@ class PresentationCommander:
         )
         logger.info("步骤3: 日报HTML生成: %s", html_path)
 
-        # 步骤4: 更新索引页
+        # 步骤4: 构建每日精选报送
+        elite_path = self.elite_builder.build(
+            articles=articles,
+            report_date=report_date,
+            collection_stats=collection_stats,
+        )
+        logger.info("步骤4: 精选报送生成: %s", elite_path)
+
+        # 步骤5: 更新索引页
         self._update_index()
-        logger.info("步骤4: 索引页已更新")
+        logger.info("步骤5: 索引页已更新")
 
         elapsed = time.time() - start_time
         logger.info(
@@ -119,13 +129,15 @@ class PresentationCommander:
         weekly_reports = self.db.get_all_weekly_reports()
         monthly_reports = self.db.get_all_monthly_reports()
 
-        # 日报列表
+        # 日报列表（含精选链接）
         daily_html = ""
         for r in daily_reports:
+            elite_link = r.html_path.replace("daily/", "elite/")
             daily_html += (
                 f'<tr><td>{r.report_date}</td>'
                 f'<td>{r.article_count}篇</td>'
-                f'<td><a href="{r.html_path}">查看</a></td></tr>\n'
+                f'<td><a href="{r.html_path}">全量简报</a> | '
+                f'<a href="{elite_link}" style="color:#B8860B;font-weight:bold">精选报送</a></td></tr>\n'
             )
 
         # 周报列表
