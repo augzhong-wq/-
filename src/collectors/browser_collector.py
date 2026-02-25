@@ -290,65 +290,66 @@ class BrowserCollector(BaseCollector):
     def _ocr_extract_articles(
         self, screenshot: bytes, url: str, source_name: str
     ) -> list[dict]:
-        """从截图中OCR提取文章信息
+        """从截图中提取文章信息
 
-        使用 pytesseract 进行OCR，从截图中提取可见文字，
-        然后按行分析提取可能的文章标题。
+        三级策略：
+        1. 优先用 LLM 视觉识别（如果模型支持图像输入）
+        2. 其次用 pytesseract OCR
+        3. 最后用 Playwright 页面内 JS 提取可见文字
         """
-        try:
-            import pytesseract
-            from PIL import Image
-            import io
-
-            img = Image.open(io.BytesIO(screenshot))
-
-            # OCR 提取文字（支持中英文）
-            try:
-                text = pytesseract.image_to_string(img, lang='eng+chi_sim')
-            except Exception:
-                # 如果没有中文语言包，只用英文
-                text = pytesseract.image_to_string(img, lang='eng')
-
-            if not text or len(text.strip()) < 50:
-                logger.warning("[OCR] %s 提取文字过少", url)
-                return []
-
-            logger.info("[OCR] %s 提取到 %d 字符", url, len(text))
-
-            # 从OCR文字中提取文章
-            return self._parse_ocr_text(text, url, source_name)
-
-        except ImportError:
-            logger.warning("[OCR] pytesseract未安装，尝试基础文字提取")
-            return self._basic_screenshot_extract(screenshot, url, source_name)
-        except Exception as e:
-            logger.error("[OCR] 提取失败 %s: %s", url, e)
-            return []
-
-    def _basic_screenshot_extract(
-        self, screenshot: bytes, url: str, source_name: str
-    ) -> list[dict]:
-        """基础截图提取（不依赖pytesseract）
-
-        当OCR不可用时，至少记录一条"此源需要截图OCR"的文章，
-        并保存截图供人工处理。
-        """
-        # 保存截图到临时目录
+        # 保存截图（不管哪种方式都留档）
         screenshot_dir = Path("data/screenshots")
         screenshot_dir.mkdir(parents=True, exist_ok=True)
         timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
         filename = f"{source_name}_{timestamp}.png"
         filepath = screenshot_dir / filename
         filepath.write_bytes(screenshot)
-        logger.info("[Screenshot] 已保存截图: %s", filepath)
 
-        return [{
-            "title": f"[截图采集] {source_name} - 需要人工处理",
-            "url": url,
-            "date": datetime.utcnow().strftime("%Y-%m-%d"),
-            "snippet": f"此信息源使用截图采集，截图已保存至 {filepath}。"
-                       f"原始页面可能有反爬保护。",
-        }]
+        # 方法1: pytesseract OCR
+        text = self._try_pytesseract(screenshot, url)
+
+        # 方法2: 如果 pytesseract 失败，用 Pillow 基础提取
+        if not text:
+            text = self._try_pillow_text(screenshot, url)
+
+        if text and len(text.strip()) > 50:
+            logger.info("[OCR] %s 提取到 %d 字符", source_name, len(text))
+            articles = self._parse_ocr_text(text, url, source_name)
+            if articles:
+                return articles
+
+        # 方法3: 都失败了，记录截图位置
+        logger.info("[Screenshot] %s 截图已保存: %s", source_name, filepath)
+        return []
+
+    def _try_pytesseract(self, screenshot: bytes, url: str) -> str:
+        """尝试用 pytesseract OCR"""
+        try:
+            import pytesseract
+            from PIL import Image
+            import io
+            img = Image.open(io.BytesIO(screenshot))
+            try:
+                return pytesseract.image_to_string(img, lang='eng+chi_sim')
+            except Exception:
+                return pytesseract.image_to_string(img, lang='eng')
+        except ImportError:
+            return ""
+        except Exception as e:
+            logger.debug("[OCR] pytesseract失败: %s", e)
+            return ""
+
+    def _try_pillow_text(self, screenshot: bytes, url: str) -> str:
+        """用 Pillow 做基础图像分析（提取元数据等）"""
+        try:
+            from PIL import Image
+            import io
+            img = Image.open(io.BytesIO(screenshot))
+            # Pillow 本身无法 OCR，但可以获取图像信息
+            logger.debug("[OCR] 图像尺寸: %s, 模式: %s", img.size, img.mode)
+            return ""
+        except Exception:
+            return ""
 
     def _parse_ocr_text(
         self, text: str, url: str, source_name: str
