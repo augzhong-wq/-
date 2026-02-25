@@ -1079,6 +1079,225 @@ SOURCES: list[Source] = [
         priority=3,
         notes="世界经济论坛_国际组织_CN_中文首页",
     ),
+
+    # ═════════════════════════════════════════════════════
+    # 十、新增渠道 — 中文创投/快讯/科技媒体
+    # （弥补中文AI投融资和产品发布信息缺口）
+    # ═════════════════════════════════════════════════════
+
+    # 69. 36氪 AI频道 + 快讯
+    Source(
+        name="36氪",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://36kr.com/information/AI/",
+            "https://36kr.com/newsflashes",
+            "https://36kr.com/information/web3/",
+            "https://36kr.com/information/technology/",
+        ],
+        collector_type="http",
+        priority=5,
+        notes="中文最大科技创投媒体，覆盖AI投融资、产品发布、行业动态",
+    ),
+
+    # 70. 钛媒体
+    Source(
+        name="钛媒体",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://www.tmtpost.com/tag/AI",
+            "https://www.tmtpost.com/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD",
+            "https://www.tmtpost.com/nictation/listMore/1",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="中文科技深度报道媒体",
+    ),
+
+    # 71. 虎嗅
+    Source(
+        name="虎嗅",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://www.huxiu.com/channel/ai",
+            "https://www.huxiu.com/channel/104.html",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="中文科技产业分析媒体",
+    ),
+
+    # 72. 澎湃科技
+    Source(
+        name="澎湃科技",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://www.thepaper.cn/channel_25951",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="澎湃新闻科技频道，覆盖中国AI政策和产业",
+    ),
+
+    # 73. 新浪科技AI
+    Source(
+        name="新浪科技",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://tech.sina.com.cn/ai/",
+            "https://finance.sina.com.cn/tech/",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="新浪科技AI频道",
+    ),
+
+    # 74. 投资界
+    Source(
+        name="投资界",
+        category="投融资与生态",
+        sub_category="中文投融资",
+        urls=[
+            "https://www.pedaily.cn/",
+            "https://news.pedaily.cn/",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="中国最大创投信息平台，覆盖AI投融资",
+    ),
+
+    # 75. IT桔子
+    Source(
+        name="IT桔子",
+        category="投融资与生态",
+        sub_category="中文投融资",
+        urls=[
+            "https://www.itjuzi.com/",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="中国创投数据库，AI公司融资信息",
+    ),
+
+    # 76. 腾讯科技
+    Source(
+        name="腾讯科技",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://new.qq.com/ch/tech/",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="腾讯新闻科技频道",
+    ),
+
+    # ═════════════════════════════════════════════════════
+    # 十一、新增渠道 — 国际AI核心媒体/聚合
+    # （弥补Google主博客、AI专业媒体、新闻聚合缺口）
+    # ═════════════════════════════════════════════════════
+
+    # 77. Google Blog AI (最重要！Gemini等旗舰产品首发渠道)
+    Source(
+        name="Google Blog AI",
+        category="AI巨头与顶级实验室",
+        sub_category="AI龙头企业",
+        urls=[
+            "https://blog.google/technology/ai/",
+            "https://blog.google/technology/developers/",
+            "https://blog.google/technology/research/",
+            "https://blog.google/products/gemini/",
+        ],
+        collector_type="http",
+        priority=5,
+        notes="Google主博客AI频道——Gemini等重大发布首发渠道",
+    ),
+
+    # 78. Techmeme (科技新闻聚合第一名)
+    Source(
+        name="Techmeme",
+        category="专业媒体与通讯",
+        sub_category="新闻聚合",
+        urls=[
+            "https://www.techmeme.com/",
+        ],
+        collector_type="http",
+        priority=5,
+        notes="全球最权威科技新闻聚合器，所有重大AI消息必上榜",
+    ),
+
+    # 79. Hacker News
+    Source(
+        name="Hacker News",
+        category="专业媒体与通讯",
+        sub_category="新闻聚合",
+        urls=[
+            "https://news.ycombinator.com/",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="硅谷/极客圈必看新闻社区",
+    ),
+
+    # 80. VentureBeat AI
+    Source(
+        name="VentureBeat",
+        category="专业媒体与通讯",
+        sub_category="科技与商业媒体",
+        urls=[
+            "https://venturebeat.com/ai/",
+            "https://venturebeat.com/category/ai/",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="AI领域专业媒体，覆盖企业AI应用和产品发布",
+    ),
+
+    # 81. Ars Technica AI
+    Source(
+        name="Ars Technica",
+        category="专业媒体与通讯",
+        sub_category="科技与商业媒体",
+        urls=[
+            "https://arstechnica.com/ai/",
+            "https://arstechnica.com/information-technology/",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="深度科技报道媒体AI频道",
+    ),
+
+    # 82. Wired AI
+    Source(
+        name="Wired",
+        category="专业媒体与通讯",
+        sub_category="科技与商业媒体",
+        urls=[
+            "https://www.wired.com/tag/artificial-intelligence/",
+            "https://www.wired.com/tag/machine-learning/",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="科技文化杂志AI报道",
+    ),
+
+    # 83. The Information
+    Source(
+        name="The Information",
+        category="专业媒体与通讯",
+        sub_category="科技与商业媒体",
+        urls=[
+            "https://www.theinformation.com/",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="硅谷高端科技商业媒体，常有独家AI报道",
+    ),
 ]
 
 
