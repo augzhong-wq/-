@@ -158,8 +158,9 @@ SOURCES: list[Source] = [
         urls=[
             "https://x.ai/news",
         ],
-        collector_type="http",
+        collector_type="browser",
         priority=4,
+        notes="反爬严重，使用浏览器+截图OCR采集",
     ),
 
     # 10. Mistral AI
@@ -255,8 +256,9 @@ SOURCES: list[Source] = [
             "https://www.turing.ac.uk/blog",
             "https://www.turing.ac.uk/news/publications",
         ],
-        collector_type="http",
+        collector_type="browser",
         priority=4,
+        notes="反爬严重(403)，使用浏览器采集",
     ),
 
     # 17. MILA (蒙特利尔)
@@ -589,9 +591,9 @@ SOURCES: list[Source] = [
             "https://www.mckinsey.com/industries/financial-services/our-insights",
             "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights",
         ],
-        collector_type="http",
+        collector_type="browser",
         priority=4,
-        notes="麦肯锡公司_国外智库_EN_洞见",
+        notes="麦肯锡公司_反爬严重(403)，使用浏览器+截图OCR采集",
     ),
 
     # 38. 波士顿咨询 BCG
@@ -663,9 +665,9 @@ SOURCES: list[Source] = [
             "https://www.mckinsey.com/industries/financial-services/our-insights",
             "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights",
         ],
-        collector_type="http",
+        collector_type="browser",
         priority=4,
-        notes="麦肯锡公司_国外智库_EN_洞见",
+        notes="麦肯锡公司_反爬严重(403)，使用浏览器+截图OCR采集",
     ),
 
     # 42. Goldman Sachs AI研究
@@ -736,9 +738,9 @@ SOURCES: list[Source] = [
             "https://www.businesswire.com/portal/site/home/news/industry/?vnsId=31249",
             "https://www.businesswire.com/portal/site/home/news/industry/?vnsId=31264",
         ],
-        collector_type="http",
+        collector_type="browser",
         priority=3,
-        notes="美国商业资讯_EN_新闻",
+        notes="美国商业资讯_EN_新闻（部分403，使用浏览器采集）",
     ),
 
     # 46. PR Newswire

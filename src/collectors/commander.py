@@ -4,6 +4,7 @@
 - 指挥所有爬虫worker遍历全部渠道
 - 按域名分组控制并发
 - 分配HTTP或Browser采集器
+- HTTP失败自动降级到Browser采集
 - 汇总采集结果
 - 记录采集统计
 """
@@ -33,6 +34,7 @@ class CollectionCommander:
             "total_sources": 0,
             "success_sources": 0,
             "failed_sources": 0,
+            "fallback_sources": 0,  # HTTP失败后降级到Browser的源数
             "total_articles": 0,
             "total_urls": 0,
             "elapsed_seconds": 0,
@@ -75,22 +77,35 @@ class CollectionCommander:
             len(http_sources), len(browser_sources)
         )
 
-        # 并发采集
         all_articles: list[RawArticle] = []
+        failed_http_sources: list[Source] = []
 
         # 先执行HTTP采集（更快）
         if http_sources:
-            http_articles = await self._collect_with_concurrency(
+            http_articles, failed = await self._collect_with_concurrency(
                 http_sources, self.http_collector, "HTTP"
             )
             all_articles.extend(http_articles)
+            failed_http_sources = failed
 
-        # 再执行浏览器采集（更慢，需要串行化一些）
+        # 执行浏览器采集（已配置为browser的源）
         if browser_sources:
-            browser_articles = await self._collect_with_concurrency(
+            browser_articles, _ = await self._collect_with_concurrency(
                 browser_sources, self.browser_collector, "Browser"
             )
             all_articles.extend(browser_articles)
+
+        # 自动降级：HTTP失败的源用Browser重试
+        if failed_http_sources:
+            logger.info(
+                "═══ 自动降级：%d个HTTP失败源转Browser采集 ═══",
+                len(failed_http_sources)
+            )
+            self.stats["fallback_sources"] = len(failed_http_sources)
+            fallback_articles, _ = await self._collect_with_concurrency(
+                failed_http_sources, self.browser_collector, "Fallback-Browser"
+            )
+            all_articles.extend(fallback_articles)
 
         # 清理资源
         await self.http_collector.close()
@@ -103,10 +118,12 @@ class CollectionCommander:
         logger.info(
             "═══ 采集总指挥完成 ═══\n"
             "  成功信息源: %d/%d\n"
+            "  降级采集源: %d\n"
             "  采集文章数: %d\n"
             "  耗时: %.1f秒",
             self.stats["success_sources"],
             self.stats["total_sources"],
+            self.stats["fallback_sources"],
             self.stats["total_articles"],
             elapsed,
         )
@@ -118,8 +135,12 @@ class CollectionCommander:
         sources: list[Source],
         collector,
         collector_name: str,
-    ) -> list[RawArticle]:
-        """并发控制的采集"""
+    ) -> tuple[list[RawArticle], list[Source]]:
+        """并发控制的采集
+
+        Returns:
+            (采集到的文章列表, 失败的源列表)
+        """
         # 全局信号量
         global_sem = asyncio.Semaphore(MAX_CONCURRENCY)
         # 按域名的信号量
@@ -128,6 +149,7 @@ class CollectionCommander:
         )
 
         results: list[RawArticle] = []
+        failed_sources: list[Source] = []
         lock = asyncio.Lock()
 
         async def _collect_source(source: Source):
@@ -145,6 +167,7 @@ class CollectionCommander:
                                 self.stats["success_sources"] += 1
                             else:
                                 self.stats["failed_sources"] += 1
+                                failed_sources.append(source)
                         logger.info(
                             "[%s] ✓ %s: %d 篇文章",
                             collector_name, source.name, len(articles)
@@ -152,6 +175,7 @@ class CollectionCommander:
                     except Exception as e:
                         async with lock:
                             self.stats["failed_sources"] += 1
+                            failed_sources.append(source)
                         logger.error(
                             "[%s] ✗ %s: %s",
                             collector_name, source.name, e
@@ -164,7 +188,7 @@ class CollectionCommander:
         tasks = [_collect_source(s) for s in sorted_sources]
         await asyncio.gather(*tasks, return_exceptions=True)
 
-        return results
+        return results, failed_sources
 
     @staticmethod
     def _get_domain(url: str) -> str:
