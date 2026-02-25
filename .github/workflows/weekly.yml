@@ -1,0 +1,56 @@
+name: Weekly AI Summary
+
+on:
+  schedule:
+    # UTC 9:00 每周五 = 北京时间 17:00 周五
+    - cron: '0 9 * * 5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+env:
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+jobs:
+  weekly-summary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run weekly summary
+        run: python -m src.main --mode weekly
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "ai-monitor@github-actions.bot"
+          git config --local user.name "AI Monitor Bot"
+          git add docs/ data/
+          git diff --staged --quiet || git commit -m "📊 Weekly report: $(date -u -d '+8 hours' +%Y-%m-%d)"
+          git push
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          keep_files: true

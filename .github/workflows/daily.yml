@@ -1,0 +1,61 @@
+name: Daily AI Monitor
+
+on:
+  schedule:
+    # UTC 7:00 = 北京时间 15:00
+    - cron: '0 7 * * *'
+  workflow_dispatch:  # 支持手动触发
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+env:
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120  # 2小时超时
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 完整历史，保留数据库
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: |
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: Run daily monitor
+        run: python -m src.main --mode daily
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "ai-monitor@github-actions.bot"
+          git config --local user.name "AI Monitor Bot"
+          git add docs/ data/
+          git diff --staged --quiet || git commit -m "📋 Daily report: $(date -u -d '+8 hours' +%Y-%m-%d)"
+          git push
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          keep_files: true
