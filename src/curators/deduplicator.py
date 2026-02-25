@@ -39,6 +39,10 @@ class Deduplicator:
             if not article.title or len(article.title.strip()) < 3:
                 continue
 
+            # 跳过截图采集占位条目（这些不是真正的文章内容）
+            if self._is_placeholder(article.title):
+                continue
+
             normalized_url = self._normalize_url(article.url)
 
             # 1. URL去重
@@ -93,6 +97,15 @@ class Deduplicator:
             if similarity >= DEDUP_SIMILARITY_THRESHOLD:
                 return True
         return False
+
+    @staticmethod
+    def _is_placeholder(title: str) -> bool:
+        """检查是否为占位/无效条目"""
+        placeholders = [
+            "截图采集", "需要人工处理", "反爬保护",
+            "[截图采集]", "截图已保存", "截图已存档",
+        ]
+        return any(p in title for p in placeholders)
 
     @staticmethod
     def _jaccard_similarity(set_a: set, set_b: set) -> float:
