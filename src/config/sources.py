@@ -1298,6 +1298,408 @@ SOURCES: list[Source] = [
         priority=4,
         notes="硅谷高端科技商业媒体，常有独家AI报道",
     ),
+
+    # ═════════════════════════════════════════════════════
+    # 十二、高频中文科技媒体（从200+条实际动态中提取的高频来源）
+    # ═════════════════════════════════════════════════════
+
+    # 84. IT之家（出现频率最高~20次）
+    Source(
+        name="IT之家",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://www.ithome.com/tag/AI/",
+            "https://www.ithome.com/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/",
+            "https://www.ithome.com/0/ai/",
+        ],
+        collector_type="http",
+        priority=5,
+        notes="中文IT新闻第一站，AI动态覆盖极广",
+    ),
+
+    # 85. 智东西（出现频率~15次）
+    Source(
+        name="智东西",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://zhidx.com/",
+            "https://zhidx.com/p/ai",
+        ],
+        collector_type="http",
+        priority=5,
+        notes="中文AI产业深度报道第一媒体",
+    ),
+
+    # 86. APPSO/爱范儿（出现频率~10次）
+    Source(
+        name="APPSO",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://www.ifanr.com/category/ai",
+            "https://www.ifanr.com/",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="爱范儿旗下，覆盖AI产品发布和消费级应用",
+    ),
+
+    # 87. 极客公园
+    Source(
+        name="极客公园",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://www.geekpark.net/",
+            "https://www.geekpark.net/column/ai",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="科技创新媒体，覆盖AI企业融资和产品",
+    ),
+
+    # 88. 新智元
+    Source(
+        name="新智元",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://www.ai-era.com/",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="AI领域专业媒体",
+    ),
+
+    # 89. 晚点LatePost
+    Source(
+        name="晚点LatePost",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://www.latepost.com/",
+            "https://www.latepost.com/news/index?pag=1",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="科技商业深度报道，独家融资消息",
+    ),
+
+    # 90. 第一财经
+    Source(
+        name="第一财经",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://www.yicai.com/news/technology/",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="财经视角的科技新闻",
+    ),
+
+    # 91. 财联社
+    Source(
+        name="财联社",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://www.cls.cn/subject/1690",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="财经快讯，覆盖AI上市公司和融资",
+    ),
+
+    # ═════════════════════════════════════════════════════
+    # 十三、中国头部AI企业官方渠道
+    # （企业首发消息最大信息源，约占动态总量40%）
+    # ═════════════════════════════════════════════════════
+
+    # 92. 智谱AI
+    Source(
+        name="智谱AI官方",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://zhipu.ai/news",
+            "https://open.bigmodel.cn/dev/howuse/news",
+        ],
+        collector_type="http",
+        priority=5,
+        notes="智谱AI官方新闻，GLM系列模型首发",
+    ),
+
+    # 93. 通义千问/阿里云AI
+    Source(
+        name="通义千问官方",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://qwenlm.github.io/blog/",
+            "https://www.alibabacloud.com/blog/ai",
+        ],
+        collector_type="http",
+        priority=5,
+        notes="阿里通义千问官方博客，Qwen系列首发",
+    ),
+
+    # 94. DeepSeek
+    Source(
+        name="DeepSeek官方",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://api-docs.deepseek.com/news",
+            "https://github.com/deepseek-ai",
+        ],
+        collector_type="http",
+        priority=5,
+        notes="DeepSeek官方动态",
+    ),
+
+    # 95. 字节跳动/豆包
+    Source(
+        name="字节跳动AI",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://www.volcengine.com/docs/82379",
+            "https://www.volcengine.com/product/doubao",
+        ],
+        collector_type="http",
+        priority=5,
+        notes="字节跳动火山引擎/豆包大模型",
+    ),
+
+    # 96. MiniMax稀宇科技
+    Source(
+        name="MiniMax",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://www.minimax.io/news",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="MiniMax/海螺AI官方动态",
+    ),
+
+    # 97. 月之暗面Kimi
+    Source(
+        name="月之暗面Kimi",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://kimi.moonshot.cn/",
+            "https://platform.moonshot.cn/docs",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="月之暗面/Kimi官方",
+    ),
+
+    # 98. 百度文心
+    Source(
+        name="百度文心",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://yiyan.baidu.com/",
+            "https://cloud.baidu.com/article/ai",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="百度文心大模型官方",
+    ),
+
+    # 99. 腾讯混元
+    Source(
+        name="腾讯混元",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://hunyuan.tencent.com/",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="腾讯混元大模型官方",
+    ),
+
+    # 100. 阶跃星辰
+    Source(
+        name="阶跃星辰",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://www.stepfun.com/",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="阶跃星辰官方，Step系列模型",
+    ),
+
+    # 101. 百川智能
+    Source(
+        name="百川智能",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://www.baichuan-ai.com/",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="百川智能官方，医疗AI领先",
+    ),
+
+    # 102. 面壁智能
+    Source(
+        name="面壁智能",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://www.modelbest.cn/",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="面壁智能官方，MiniCPM系列",
+    ),
+
+    # 103. 商汤科技
+    Source(
+        name="商汤科技",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://www.sensetime.com/cn/news-detail",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="商汤科技官方新闻",
+    ),
+
+    # 104. 科大讯飞
+    Source(
+        name="科大讯飞",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://www.iflytek.com/news",
+        ],
+        collector_type="http",
+        priority=4,
+        notes="科大讯飞官方，星火大模型",
+    ),
+
+    # 105. 昆仑万维
+    Source(
+        name="昆仑万维",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://www.kunlun.com/news.html",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="昆仑万维官方，天工/Skywork系列",
+    ),
+
+    # 106. 快手可灵AI
+    Source(
+        name="快手可灵",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://kling.kuaishou.com/",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="快手可灵AI视频生成",
+    ),
+
+    # 107. 美团LongCat/龙猫
+    Source(
+        name="美团LongCat",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://github.com/meituan",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="美团龙猫LongCat团队",
+    ),
+
+    # ═════════════════════════════════════════════════════
+    # 十四、AI应用/垂直平台
+    # ═════════════════════════════════════════════════════
+
+    # 108. 哩布哩布AI (LiblibAI)
+    Source(
+        name="LiblibAI",
+        category="专业媒体与通讯",
+        sub_category="AI应用平台",
+        urls=[
+            "https://www.liblib.art/",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="中国最大多模态模型社区",
+    ),
+
+    # 109. 爱诗科技/PixVerse
+    Source(
+        name="爱诗科技PixVerse",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://pixverse.ai/",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="AI视频生成领军企业",
+    ),
+
+    # 110. Vidu AI
+    Source(
+        name="Vidu AI",
+        category="AI巨头与顶级实验室",
+        sub_category="中国AI龙头",
+        urls=[
+            "https://www.vidu.com/",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="生数科技AI视频生成",
+    ),
+
+    # 111. InfoQ中文
+    Source(
+        name="InfoQ",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://www.infoq.cn/topic/AI",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="面向开发者的AI技术报道",
+    ),
+
+    # 112. 智能涌现
+    Source(
+        name="智能涌现",
+        category="专业媒体与通讯",
+        sub_category="中文快速聚合",
+        urls=[
+            "https://www.smartemergence.com/",
+        ],
+        collector_type="http",
+        priority=3,
+        notes="AI产业和具身智能报道",
+    ),
 ]
 
 
