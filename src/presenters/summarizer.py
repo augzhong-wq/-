@@ -48,15 +48,23 @@ class Summarizer:
         # 批量生成摘要
         summaries = self.llm.generate_batch_summaries(article_dicts)
 
-        # 更新文章摘要
+        # 更新文章标题和摘要
         for i, art in enumerate(articles):
             if i < len(summaries) and summaries[i]:
-                art.summary_zh = summaries[i]
-                # 如果标题是英文，尝试生成中文标题
-                if self._is_mostly_english(art.title_zh):
+                text = summaries[i].strip()
+
+                # 尝试从LLM输出中分离标题和摘要
+                title, body = self._split_title_and_body(text)
+
+                if title:
+                    art.title_zh = title
+                    art.summary_zh = body if body else text
+                else:
+                    # 无法分离时，用第一句做标题，其余做摘要
                     art.title_zh = self._extract_title_from_summary(
-                        summaries[i], art.title_zh
+                        text, art.title_zh
                     )
+                    art.summary_zh = text
 
         logger.info("精编摘要生成完成")
         return articles
@@ -112,6 +120,44 @@ class Summarizer:
             return highlights[:count]
 
         return [art.title_zh for art in top_articles]
+
+    @staticmethod
+    def _split_title_and_body(text: str) -> tuple[str, str]:
+        """从LLM输出中分离标题和摘要正文
+
+        支持的格式：
+        - 【标题】摘要正文
+        - 标题\n摘要正文（第一行为标题）
+        """
+        text = text.strip()
+
+        # 格式1: 【标题】摘要
+        if "【" in text and "】" in text:
+            start = text.index("【") + 1
+            end = text.index("】")
+            title = text[start:end].strip()
+            body = text[end + 1:].strip()
+            if title and len(title) >= 10:
+                return title, body
+
+        # 格式2: 第一行为标题（如果第一行30-80字且不含句号结尾）
+        lines = text.split("\n", 1)
+        if len(lines) >= 2:
+            first_line = lines[0].strip()
+            rest = lines[1].strip()
+            if 10 <= len(first_line) <= 100 and not first_line.endswith("。"):
+                return first_line, rest
+
+        # 格式3: 用第一个句号分割
+        for sep in ["。", "；"]:
+            if sep in text:
+                parts = text.split(sep, 1)
+                title_candidate = parts[0].strip()
+                if 10 <= len(title_candidate) <= 100:
+                    return title_candidate, text
+                break
+
+        return "", text
 
     @staticmethod
     def _is_mostly_english(text: str) -> bool:
