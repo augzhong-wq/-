@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人工智能动态简报 - 周报 2026年第13周</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "SimSun", "宋体", "Microsoft YaHei", serif;
+            background: #f5f5f5; color: #333; line-height: 1.8;
+        }
+        .container {
+            max-width: 800px; margin: 20px auto; background: #fff;
+            padding: 40px 50px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .header-line { border-top: 3px solid #003366; margin-bottom: 30px; }
+        .report-title {
+            text-align: center; color: #003366; font-size: 26px;
+            font-weight: bold; letter-spacing: 3px; margin-bottom: 5px;
+        }
+        .report-subtitle {
+            text-align: center; color: #666; font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .report-meta {
+            text-align: center; color: #555; font-size: 14px;
+            margin-bottom: 20px; padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .overview-section {
+            background: #f0f4f8; border-left: 4px solid #003366;
+            padding: 15px 20px; margin: 20px 0;
+        }
+        .overview-title {
+            color: #003366; font-size: 16px; font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .overview-text { font-size: 14px; line-height: 1.8; }
+        .section-divider {
+            border-top: 2px solid #003366; margin: 25px 0 20px;
+        }
+        .category-title {
+            color: #003366; font-size: 18px; font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .category-divider {
+            border-top: 1px solid #ccc; margin-bottom: 15px;
+        }
+        .article-item {
+            margin-bottom: 15px; padding-bottom: 12px;
+            border-bottom: 1px dotted #e0e0e0;
+        }
+        .article-item:last-child { border-bottom: none; }
+        .importance { color: #DAA520; font-size: 13px; margin-right: 5px; }
+        .article-title {
+            font-weight: bold; color: #003366; font-size: 15px;
+        }
+        .article-summary {
+            font-size: 14px; color: #444; line-height: 1.7;
+            margin: 5px 0; text-indent: 2em;
+        }
+        .article-meta { font-size: 12px; color: #999; }
+        .footer-section {
+            border-top: 2px solid #003366; margin-top: 30px;
+            padding-top: 15px;
+        }
+        .footer-text { font-size: 13px; color: #666; }
+        @media (max-width: 600px) {
+            .container { padding: 20px 15px; margin: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-line"></div>
+        <h1 class="report-title">人工智能动态简报 · 周报</h1>
+        <p class="report-subtitle">AI WEEKLY INTELLIGENCE BRIEF</p>
+        <div class="report-meta">
+            2026年第13周 &nbsp;|&nbsp; 2026年03月23日 — 2026年03月29日
+        </div>
+        <div class="overview-section">
+            <div class="overview-title">【本周综述】</div>
+            <p class="overview-text">本周，全球人工智能领域呈现技术迭代加速、产业格局调整与安全治理并行的态势。主要动态如下：
+
+一、关键技术模型持续发布与集成。微软宣布其企业AI平台Microsoft Foundry将全面集成OpenAI的GPT-5.4系列模型，并引入Claude Sonnet 4.6等前沿模型，旨在为企业提供更强大的AI基础设施。同时，微软研究院发布了面向低资源语言的自动语音识别模型Paza，并推出支持企业构建前沿模型的Forge系统，显示出平台化与专业化服务并进的趋势。
+
+二、产业生态出现显著变动。迪士尼公司宣布取消与OpenAI价值10亿美元的合作计划，涉及Sora视频生成模型的关停。与此同时，马斯克旗下xAI公司创始团队出现重大人员变动，马斯克宣布将亲自接管公司运营并推进IPO，同时预告将加大对Grok模型的投入。英伟达首席执行官黄仁勋提出通过补贴算力打造“数字员工”的构想，引发业界对AI与劳动力结合模式的广泛讨论。
+
+三、安全与治理议题受到持续关注。美国司法部对涉嫌向中国非法走私AI技术的个人提出指控，凸显技术跨境流动的监管复杂性。在国内，国家数据局公布数据显示，我国日均AI Token调用量已突破140万亿，两年内增长超千倍，反映出国内AI应用规模的迅猛扩张。此外，头部企业如OpenAI也发布了关于监控内部智能体“对齐失范”的技术说明，表明产业界对AI安全内生问题的重视程度在提升。
+
+四、跨界融合与战略布局深化。微软宣布将AI技术应用于核能领域，以提升行业智能化与韧性。生物科技领域，中国公司华深智药完成大规模融资，显示AI在生物医药等垂直行业的落地加速。马斯克亦公布了为SpaceX和特斯拉自建芯片工厂的计划，进一步延伸其在AI硬件领域的布局。
+
+总体而言，本周AI领域在技术能力、商业合作、安全合规及产业融合等多个维度均出现重要进展与调整。</p>
+        </div>
+        <div class="section-divider"></div>
+        
+            <div class="category-section">
+                <h2 class="category-title">一、技术突破</h2>
+                <div class="category-divider"></div>
+                
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">NVIDIA Technical Blog</span>
+                    </div>
+                    <p class="article-summary">NVIDIA Technical Blog
+-
+Data ScienceNVIDIA Vera CPU Delivers High Performance, Bandwidth, and Efficiency for AI Factories
+-
+Agentic AI / Generative AIRun Autonomous, Self-Evolving Agents More Safely w</p>
+                    <div class="article-meta">来源：NVIDIA</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">NVIDIA Technical Blog</span>
+                    </div>
+                    <p class="article-summary">NVIDIA Technical Blog
+-
+Data ScienceNVIDIA Vera CPU Delivers High Performance, Bandwidth, and Efficiency for AI Factories
+-
+Agentic AI / Generative AIRun Autonomous, Self-Evolving Agents More Safely w</p>
+                    <div class="article-meta">来源：NVIDIA</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">刚刚，英伟达革了自己的命</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：投资界</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">谷歌迎来“DeepSeek 时刻”！TurboQuant 引爆 AI 圈、全球开发者疯狂复现：6 倍无损压缩，内存股集体暴跌</span>
+                    </div>
+                    <p class="article-summary">TurboQuant 发布短短数小时内，内存类股票应声下跌。 作者 :华卫</p>
+                    <div class="article-meta">来源：InfoQ</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Exploring LLMs with MLX and the Neural Accelerators in the M5 GPU</span>
+                    </div>
+                    <p class="article-summary">Exploring LLMs with MLX and the Neural Accelerators in the M5 GPU November 19, 2025</p>
+                    <div class="article-meta">来源：Apple</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Exploring LLMs with MLX and the Neural Accelerators in the M5 GPU</span>
+                    </div>
+                    <p class="article-summary">Exploring LLMs with MLX and the Neural Accelerators in the M5 GPU November 19, 2025</p>
+                    <div class="article-meta">来源：Apple</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">跻身全球前三：微软最强生图 AI 模型 MAI-Image-2 登场，搞定复杂信息图表</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">苹果联合打造 RubiCap 框架：让 AI 描述图像每个细节，性能击败 10 倍体量对手</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">SIMA 2</span>
+                    </div>
+                    <p class="article-summary">An agent that plays, reasons, and learns with you in virtual 3D worlds.</p>
+                    <div class="article-meta">来源：Alphabet/Google</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">SIMA 2</span>
+                    </div>
+                    <p class="article-summary">An agent that plays, reasons, and learns with you in virtual 3D worlds.</p>
+                    <div class="article-meta">来源：Alphabet/Google</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">DroidSpeak: Efficient Context Sharing for Multiple-LLM Inference</span>
+                    </div>
+                    <p class="article-summary">Yuhan Liu, Yuyang Huang, Jiayi Yao, Zhuohan Gu, Kuntai Du, Hanchen Li, Yihua Cheng, Junchen Jiang,Shan Lu,Madan Musuvathi,Esha Choukse NSDI| May 2026</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Systematic debugging for AI agents: Introducing the AgentRx framework</span>
+                    </div>
+                    <p class="article-summary">As AI agents transition from simple chatbots to autonomous systems capable of managing cloud incidents, navigating complex web interfaces, and executing multi-step API workflows, a new challenge has e</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Google bumps up Q Day deadline to 2029, far sooner than previously thought</span>
+                    </div>
+                    <p class="article-summary">Company warns entire industry to move off RSA and EC more quickly.</p>
+                    <div class="article-meta">来源：Ars Technica</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">24 Mar, 2026, 20:00 ISTMarketeam.ai Unveils RL-KPI at NVIDIA GTC: Breakthrough AI Training Method Extends Deterministic Reward Learning to Non-Deterministic Business OutcomesOn stage, at NVIDIA GTC 2026, Marketeam.ai unveiled RL-KPI (Reinforcement Learning with Key Performance Indicators), a groundb</span>
+                    </div>
+                    <p class="article-summary">On stage, at NVIDIA GTC 2026, Marketeam.ai unveiled RL-KPI (Reinforcement Learning with Key Performance Indicators), a groundbreaking model training...</p>
+                    <div class="article-meta">来源：PR Newswire</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">NVIDIA本周其他3条动态</span>
+                    </div>
+                    <p class="article-summary">NVIDIA Technical Blog、How Autonomous AI Agents Becom、Advancing Open Source AI, NVID等。</p>
+                    <div class="article-meta">来源：NVIDIA</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Apple本周其他2条动态</span>
+                    </div>
+                    <p class="article-summary">FastVLM: Efficient Vision Enco、Exploring LLMs with MLX and th等。</p>
+                    <div class="article-meta">来源：Apple</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">IT之家本周其他1条动态</span>
+                    </div>
+                    <p class="article-summary">拒绝重复造轮子：Mozilla 首发 cq 共享知识库，让 等。</p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Alphabet/Google本周其他1条动态</span>
+                    </div>
+                    <p class="article-summary">SIMA 2等。</p>
+                    <div class="article-meta">来源：Alphabet/Google</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Microsoft本周其他4条动态</span>
+                    </div>
+                    <p class="article-summary">PlugMem: Transforming raw agen、CORPGEN advances AI agents for、OptiMind: A small language mod、Agent Lightning: Adding reinfo等。</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+            </div>
+            <div class="category-section">
+                <h2 class="category-title">二、产品发布</h2>
+                <div class="category-divider"></div>
+                
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">Phi-4-reasoning-vision and the lessons of training a multimodal reasoning model</span>
+                    </div>
+                    <p class="article-summary">We are pleased to announce Phi-4-reasoning-vision-15B, a 15 billion parameter open‑weight multimodal reasoning model, available through Microsoft Foundry (opens in new tab), HuggingFace (opens in new </p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">Introducing GPT-5.4 in Microsoft Foundry</span>
+                    </div>
+                    <p class="article-summary">Today, we’re announcing OpenAI’s GPT‑5.4 to be generally available soon in Microsoft Foundry: a model designed to help organizations move from planning work to reliably completing it in production env</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">公司 研究 产品 安全 LTH ”安全 防护 ”全球 事</span>
+                    </div>
+                    <p class="article-summary">5.4 mini 5.4 nano 我 们 如 何 监控 内 部 编程 智能 体 的 对 齐 失范 OpenAlto acquire Astral GPT-5.4 mini 与 nano 正式 发 布 安全 2026 年 3 月 19 日 公司 2026 年 3 月 19 日 公司 2026 年 3 月 T7 日</p>
+                    <div class="article-meta">来源：OpenAI</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Introducing Forge</span>
+                    </div>
+                    <p class="article-summary">Today, we’re introducing Forge, a system that allows enterprises to build frontier-grade AI models grounded in their proprietary knowledge.</p>
+                    <div class="article-meta">来源：Mistral AI</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Introducing Forge</span>
+                    </div>
+                    <p class="article-summary">Today, we’re introducing Forge, a system that allows enterprises to build frontier-grade AI models grounded in their proprietary knowledge.</p>
+                    <div class="article-meta">来源：Mistral AI</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">OpenAI 推出“超级应用”，开抢 Anthropic 的企业客户</span>
+                    </div>
+                    <p class="article-summary">OpenAI 的“桌面超级应用”要来了。“超级应用”，把原本分散的产品入口重新收拢。“合并同类项”。 作者 :允毅</p>
+                    <div class="article-meta">来源：InfoQ</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">OpenAI Sora 退场点燃 AI 视频赛道变局，马斯克预告“史诗级”Grok 加倍押注</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">SIMA 2</span>
+                    </div>
+                    <p class="article-summary">An agent that plays, reasons, and learns with you in virtual 3D worlds.</p>
+                    <div class="article-meta">来源：Alphabet/Google</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">开放 Siri，苹果决定打开万亿「AI 生态」</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：投资界</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">「百虾大战」战火持续，阶跃星辰发布桌面端 StepClaw，接入「水产市场」</span>
+                    </div>
+                    <p class="article-summary">从百模大战打到了百虾大战。 作者 :李冬梅</p>
+                    <div class="article-meta">来源：InfoQ</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">覆盖全球约 43% 网站的底层引擎升级：WordPress.com 接入 AI 智能体，实现代写 / 优化 SEO 等</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Claude能直接操控你的电脑微信了</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：投资界</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Product management on the AI exponential</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：Anthropic</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Put Claude to work on your computer</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：Anthropic</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Z.ai</span>
+                    </div>
+                    <p class="article-summary">AutoClaw
+只需1分钟，给每台电脑装上小龙虾
+立刻了解
+GLM模型
+新一代大模型全栈技术体系
+GLM-5-Turbo
+GLM-5-Turbo
+专为龙虾场景打造的基座模型，从训练层深度优化Agent核心能力，大幅提升工具调用与长链路执行能力。
+GLM-5
+在 SWE-bench Verified、Terminal Bench 2.0 等智能体编程核心榜单上，GLM-5 达到开源模型 SOTA，</p>
+                    <div class="article-meta">来源：智谱AI官方</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Z.ai</span>
+                    </div>
+                    <p class="article-summary">AutoClaw
+只需1分钟，给每台电脑装上小龙虾
+立刻了解
+GLM模型
+新一代大模型全栈技术体系
+GLM-5-Turbo
+GLM-5-Turbo
+专为龙虾场景打造的基座模型，从训练层深度优化Agent核心能力，大幅提升工具调用与长链路执行能力。
+GLM-5
+在 SWE-bench Verified、Terminal Bench 2.0 等智能体编程核心榜单上，GLM-5 达到开源模型 SOTA，</p>
+                    <div class="article-meta">来源：智谱AI官方</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Introducing OpenClaw on Amazon Lightsail to run your autonomous private AI agents</span>
+                    </div>
+                    <p class="article-summary">AWS launches OpenClaw on Amazon Lightsail to run OpenClaw instance, pairing your browser, enabling AI capabilities, and optionally connecting messaging channels. Your Lightsail OpenClaw instance is pr</p>
+                    <div class="article-meta">来源：Amazon/AWS</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Introducing OpenClaw on Amazon Lightsail to run your autonomous private AI agents</span>
+                    </div>
+                    <p class="article-summary">AWS launches OpenClaw on Amazon Lightsail to run OpenClaw instance, pairing your browser, enabling AI capabilities, and optionally connecting messaging channels. Your Lightsail OpenClaw instance is pr</p>
+                    <div class="article-meta">来源：Amazon/AWS</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">欢迎使用 Kimi API 文档</span>
+                    </div>
+                    <p class="article-summary">Kimi K2.5 是 Kimi 迄今最智能的模型，同时支持视觉与文本输入、思考与非思考模式、对话与 Agent 任务，支持256K上下文长度 申请 API Key</p>
+                    <div class="article-meta">来源：月之暗面Kimi</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">03:01 ETOracle Introduces Fusion Agentic ApplicationsOracle AI World -- Oracle today announced Fusion Agentic Applications, a new class of enterprise applications powered by coordinated teams of...</span>
+                    </div>
+                    <p class="article-summary">Oracle AI World -- Oracle today announced Fusion Agentic Applications, a new class of enterprise applications powered by coordinated teams of...</p>
+                    <div class="article-meta">来源：PR Newswire</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">24 Mar, 2026, 18:00 ISTCropX Launches AI-Powered CropX Vision: Measuring Vineyard Water Stress with One PictureCropX Technologies, a global leader in digital agronomic solutions, today announced the global launch of CropX Vision, an AI-powered crop monitoring...</span>
+                    </div>
+                    <p class="article-summary">CropX Technologies, a global leader in digital agronomic solutions, today announced the global launch of CropX Vision, an AI-powered crop monitoring...</p>
+                    <div class="article-meta">来源：PR Newswire</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Apple sets June date for WWDC 2026, teasing ‘AI advancements’</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：TechCrunch</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Google launches Lyria 3 Pro music generation model</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：TechCrunch</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Claude Code can now take over your computer to complete tasks</span>
+                    </div>
+                    <p class="article-summary">But Anthropic urges caution as “research preview” safeguards “aren’t absolute.”</p>
+                    <div class="article-meta">来源：Ars Technica</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Claude Code can now take over your computer to complete tasks</span>
+                    </div>
+                    <p class="article-summary">But Anthropic urges caution as “research preview” safeguards “aren’t absolute.”</p>
+                    <div class="article-meta">来源：Ars Technica</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">早报｜iOS27定档6月9日、将公布AI最新进展/8499起，华为发布Mate80 Pro Max风驰版/小鹏汽车成立Robotaxi业务部</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：APPSO</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">2026 苹果最重要发布定档：Siri 无处不在，即将接管你的 iPhone</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：APPSO</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Into the Omniverse: NVIDIA GTC Showcases Virtual Worlds Powering the Physical AI Era</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：NVIDIA</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Microsoft本周其他35条动态</span>
+                    </div>
+                    <p class="article-summary">Introducing GPT-5.4 in Microso、Introducing GPT-5.4 in Microso、Introducing GPT-5.4 in Microso、Microsoft at NVIDIA GTC: New s、Microsoft Sovereign Cloud adds等。</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Mistral AI本周其他3条动态</span>
+                    </div>
+                    <p class="article-summary">Introducing Forge、Introducing Forge、Speaking of Voxtral等。</p>
+                    <div class="article-meta">来源：Mistral AI</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">InfoQ本周其他2条动态</span>
+                    </div>
+                    <p class="article-summary">腾讯 QClaw“龙虾”全量公测：20 秒装完，微信一句话远、“聊天干活”只需扫个码：微信 ClawBot 官配 Work等。</p>
+                    <div class="article-meta">来源：InfoQ</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">IT之家本周其他3条动态</span>
+                    </div>
+                    <p class="article-summary">覆盖全球约 43% 网站的底层引擎升级：WordPress.、OpenAI 本周将升级 ChatGPT，实现 AI 直接比、OpenAI 本周将升级 ChatGPT，实现 AI 直接比等。</p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">智谱AI官方本周其他2条动态</span>
+                    </div>
+                    <p class="article-summary">Z.ai、Z.ai等。</p>
+                    <div class="article-meta">来源：智谱AI官方</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">TechCrunch本周其他1条动态</span>
+                    </div>
+                    <p class="article-summary">Google launches Lyria 3 Pro mu等。</p>
+                    <div class="article-meta">来源：TechCrunch</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Ars Technica本周其他1条动态</span>
+                    </div>
+                    <p class="article-summary">The debut of Gemini 3.1 Flash 等。</p>
+                    <div class="article-meta">来源：Ars Technica</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">APPSO本周其他2条动态</span>
+                    </div>
+                    <p class="article-summary">刚刚，苹果版 ChatGPT 曝光，AI Siri 将接管你、2026 苹果最重要发布定档：Siri 无处不在，即将接管你等。</p>
+                    <div class="article-meta">来源：APPSO</div>
+                </div>
+            </div>
+            <div class="category-section">
+                <h2 class="category-title">三、企业动态</h2>
+                <div class="category-divider"></div>
+                
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">[ WHAT'S NEW J</span>
+                    </div>
+                    <p class="article-summary">Latest news FEBRUARY 02, 2026 xAl joins SpaceX</p>
+                    <div class="article-meta">来源：xAI</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">机器之心</span>
+                    </div>
+                    <p class="article-summary">机器之心·PRO通讯会员
+一份让您从此不再担心错失
+AI
+赛道良机的业内通讯
+会员通讯
+Week 12 · Context 还不够，Harness 才是 Agent 工程优化的正解？
+本周，英伟达 GTC 大会发布 Vera Rubin 架构算力平台；OpenAI 宣布收购 Python 开发工具初创公司 Astral。
+订阅会员畅读
+专题解读
+386
+从「模型」到「部署」，如何理解 AI 技术进</p>
+                    <div class="article-meta">来源：机器之心</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">11 人走 10 人：消息称 xAI 创始团队仅剩一人，马斯克亲自接管迎 IPO</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">11 人走 10 人：消息称 xAI 创始团队仅剩一人，马斯克亲自接管迎 IPO</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">Disney cancels $1 billion OpenAI partnership amid Sora shutdown plans</span>
+                    </div>
+                    <p class="article-summary">Press reports suggest Disney was blindsided and that no money changed hands.</p>
+                    <div class="article-meta">来源：Ars Technica</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">Disney cancels $1 billion OpenAI partnership amid Sora shutdown plans</span>
+                    </div>
+                    <p class="article-summary">Press reports suggest Disney was blindsided and that no money changed hands.</p>
+                    <div class="article-meta">来源：Ars Technica</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">Introducing GPT-5.4 in Microsoft Foundry</span>
+                    </div>
+                    <p class="article-summary">Today, we’re announcing OpenAI’s GPT‑5.4 to be generally available soon in Microsoft Foundry: a model designed to help organizations move from planning work to reliably completing it in production env</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">[ WHAT'S NEW J</span>
+                    </div>
+                    <p class="article-summary">Latest news FEBRUARY 02, 2026 xAl joins SpaceX</p>
+                    <div class="article-meta">来源：xAI</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Microsoft at NVIDIA GTC: New solutions for Microsoft Foundry, Azure AI infrastructure and Physical AI</span>
+                    </div>
+                    <p class="article-summary">Microsoft combines accelerated computing with cloud scale engineering to bring advanced AI capabilities to our customers. For years, we’ve worked with NVIDIA to integrate hardware, software and infras</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">NVIDIA and Emerald AI Join Leading Energy Companies to Pioneer Flexible AI Factories as Grid Assets</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：NVIDIA</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">The Future of AI Is Open and Proprietary</span>
+                    </div>
+                    <p class="article-summary">AI is the defining technology of our time, quickly becoming core business infrastructure. It’s fueled by a diverse ecosystem of models: large and small, open...</p>
+                    <div class="article-meta">来源：NVIDIA</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Sam Altman-backed fusion startup Helion in talks to sell power to OpenAI</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：TechCrunch</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Exclusive: OpenAl CEO Shifts Responsibilities, Preps ‘Spud’ Al Model</span>
+                    </div>
+                    <p class="article-summary">Health Ring Oura Interviews Banks</p>
+                    <div class="article-meta">来源：The Information</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Inside our approach to the Model Spec</span>
+                    </div>
+                    <p class="article-summary">研究 2026435258 OpenAl Foundation 最 新 动态 公司 2026 年 3 月 24 日</p>
+                    <div class="article-meta">来源：OpenAI</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">马斯克xAI联创11跑10！</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：投资界</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">突发！Sora 宣布关停，史上最贵 AI 表情包生成器只撑了七个月</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：APPSO</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">AI RESEARCH</span>
+                    </div>
+                    <p class="article-summary">We are innovating in the open, With a decade of experience, the Meta FAIR team aims to achieve advanced machine intelligence (AMI) to accelerate the potential of future Meta products</p>
+                    <div class="article-meta">来源：Meta</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Research at Meta</span>
+                    </div>
+                    <p class="article-summary">Research Publications Programs v Datasets Careers Q May 17, 2023 April 17, 2023 April 14, 2023 How generational Every tree counts How a non-traditional</p>
+                    <div class="article-meta">来源：Meta</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">机器之心</span>
+                    </div>
+                    <p class="article-summary">机器之心·PRO通讯会员
+一份让您从此不再担心错失
+AI
+赛道良机的业内通讯
+会员通讯
+Week 12 · Context 还不够，Harness 才是 Agent 工程优化的正解？
+本周，英伟达 GTC 大会发布 Vera Rubin 架构算力平台；OpenAI 宣布收购 Python 开发工具初创公司 Astral。
+订阅会员畅读
+专题解读
+386
+从「模型」到「部署」，如何理解 AI 技术进</p>
+                    <div class="article-meta">来源：机器之心</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Sam Altman-backed fusion startup Helion in talks to sell power to OpenAI</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：TechCrunch</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Exclusive: OpenAl's First Advertisers Can’t Prove ChatGPT Ads Work</span>
+                    </div>
+                    <p class="article-summary">Latest \ Most popular YOUR AD HERE</p>
+                    <div class="article-meta">来源：The Information</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Inside our approach to the Model Spec</span>
+                    </div>
+                    <p class="article-summary">研究 2026435258 OpenAl Foundation 最 新 动态 公司 2026 年 3 月 24 日</p>
+                    <div class="article-meta">来源：OpenAI</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">黄仁勋要发Token当工资</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：投资界</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">早报｜小米汽车2025年收入超千亿元/上线7个月，OpenAI关停Sora/美团致歉：App删除照片问题已修复</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：APPSO</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Z.ai</span>
+                    </div>
+                    <p class="article-summary">AutoClaw
+只需1分钟，给每台电脑装上小龙虾
+立刻了解
+GLM模型
+新一代大模型全栈技术体系
+GLM-5-Turbo
+GLM-5-Turbo
+专为龙虾场景打造的基座模型，从训练层深度优化Agent核心能力，大幅提升工具调用与长链路执行能力。
+GLM-5
+在 SWE-bench Verified、Terminal Bench 2.0 等智能体编程核心榜单上，GLM-5 达到开源模型 SOTA，</p>
+                    <div class="article-meta">来源：智谱AI官方</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Mar 20, 2026, 13:15 ETS&P Global: Era of Linear Energy Transition Has Ended as AI Demand and Geopolitics Reshape MarketsS&P Global today released new research examining how the global energy landscape is being reshaped by geopolitics and competing priorities of...</span>
+                    </div>
+                    <p class="article-summary">S&P Global today released new research examining how the global energy landscape is being reshaped by geopolitics and competing priorities of...</p>
+                    <div class="article-meta">来源：PR Newswire</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">18 Mar, 2026, 15:00 ISTNiv-AI Emerges from Stealth with $12M, Unlocking Stranded Power for AI with Its "Electrical Fingerprint" TechnologyNiv-AI, the deep-tech platform solving the power capacity crisis in AI infrastructure, today announced its launch from stealth. Backed by Glilot...</span>
+                    </div>
+                    <p class="article-summary">Niv-AI, the deep-tech platform solving the power capacity crisis in AI infrastructure, today announced its launch from stealth. Backed by Glilot...</p>
+                    <div class="article-meta">来源：PR Newswire</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">EU Tech Business Offer Kenya</span>
+                    </div>
+                    <p class="article-summary">The European Union and Kenya have officially launched the EU-Kenya Digital Dialogue, significantly bolstering their collaborative efforts in the digital realm.</p>
+                    <div class="article-meta">来源：欧盟AI Office</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">资讯 – 量子位</span>
+                    </div>
+                    <p class="article-summary">扫码关注量子位
+速度快到离谱，完整规划仅需1秒
+最新模型在Embodied Arena登顶
+一站式配齐选品/建站/运营
+和人类用电脑没有区别了
+微信和WhatsApp双双断连
+“故事”是科学里永远属于人类的一面
+各类Skill按需扩展
+硬件+平台+数据统统给你
+清华系科创标杆
+6家全球top10科技公司都在用它家产品
+有1.3亿用户在千问首次体验AI购物
+推进智能体应用的实战化防御。
+硅谷新风尚T</p>
+                    <div class="article-meta">来源：量子位</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Book of Strategy Maps: The companies building tomorrow’s AI ecosystems</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：CB Insights</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Book of Strategy Maps: The companies building tomorrow’s AI ecosystems</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：CB Insights Newsletter</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Sora 关停背后：为啥它没跑成“视频版 ChatGPT”？</span>
+                    </div>
+                    <p class="article-summary">当 OpenAI 开始讲 ROI，高成本低频需求先出局 作者 :木子</p>
+                    <div class="article-meta">来源：InfoQ</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">xAI本周其他2条动态</span>
+                    </div>
+                    <p class="article-summary">[ WHAT'S NEW J、[ WHAT'S NEW J等。</p>
+                    <div class="article-meta">来源：xAI</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">IT之家本周其他13条动态</span>
+                    </div>
+                    <p class="article-summary">OpenAI Sora 退场点燃 AI 视频赛道变局，马斯克、英伟达 CEO 黄仁勋：如果工程师 AI Token 用的少、Meta 元宇宙未死，但扎克伯格的热情已转向 AI、雷军：小米积极拥抱 AI 时代，未来三年在 AI 领域投入 、英伟达 CEO 黄仁勋：如果工程师 AI Token 用的少等。</p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Ars Technica本周其他1条动态</span>
+                    </div>
+                    <p class="article-summary">OpenAI announces plans to shut等。</p>
+                    <div class="article-meta">来源：Ars Technica</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Microsoft本周其他14条动态</span>
+                    </div>
+                    <p class="article-summary">AI for nuclear energy: Powerin、Microsoft at NVIDIA GTC: New s、Microsoft Sovereign Cloud adds、Claude Sonnet 4.6 in Microsoft、Microsoft at NVIDIA GTC: New s等。</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">NVIDIA本周其他1条动态</span>
+                    </div>
+                    <p class="article-summary">Advancing Open Source AI, NVID等。</p>
+                    <div class="article-meta">来源：NVIDIA</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">投资界本周其他3条动态</span>
+                    </div>
+                    <p class="article-summary">扎克伯格，给自己造了个「AI 老板」、为什么 OpenAI，必须砍掉 Sora？、OpenAI关停Sora，25个月从封神到退场等。</p>
+                    <div class="article-meta">来源：投资界</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">PR Newswire本周其他4条动态</span>
+                    </div>
+                    <p class="article-summary">Mar 24, 2026, 08:00 ETSOFTBANK、Mar 24, 2026, 08:00 ETSOFTBANK、Mar 24, 2026, 13:15 ETSynopsys、Mar 24, 2026, 08:00 ETSOFTBANK等。</p>
+                    <div class="article-meta">来源：PR Newswire</div>
+                </div>
+            </div>
+            <div class="category-section">
+                <h2 class="category-title">四、政策监管</h2>
+                <div class="category-divider"></div>
+                
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">Leaders’ Declaration at AI Impact Summit in India</span>
+                    </div>
+                    <p class="article-summary">The AI Impact Summit 2026, held in New Delhi on 18–19 February, concluded with the adoption of the New Delhi Declaration on AI Impact, marking a significant milestone in global cooperation on artifici</p>
+                    <div class="article-meta">来源：EU AI Act</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">Chinese National and Two U.S. Citizens Charged with Conspiring to Smuggle Artificial Intelligence Technology to China</span>
+                    </div>
+                    <p class="article-summary">Stanley Yi Zheng, Matthew Kelly, and Tommy Shad English have been charged with conspiring to commit smuggling and export control violations. The three defendants are alleged to have sought millions of</p>
+                    <div class="article-meta">来源：DOJ</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">Chinese National and Two U.S. Citizens Charged with Conspiring to Smuggle Artificial Intelligence Technology to China</span>
+                    </div>
+                    <p class="article-summary">Stanley Yi Zheng, Matthew Kelly, and Tommy Shad English have been charged with conspiring to commit smuggling and export control violations. The three defendants are alleged to have sought millions of</p>
+                    <div class="article-meta">来源：DOJ</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Commission publishes second draft of Code of Practice on Marking and Labelling of AI-generated content</span>
+                    </div>
+                    <p class="article-summary">To help providers and deployers meet the marking and labelling requirements for AI generated content under Article 50 AI Act, the Commission is facilitating the development of a voluntary code of prac</p>
+                    <div class="article-meta">来源：EU AI Act</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">European Union endorses Leaders' Declaration at AI Summit in India</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：欧盟AI Office</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">European Union endorses Leaders' Declaration at AI Summit in India</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：欧盟AI Office</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Pentagon’s ‘Attempt to Cripple’ Anthropic Is Troubling, Judge Says</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：Wired</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">国家数据局局长刘烈宏：今年 3 月中国日均 Token 调用量已突破 140 万亿，两年增长超千倍</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Mar 20, 2026, 17:32 ETCOLORADO TEAMSTERS DEMAND STATEWIDE REFERENDUM ON DRIVERLESS TRUCKSColorado Teamsters rallied at the state capitol today calling on lawmakers to pass House Bill 26-1286. The legislation would allow Coloradans to vote ...</span>
+                    </div>
+                    <p class="article-summary">Colorado Teamsters rallied at the state capitol today calling on lawmakers to pass House Bill 26-1286. The legislation would allow Coloradans to vote ...</p>
+                    <div class="article-meta">来源：PR Newswire</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">EU AI Act本周其他4条动态</span>
+                    </div>
+                    <p class="article-summary">Commission publishes second dr、Commission publishes second dr、Commission publishes second dr、Commission publishes second dr等。</p>
+                    <div class="article-meta">来源：EU AI Act</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">欧盟AI Office本周其他8条动态</span>
+                    </div>
+                    <p class="article-summary">European Union endorses Leader、European Union endorses Leader、Seventh AI Board meeting、Seventh AI Board meeting、Digital Europe Programme amend等。</p>
+                    <div class="article-meta">来源：欧盟AI Office</div>
+                </div>
+            </div>
+            <div class="category-section">
+                <h2 class="category-title">五、投融资</h2>
+                <div class="category-divider"></div>
+                
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">华深智药完成7.87亿美元融资，刷新今年全球生物技术公司融资纪录</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：投资界</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">快讯_融资_互联网_资本_科技_合并_最新快讯_36氪</span>
+                    </div>
+                    <p class="article-summary">8点1氪丨上市公司董事长病逝，未成年女儿继承9亿元股票；司美格鲁肽化合物专利到期；于东来回应40亿资产利润分配争议
+马斯克官宣：年产1万亿瓦芯片，人类迈向星际文明打响第一枪
+推送和解读前沿、有料的科技创投资讯
+一级市场金融信息和系统服务提供商
+聚焦全球优秀创业者，项目融资率接近97%，领跑行业</p>
+                    <div class="article-meta">来源：36氪</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Harvey confirms $11B valuation: Sequoia triples down</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：TechCrunch</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Defense startup Shield AI lands $12.7B valuation, up 140%, after US Air Force deal</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：TechCrunch</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">首发|清华师兄带队，轻舟智航融资1亿美元</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：投资界</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">快讯_融资_互联网_资本_科技_合并_最新快讯_36氪</span>
+                    </div>
+                    <p class="article-summary">8点1氪丨张雪峰医疗文件疑似泄露，苏州卫生健康委回应；黄仁勋谈死亡：希望在工作中突然离世；OpenAI将停止Sora视频生成服务，精简产品线
+泡泡玛特赚麻了，资本泡沫却破裂了
+推送和解读前沿、有料的科技创投资讯
+一级市场金融信息和系统服务提供商
+聚焦全球优秀创业者，项目融资率接近97%，领跑行业</p>
+                    <div class="article-meta">来源：36氪</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">专家：AI 泡沫若破裂冲击将小于互联网泡沫，科技巨头“护城河”是关键</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">TechCrunch本周其他3条动态</span>
+                    </div>
+                    <p class="article-summary">With $3.5B in fresh capital, K、Granola raises $125M, hits $1.、Granola raises $125M, hits $1.等。</p>
+                    <div class="article-meta">来源：TechCrunch</div>
+                </div>
+            </div>
+            <div class="category-section">
+                <h2 class="category-title">六、研究前沿</h2>
+                <div class="category-divider"></div>
+                
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Filter 2 Sortv</span>
+                    </div>
+                    <p class="article-summary">All Publication Conclusion Milestone Release Research Our First Proof submissions Feb 20, 2026 We share our Al model's proof attempts for the First Proof math challenge, testing research-grade</p>
+                    <div class="article-meta">来源：OpenAI</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">All Publication Conclusion Milestone Release Filter 2 Sortv.</span>
+                    </div>
+                    <p class="article-summary">Research Our First Proof submissions Feb 20, 2026 We share our Al model's proof attempts for the First Proof math challenge, testing research-grade reasoning on expert-level problems.</p>
+                    <div class="article-meta">来源：OpenAI</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Apple Machine Learning Research at NeurIPS 2025</span>
+                    </div>
+                    <p class="article-summary">Apple Machine Learning Research at NeurIPS 2025 November 21, 2025</p>
+                    <div class="article-meta">来源：Apple</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Exploring LLMs with MLX and the Neural Accelerators in the M5 GPU</span>
+                    </div>
+                    <p class="article-summary">Exploring LLMs with MLX and the Neural Accelerators in the M5 GPU November 19, 2025</p>
+                    <div class="article-meta">来源：Apple</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">The Future of AI Is Open and Proprietary</span>
+                    </div>
+                    <p class="article-summary">AI is the defining technology of our time, quickly becoming core business infrastructure. It’s fueled by a diverse ecosystem of models: large and small, open...</p>
+                    <div class="article-meta">来源：NVIDIA</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Projects – Google Research</span>
+                    </div>
+                    <p class="article-summary">Projects
+Our teams leverage research developments across domains to build tools and technology that impact billions of people. Sharing our learnings and tools to fuel progress in the field is core to </p>
+                    <div class="article-meta">来源：Alphabet/Google</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">SIMA 2</span>
+                    </div>
+                    <p class="article-summary">An agent that plays, reasons, and learns with you in virtual 3D worlds.</p>
+                    <div class="article-meta">来源：Alphabet/Google</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">GPU Acceleration of SQL Analytics on Compressed Data</span>
+                    </div>
+                    <p class="article-summary">Zezhou Huang, Krystian Sakowski, H. Lehnert, Wei Cui, C. Curino, Matteo Interlandi, Marius Dumitru, Rathijit Sen VLDB 26|
+										August 2026, Vol abs/2506.10092</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">EgoBrain: Synergizing Minds and Eyes For Human Action Understanding</span>
+                    </div>
+                    <p class="article-summary">Nie Lin,Yansen Wang,Dongqi Han, Weibang Jiang, Jingyuan Li, Ryosuke Furuta, Yoichi Sato,Dongsheng Li 2026 International Conference on Learning Representations| April 2026</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">AI RESEARCH</span>
+                    </div>
+                    <p class="article-summary">We are innovating in the open, With a decade of experience, the Meta FAIR team aims to achieve advanced machine intelligence (AMI) to accelerate the potential of future Meta products</p>
+                    <div class="article-meta">来源：Meta</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Study on Artificial Intelligence in healthcare dissects digital health technologies in Europe</span>
+                    </div>
+                    <p class="article-summary">This study analyses the EU digital health market and economic impact of digital health technologies, including AI-enabled solutions.</p>
+                    <div class="article-meta">来源：EU AI Act</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">一篇论文引发存储芯片股暴跌，Google 的「DeepSeek 时刻」来了？</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：APPSO</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">OpenAI本周其他3条动态</span>
+                    </div>
+                    <p class="article-summary">All Publication Conclusion Mil、Filter 2 Sortv、Filter 2 Sortv等。</p>
+                    <div class="article-meta">来源：OpenAI</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Apple本周其他17条动态</span>
+                    </div>
+                    <p class="article-summary">Apple Machine Learning Researc、The “Super Weight:” How Even a、The Super Weight in Large Lang、Apple Machine Learning Researc、The “Super Weight:” How Even a等。</p>
+                    <div class="article-meta">来源：Apple</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Alphabet/Google本周其他4条动态</span>
+                    </div>
+                    <p class="article-summary">Projects – Google Research、Projects – Google Research、Projects – Google Research、Projects – Google Research等。</p>
+                    <div class="article-meta">来源：Alphabet/Google</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Microsoft本周其他17条动态</span>
+                    </div>
+                    <p class="article-summary">DroidSpeak: Efficient Context 、EgoBrain: Synergizing Minds an、DroidSpeak: Efficient Context 、UniRG: Scaling medical imaging、Argos: Multimodal reinforcemen等。</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+            </div>
+            <div class="category-section">
+                <h2 class="category-title">七、行业应用</h2>
+                <div class="category-divider"></div>
+                
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">国家数据局局长刘烈宏：今年 3 月中国日均 Token 调用量已突破 140 万亿，两年增长超千倍</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">国家数据局局长刘烈宏：今年 3 月中国日均 Token 调用量已突破 140 万亿，两年增长超千倍</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">黄仁勋回应一切：木匠、水管工看到 Al 应该最兴奋</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：APPSO</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">黄仁勋回应一切：木匠、水管工看到 Al 应该最兴奋</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：APPSO</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">AI for nuclear energy: Powering an intelligent, resilient future</span>
+                    </div>
+                    <p class="article-summary">To break the infrastructure bottleneck and shift the industry from ambition to delivery, Microsoft is announcing an AI for nuclear collaboration with NVIDIA, to provide end-to-end tools that streamlin</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">Autonomous Cars</span>
+                    </div>
+                    <p class="article-summary">The automaker plans to start supervised public-road testing on limited access highways across California and Michigan, with the goal of reaching 200 vehicles this year. According to GM:
+Each vehicle w</p>
+                    <div class="article-meta">来源：The Verge</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">智能车参考 – 量子位</span>
+                    </div>
+                    <p class="article-summary">扫码关注量子位
+售价45.99万元
+“VLA好钢没用在刀刃上”
+今年冲刺50亿净利
+半价理想学理想盈利了
+历史最佳财报
+均跑4.3万单
+冲刺年底每分钟接99单
+春节OTA，首发自定义“自动化”
+主导AI商业模式
+微信互联和目的地服务上线
+中国边缘AI芯片第一股
+网络横跨半个地球
+特斯拉Robotaxi核心人物
+城区NOA向10万级下探
+1个月前被曝陷入僵局
+新SU7到店时间定了
+复盘坚称人类驾驶后</p>
+                    <div class="article-meta">来源：量子位</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">智能车参考 – 量子位</span>
+                    </div>
+                    <p class="article-summary">扫码关注量子位
+售价45.99万元
+“VLA好钢没用在刀刃上”
+今年冲刺50亿净利
+半价理想学理想盈利了
+历史最佳财报
+均跑4.3万单
+冲刺年底每分钟接99单
+春节OTA，首发自定义“自动化”
+主导AI商业模式
+微信互联和目的地服务上线
+中国边缘AI芯片第一股
+网络横跨半个地球
+特斯拉Robotaxi核心人物
+城区NOA向10万级下探
+1个月前被曝陷入僵局
+新SU7到店时间定了
+复盘坚称人类驾驶后</p>
+                    <div class="article-meta">来源：量子位</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">How Autonomous Drones Are Changing Warfare</span>
+                    </div>
+                    <p class="article-summary">How AI is ushering in an era of autonomous swarming drones</p>
+                    <div class="article-meta">来源：IEEE Spectrum</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">CORPGEN advances AI agents for real work</span>
+                    </div>
+                    <p class="article-summary">By mid-morning, a typical knowledge worker is already juggling a client report, a budget spreadsheet, a slide deck, and an email backlog, all interdependent and all demanding attention at once. For AI</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Autonomous Cars</span>
+                    </div>
+                    <p class="article-summary">The company has a roadside assistance team that it dispatches to move vehicles when they get trapped. But sometimes Waymo needs emergency responders to actually get behind the wheel. TechCrunch got th</p>
+                    <div class="article-meta">来源：The Verge</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">How Autonomous Drones Are Changing Warfare</span>
+                    </div>
+                    <p class="article-summary">How AI is ushering in an era of autonomous swarming drones</p>
+                    <div class="article-meta">来源：IEEE Spectrum</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Workshop explores Software-defined and AI-driven future for European drone industry</span>
+                    </div>
+                    <p class="article-summary">The European Commission and the HIPEAC network hosted a workshop on Distributed and decentralised intelligence for future drone swarm applications on 26 February 2026 in Brussels.</p>
+                    <div class="article-meta">来源：EU AI Act</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">5G4LIVES: protecting lives and the environment in Riga and Turin</span>
+                    </div>
+                    <p class="article-summary">5G4LIVES uses hybrid private 5G networks and AI-enabled drones to strengthen emergency response and environmental protection in the cities of Riga and Turin.</p>
+                    <div class="article-meta">来源：EU AI Act</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Book of Strategy Maps: The companies building tomorrow’s AI ecosystems</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：CB Insights</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">NVIDIA and Emerald AI Join Leading Energy Companies to Pioneer Flexible AI Factories as Grid Assets</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：NVIDIA</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Blowing Off Steam: How Power-Flexible AI Factories Can Stabilize the Global Energy Grid</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：NVIDIA</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">AWS: Why agentic AI marks an inflection point for enterprise modernization</span>
+                    </div>
+                    <p class="article-summary">Enterprises are achieving 5-80x faster modernization while reducing costs by 90% through agentic AI—a fundamental shift that’s helping companies like BMW, Air Canada, and CSL transform the $2.41 trill</p>
+                    <div class="article-meta">来源：Amazon/AWS</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">The rise of autonomous agents: What enterprise leaders need to know about the next wave of AI</span>
+                    </div>
+                    <p class="article-summary">Autonomous AI agents are evolving beyond chatbots to become independent systems that can reason and complete complex tasks, driving enterprise adoption through improved technology and development tool</p>
+                    <div class="article-meta">来源：Amazon/AWS</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Meet the Gods of AI Warfare</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：Wired</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Mind the gap: AI adoption in Europe and the US</span>
+                    </div>
+                    <p class="article-summary">Alexander Bick, 																				Adam Blandin, 																				David J. Deming, 																				Nicola Fuchs-Schündeln, 																				Jonas Jessen March 25, 2026</p>
+                    <div class="article-meta">来源：布鲁金斯学会</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Mind the gap: AI adoption in Europe and the US</span>
+                    </div>
+                    <p class="article-summary">Alexander Bick, 																				Adam Blandin, 																				David J. Deming, 																				Nicola Fuchs-Schündeln, 																				Jonas Jessen March 25, 2026</p>
+                    <div class="article-meta">来源：布鲁金斯学会</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">OECD Economic Outlook, Interim Report March 2026: Testing Resilience</span>
+                    </div>
+                    <p class="article-summary">The conflict in the Middle East is testing the resilience of the global economy that was being driven by supportive financial and fiscal conditions and increasing demand for artificial intelligence te</p>
+                    <div class="article-meta">来源：GPAI/OECD</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">IT之家本周其他6条动态</span>
+                    </div>
+                    <p class="article-summary">全球最大主权财富基金拟让 AI 参与投资决策，人类监督不可或、英伟达 CEO 黄仁勋：如果工程师 AI Token 用的少、全球最大主权财富基金拟让 AI 参与投资决策，人类监督不可或、卡普空表态：游戏内容不会使用 AI 生成的素材，但将用 AI、Meta CEO 扎克伯格宣布推出中小企业扶持计划，推动 A等。</p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Microsoft本周其他9条动态</span>
+                    </div>
+                    <p class="article-summary">Modernizing regulated industri、The economics of enterprise AI、Modernizing regulated industri、The economics of enterprise AI、Modernizing regulated industri等。</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">EU AI Act本周其他12条动态</span>
+                    </div>
+                    <p class="article-summary">Study on Artificial Intelligen、Workshop explores Software-def、5G4LIVES: protecting lives and、Study on Artificial Intelligen、Workshop explores Software-def等。</p>
+                    <div class="article-meta">来源：EU AI Act</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">NVIDIA本周其他1条动态</span>
+                    </div>
+                    <p class="article-summary">Blowing Off Steam: How Power-F等。</p>
+                    <div class="article-meta">来源：NVIDIA</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Amazon/AWS本周其他4条动态</span>
+                    </div>
+                    <p class="article-summary">AWS: Why agentic AI marks an i、The rise of autonomous agents:、AWS: Why agentic AI marks an i、The rise of autonomous agents:等。</p>
+                    <div class="article-meta">来源：Amazon/AWS</div>
+                </div>
+            </div>
+            <div class="category-section">
+                <h2 class="category-title">八、人才市场</h2>
+                <div class="category-divider"></div>
+                
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">黄仁勋补贴人才价值底薪 50% 的 AI 算力，为英伟达打造数十万名“数字员工”</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">黄仁勋补贴人才价值底薪 50% 的 AI 算力，为英伟达打造数十万名“数字员工”</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">A people-first vision for the future of work in the age of AI</span>
+                    </div>
+                    <p class="article-summary">Sorelle Friedler, 																				Serena Booth, 																				Andrew Schrank, 																				Susan Helper March 25, 2026</p>
+                    <div class="article-meta">来源：布鲁金斯学会</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">IT之家本周其他5条动态</span>
+                    </div>
+                    <p class="article-summary">黄仁勋补贴人才价值底薪 50% 的 AI 算力，为英伟达打造、非营利组织上线首个“AI 失业补助”：每月发 1000 美元、Anthropic 经济报告：AI 暂未导致大规模失业，真正、非营利组织上线首个“AI 失业补助”：每月发 1000 美元、Anthropic 经济报告：AI 暂未导致大规模失业，真正等。</p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+            </div>
+            <div class="category-section">
+                <h2 class="category-title">九、安全伦理</h2>
+                <div class="category-divider"></div>
+                
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">公司 研究 产品 Re LTH RSP</span>
+                    </div>
+                    <p class="article-summary">o People| approve @ 负责 任 地 发 布 Sora 我 们 如 何 监控 内 部 编程 智能 体 的 对 齐 失范 OpenAlto acquire Astral 安全 2026 年 3 月 23 日 安全 2026 年 3 月 19 日 公司 2026 年 3 月 19 日</p>
+                    <div class="article-meta">来源：OpenAI</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Media Authenticity Methods in Practice: Capabilities, Limitations, and Directions</span>
+                    </div>
+                    <p class="article-summary">As synthetic media grows, verifying what’s real, and the origin of content, matters more than ever. Our latest report explores media integrity and authentication methods, their limits, and practical p</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Media Authenticity Methods in Practice: Capabilities, Limitations, and Directions</span>
+                    </div>
+                    <p class="article-summary">As synthetic media grows, verifying what’s real, and the origin of content, matters more than ever. Our latest report explores media integrity and authentication methods, their limits, and practical p</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">How Autonomous AI Agents Become Secure by Design With NVIDIA OpenShell</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：NVIDIA</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Meet the Gods of AI Warfare</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：Wired</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">AI 圈地震：月安装量约 9500 万次的 API 网关 LiteLLM 遭投毒，波及 OpenAI / Anthropic 等用户</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">AI 圈地震：月安装量约 9500 万次的 API 网关 LiteLLM 遭投毒，波及 OpenAI / Anthropic 等用户</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Microsoft本周其他2条动态</span>
+                    </div>
+                    <p class="article-summary">Media Authenticity Methods in 、Media Authenticity Methods in 等。</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">IT之家本周其他3条动态</span>
+                    </div>
+                    <p class="article-summary">苹果联合创始人沃兹尼亚克：AI 体验常令人失望，自己很少使用、甲骨文 CEO 西西里亚：AI 不会取代人类，而是增强能力、AI 圈地震：月安装量约 9500 万次的 API 网关 L等。</p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+            </div>
+            <div class="category-section">
+                <h2 class="category-title">十、芯片与算力</h2>
+                <div class="category-divider"></div>
+                
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">Elon Musk unveils chip manufacturing plans for SpaceX and Tesla</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：TechCrunch</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">马斯克要建芯片厂了</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：投资界</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">CHIPS FOR AMERICA</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：CHIPS.gov</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★★</span>
+                        <span class="article-title">迈向银河文明的又一步？马斯克要自己造芯片了</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：APPSO</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">软银计划在美建设全球最大 AI 数据中心：10GW、投资超 660 亿美元</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">英伟达最贵 AI 机架：Vera Rubin 单台预估最高 700 万美元，微软、亚马逊等再贵也要买</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">NVIDIA Technical Blog</span>
+                    </div>
+                    <p class="article-summary">NVIDIA Technical Blog
+-
+Data ScienceNVIDIA Vera CPU Delivers High Performance, Bandwidth, and Efficiency for AI Factories
+-
+Agentic AI / Generative AIRun Autonomous, Self-Evolving Agents More Safely w</p>
+                    <div class="article-meta">来源：NVIDIA</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★★</span>
+                        <span class="article-title">NVIDIA Technical Blog</span>
+                    </div>
+                    <p class="article-summary">NVIDIA Technical Blog
+-
+Data ScienceNVIDIA Vera CPU Delivers High Performance, Bandwidth, and Efficiency for AI Factories
+-
+Agentic AI / Generative AIRun Autonomous, Self-Evolving Agents More Safely w</p>
+                    <div class="article-meta">来源：NVIDIA</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">An exclusive tour of Amazon’s Trainium lab, the chip that’s won over Anthropic, OpenAI, even Apple</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：TechCrunch</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Can high-temperature superconductors transform the power infrastructure of datacenters?</span>
+                    </div>
+                    <p class="article-summary">As the demand for AI and data-intensive computing is on the rise, the need for efficient and reliable power delivery is critical.</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Can high-temperature superconductors transform the power infrastructure of datacenters?</span>
+                    </div>
+                    <p class="article-summary">As the demand for AI and data-intensive computing is on the rise, the need for efficient and reliable power delivery is critical.</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Open EU Foundry status granted to innovative chiplet facility</span>
+                    </div>
+                    <p class="article-summary"></p>
+                    <div class="article-meta">来源：欧盟AI Office</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Executive Vice-President Virkkunen hosts Implementation Dialogue on EU Chips Act</span>
+                    </div>
+                    <p class="article-summary">Tomorrow, Executive Vice-President for Technological Sovereignty, Security and Democracy Henna Virkkunen will host a dialogue in Brussels to discuss the implementation of the Chips Act.</p>
+                    <div class="article-meta">来源：欧盟AI Office</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">Data Centers Shift to DC Power</span>
+                    </div>
+                    <p class="article-summary">800 Volt DC power delivery will enable next-gen AI data centers</p>
+                    <div class="article-meta">来源：IEEE Spectrum</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★★</span>
+                        <span class="article-title">AI Workstations Pack a Punch in a PC-Like Form Factor</span>
+                    </div>
+                    <p class="article-summary">Tenstorrent and Nvidia deliver new solutions for local AI models</p>
+                    <div class="article-meta">来源：IEEE Spectrum</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">IT之家本周其他10条动态</span>
+                    </div>
+                    <p class="article-summary">AI 算力卷向太空，英伟达黄仁勋称散热是最大挑战、软银计划在美建设全球最大 AI 数据中心：10GW、投资超 、软银计划在美建设全球最大 AI 数据中心：10GW、投资超 、谷歌 TurboQuant 引爆存储芯片崩盘：AI 内存占用、AI 算力卷向太空，英伟达黄仁勋称散热是最大挑战等。</p>
+                    <div class="article-meta">来源：IT之家</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">Microsoft本周其他1条动态</span>
+                    </div>
+                    <p class="article-summary">Can high-temperature supercond等。</p>
+                    <div class="article-meta">来源：Microsoft</div>
+                </div>
+                <div class="article-item">
+                    <div class="article-header">
+                        <span class="importance">★★</span>
+                        <span class="article-title">IEEE Spectrum本周其他1条动态</span>
+                    </div>
+                    <p class="article-summary">Data Centers Shift to DC Power等。</p>
+                    <div class="article-meta">来源：IEEE Spectrum</div>
+                </div>
+            </div>
+        <div class="footer-section">
+            <p class="footer-text">
+                本周共汇集358条动态。
+            </p>
+        </div>
+    </div>
+</body>
+</html>
