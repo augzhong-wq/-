@@ -1,0 +1,394 @@
+﻿ID,中文标题,中文摘要,分类,重要性,入选报送,信息源,原文URL,发布日期,报送日期
+60307,Will the real Anthropic please stand up,The company has been masterful at storytelling for years. Will the IPO reveal the company behind the mask or lean deeper into the myth-making?,投融资,3,是,MIT Technology Review,https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/,,2026-10-27
+60308,Roundtables: A Conversation With the Creator of AI-Designed Viruses,Watch a subscriber-only conversation with one of MIT Technology Review's Innovators Under 35.,研究前沿,1,否,MIT Technology Review,https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/,,2026-10-27
+60309,How solid-state transformers could help power the AI boom,,芯片与算力,2,否,MIT Technology Review,https://www.technologyreview.com/2026/10/27/1147684/solid-state-transformers/,,2026-10-27
+60310,The focus on AI safety disasters ignores everyday harms,,安全伦理,2,否,MIT Technology Review,https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/,,2026-10-27
+60311,Don’t be fooled—LLMs don’t reason,,研究前沿,2,否,MIT Technology Review,https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/,,2026-10-27
+60312,机器之心·数据服务,"机器之心·数据服务
+还在
+费劲
+爬数据？
+机器之心数据服务已上线
+直接获取数据，
+高效又稳定
+！
+前往了解
+276a835d17931063326294323e0e2b 深入合作请联系：
+zhaoyunfeng@jiqizhixin.com",产品发布,2,否,机器之心,https://www.jiqizhixin.com/,,2026-10-27
+60313,OpenAI,,企业动态,2,否,Techmeme,https://openai.com/,,2026-10-27
+60314,Unite.AI,,企业动态,1,否,Techmeme,https://www.unite.ai/openai-says-its-models-produced-three-proofs-in-math-cs-and-physics/,,2026-10-27
+60315,Local and Distributed Large LLM Inference with MLX and RDMA on Mac Studio,"Local and Distributed Large LLM Inference with MLX and RDMA on Mac Studio October 15, 2026",技术突破,3,是,Apple,https://machinelearning.apple.com/research/mlx-distributed-inference,,2026-10-27
+60316,In a previous post,MLXon Mac with Apple silicon lets AI researchers and developers experiment locally with the latest models and methods in a private environment. The open-source array framework leverages the unified me,技术突破,2,否,Apple,https://machinelearning.apple.com/research/exploring-llms-mlx-m5,,2026-10-27
+60317,Introducing the Third Generation of Apple’s Foundation Models,"Introducing the Third Generation of Apple’s Foundation Models June 8, 2026",产品发布,4,是,Apple,https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models,,2026-10-27
+60318,"ParaRNN: Large-Scale Nonlinear RNNs, Trainable in Parallel","ParaRNN: Large-Scale Nonlinear RNNs, Trainable in Parallel April 23, 2026",研究前沿,2,否,Apple,https://machinelearning.apple.com/research/large-scale-rnns,,2026-10-27
+60319,Apple Machine Learning Research at ICLR 2026,"Apple Machine Learning Research at ICLR 2026 April 22, 2026conferenceICLR",研究前沿,2,否,Apple,https://machinelearning.apple.com/research/iclr-2026,,2026-10-27
+60320,conferenceICLR,"Apple Machine Learning Research at ICLR 2026 April 22, 2026conferenceICLR",研究前沿,2,否,Apple,https://machinelearning.apple.com/highlights?event=ICLR,,2026-10-27
+60321,Fourteenth International Conference on Learning Representations (ICLR),"Apple is advancing AI and ML with fundamental research, much of which is shared through publications and engagement at conferences in order to accelerate progress in this important field and support t",研究前沿,2,否,Apple,https://iclr.cc,,2026-10-27
+60322,Apple Machine Learning Research at NeurIPS 2025,"Apple Machine Learning Research at NeurIPS 2025 November 21, 2025",研究前沿,2,否,Apple,https://machinelearning.apple.com/research/neurips-2025,,2026-10-27
+60323,The “Super Weight:” How Even a Single Parameter can Determine a Large Language Model’s Behavior,"The “Super Weight:” How Even a Single Parameter can Determine a Large Language Model’s Behavior August 21, 2025",研究前沿,2,否,Apple,https://machinelearning.apple.com/research/the-super-weight,,2026-10-27
+60324,The Super Weight in Large Language Models,"A recent paper from Apple researchers, “The Super Weight in Large Language Models,” reveals that an extremely small subset of parameters in LLMs (in some cases, a single parameter) can exert a disprop",研究前沿,2,否,Apple,https://machinelearning.apple.com/research/super-weight,,2026-10-27
+60325,Publications,"All publications
+Research areas
+Venues
+Published year
+- AuthorsAli Benlalah*, Sepehr Johari*, Patricia Vitoria*, Armin Kappeler*, Artem Sevastopolsky, Alexander Jung, Gabriele Fanelli, Kevin Mader, Ma",研究前沿,2,否,Apple,https://machinelearning.apple.com/research,,2026-10-27
+60326,Articles,"Articles
+News, announcements, and stories from Anthropic about Claude and the people building with it.
+Featured resource 1 of 5: Building agents: When to fold subagents into your main agent loop
+Showi",企业动态,2,否,Anthropic,https://claude.com/blog,,2026-10-27
+60327,Your First API Call,"The DeepSeek API uses an API format compatible with OpenAI/Anthropic. By modifying the configuration, you can use the OpenAI/Anthropic SDK or softwares compatible with the OpenAI/Anthropic API to acce",产品发布,1,否,DeepSeek官方,https://api-docs.deepseek.com/news,,2026-10-27
+60328,DeepSeek,"Pinned Loading
+Repositories
+    Showing 10 of 45 repositories
+    
+  
+  
+    
+        
+- [deepseek-recipe](/deepseek-ai/deepseek-recipe) Public
+- [DeepGEMM-Ascend](/deepseek-ai/DeepGEMM-Ascend) Public",企业动态,1,否,DeepSeek官方,https://github.com/deepseek-ai,,2026-10-27
+60329,Introducing Mistral Large 4,Research,产品发布,4,是,Mistral AI,https://mistral.ai/news?category=research,,2026-10-27
+60330,荷兰计划用 AI 取代 2.5 万个政府工作岗位，目标节省 35 亿欧元,,行业应用,3,是,IT之家,https://www.ithome.com/1/018/599.htm,,2026-10-27
+60331,高盛：AI 重塑市场定价，半导体板块影响力超过油价,,行业应用,4,是,IT之家,https://www.ithome.com/1/018/464.htm,,2026-10-27
+60332,Mac 版 Ollama 新增离线生成 AI 语音：数据不出门，速度比原方案最高快 35%,,产品发布,1,否,IT之家,https://www.ithome.com/1/018/228.htm,,2026-10-27
+60333,IPO 文件阐述 Anthropic 的野心：AI 有望解决过去几代人未能攻克的难题,,投融资,3,是,IT之家,https://www.ithome.com/1/018/171.htm,,2026-10-27
+60334,Gartner 调研显示：44% 的 CEO 难以证明 AI 的财务回报,,行业应用,3,是,IT之家,https://www.ithome.com/1/017/843.htm,,2026-10-27
+60335,阿波罗首席经济学家：除科技七巨头外，AI 还没帮美国企业赚到真金白银,,行业应用,3,是,IT之家,https://www.ithome.com/1/017/838.htm,,2026-10-27
+60336,Block 推出全双工 AI 语音模型 Dessa：真人感拉满，支持苹果 MacBook 本地运行,,产品发布,2,否,IT之家,https://www.ithome.com/1/017/557.htm,,2026-10-27
+60337,澳国脚授权 AI 数字分身，运动员开启肖像权 AI 商业化,,行业应用,2,否,IT之家,https://www.ithome.com/1/017/542.htm,,2026-10-27
+60338,Anthropic 亮出未发布 AI 模型：能力比 Mythos 5.1 更强，也更“守规矩”,,技术突破,2,否,IT之家,https://www.ithome.com/1/017/375.htm,,2026-10-27
+60339,英伟达黄仁勋开炮：“AI 毁灭人类”纯属捏造，是博眼球的廉价炒作,,安全伦理,5,是,IT之家,https://www.ithome.com/1/017/326.htm,,2026-10-27
+60340,扎克伯格的 AI 新版图：买下 Sundial 让数据分析变成“聊天”那么简单,,企业动态,3,是,IT之家,https://www.ithome.com/1/017/294.htm,,2026-10-27
+60341,OpenAI 为前沿 AI 训练 / 评估开启“断网闭关”模式，遏制其越狱攻击,,安全伦理,3,是,IT之家,https://www.ithome.com/1/017/289.htm,,2026-10-27
+60342,芬兰森林惨遭“剃光头”：谷歌为建 AI 数据中心非法清场 25 万棵树,,芯片与算力,2,否,IT之家,https://www.ithome.com/1/017/025.htm,,2026-10-27
+60343,谷歌推出 ACE 服务：为 AI 智能体配“独立工位”，空闲时自动下班 / 唤醒不到 500 毫秒,,产品发布,2,否,IT之家,https://www.ithome.com/1/016/853.htm,,2026-10-27
+60344,DeepSeek、MiniMax 已顺利履行登记手续，完成开源和海外授权使用,,政策监管,3,是,IT之家,https://www.ithome.com/1/016/796.htm,,2026-10-27
+60345,让你安心用 AI 网购 / 订票 / 点外卖：1Password 推出智能体密码授权功能,,产品发布,2,否,IT之家,https://www.ithome.com/1/016/772.htm,,2026-10-27
+60346,英特尔 CTO 称前沿晶圆产量最多翻倍，AI 算力扩张遭遇供应链天花板,,芯片与算力,3,是,IT之家,https://www.ithome.com/1/016/761.htm,,2026-10-27
+60347,比尔 · 盖茨：人们要为 AI 带来的二十年颠覆性变革做好准备,,行业应用,4,是,IT之家,https://www.ithome.com/1/016/742.htm,,2026-10-27
+60348,路透社：特斯拉 AI 转型承压，2026 全年支出目标降幅约 20%,,企业动态,3,是,IT之家,https://www.ithome.com/1/016/215.htm,,2026-10-27
+60349,qwen.ai,"This page will automatically redirect in5seconds. If you are not redirected automatically, please click the button below.",产品发布,1,否,通义千问官方,https://qwen.ai/research,,2026-10-27
+60350,NVIDIA Technical Blog,"NVIDIA Technical Blog
+- 
+        
+        Trustworthy AI / CybersecurityInside NVIDIA Sentry: Secure AI Agents at Runtime
+- 
+        
+        Agentic AI / Generative AIHow NVIDIA OpenShell Reference A",技术突破,2,否,NVIDIA,https://developer.nvidia.com/blog,"Oct 26, 2026",2026-10-27
+60351,NVIDIA and Meta to Expand Collaboration on Muse and Muse Family of Models Amid Robust Growth,,企业动态,5,是,NVIDIA,https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth,"October 26, 2026",2026-10-27
+60352,Accelerator & HBM Model,"AI InfrastructureDemand & installed base Bottoms-up demand forecast for AI accelerators and high-bandwidth memory across Nvidia, AMD, Google, AWS, Meta, Microsoft, Intel, and every major Chinese hyper",芯片与算力,3,是,SemiAnalysis,https://semianalysis.com/,,2026-10-27
+60353,GitHub starsInferenceXOpen-source inference benchmarks,,技术突破,1,否,SemiAnalysis,https://inferencex.semianalysis.com/,,2026-10-27
+60354,The AI Labor Debate: Three Views on the Future of Work,Teddy Tawil,人才市场,2,否,卡内基国际和平基金会,https://carnegieendowment.org/research/2026/04/the-ai-labor-debate-three-views-on-the-future-of-work,,2026-10-27
+60355,The Compute Coalition: How to Build the Future of AI in the Free World,"Alasdair Phillips-Robins,Teddy Tawil,Sam Winter-Levy",政策监管,3,是,卡内基国际和平基金会,https://carnegieendowment.org/research/2026/06/the-compute-coalition-how-to-build-the-future-of-ai-in-the-free-world,,2026-10-27
+60356,SIMA 2,"An agent that plays, reasons, and learns with you in virtual 3D worlds.",技术突破,4,是,Alphabet/Google,https://deepmind.google/research/projects/,,2026-10-27
+60357,Projects – Google Research,Our teams leverage research developments across domains to build tools and technology that impact billions of people. Sharing our learnings and tools to fuel progress in the field is core to our appro,研究前沿,3,是,Alphabet/Google,https://research.google/resources/our-projects/,,2026-10-27
+60358,Publications – Google Research,"Proceedings on Privacy Enhancing Technologies (2027)
+Preview abstract
+Recent reports have highlighted how mobile apps share user location data with third parties, risking user privacy and platform tru",研究前沿,2,否,Alphabet/Google,https://research.google/pubs/,,2026-10-27
+60359,Samira Ebrahimi Kahou,,研究前沿,1,否,MILA,https://mila.quebec/en/directory/samira-ebrahimi-kahou,,2026-10-27
+60360,Yoshua Bengio,,研究前沿,1,否,MILA,https://mila.quebec/en/directory/yoshua-bengio,,2026-10-27
+60361,openreview.net,,研究前沿,1,否,MILA,https://openreview.net/pdf?id=eGnKDfMrmX,,2026-10-27
+60362,Pablo Piantanida,,研究前沿,1,否,MILA,https://mila.quebec/en/directory/pablo-piantanida,,2026-10-27
+60363,openreview.net,,研究前沿,1,否,MILA,https://openreview.net/forum?id=O9u4lItD9K,,2026-10-27
+60364,openreview.net,,研究前沿,1,否,MILA,https://openreview.net/pdf?id=O9u4lItD9K,,2026-10-27
+60365,Noam Aigerman,,研究前沿,1,否,MILA,https://mila.quebec/en/directory/noam-aigerman,,2026-10-27
+60366,Rheia Khalaf,,研究前沿,1,否,MILA,https://mila.quebec/en/directory/rheia-khalaf,,2026-10-27
+60367,Catherine Régis,,人才市场,1,否,MILA,https://mila.quebec/en/directory/catherine-regis,,2026-10-27
+60368,Emma Kondrup,,人才市场,1,否,MILA,https://mila.quebec/en/directory/emma-kondrup,,2026-10-27
+60369,Ariana Seferiades Prece,,人才市场,1,否,MILA,https://mila.quebec/en/directory/ariana-seferiades-prece,,2026-10-27
+60370,Benjamin Prud'homme,,人才市场,1,否,MILA,https://mila.quebec/en/directory/benjamin-prudhomme,,2026-10-27
+60371,Xavier Bouthillier,,人才市场,1,否,MILA,https://mila.quebec/en/directory/xavier-bouthillier,,2026-10-27
+60372,智能车参考 – 量子位,"扫码关注量子位
+擎天柱将复制FSD训练思路
+FSD一年增长70万付费用户
+电池开发，分工远比想象复杂
+电池、电驱、超充一把梭，冬天多跑30公里
+宁德时代电池上车
+汽车竞争正在回归汽车本身
+宝马保时捷缺席
+日均10亿元流入
+马斯克反而发文道谢？
+江淮再度跌停
+2027年底实现“县县通”
+管理岗砍掉四成，顶级车型涨价20%卖
+机器人上市，风向有变
+让自动驾驶“走一步想十步”
+纯电120kWh大电池，1",行业应用,3,是,量子位,https://www.qbitai.com/category/auto,昨天 14:32,2026-10-27
+60373,Z.ai,"你好 我是 ZCode
+GLM模型
+新一代大模型全栈技术体系
+GLM-5.3
+GLM-5.3
+GLM-5.3：前沿编程能力与涌现的网络安全能力。面向复杂软件工程与长程智能体任务，支持 1M 上下文。
+GLM-5V-Turbo
+迈向原生多模态的Agent基座
+GLM-5-Turbo
+专为龙虾场景打造的基座模型，从训练层深度优化Agent核心能力，大幅提升工具调用与长链路执行能力
+ZCode
+GLM-",产品发布,4,是,智谱AI官方,https://zhipu.ai/news,,2026-10-27
+60374,平台介绍,"智谱大模型开放平台
+[bigmodel.cn](http://bigmodel.cn)，提供功能丰富、灵活易用、高性价比的大模型 API 服务，支持模型精调、推理等，致力于构建高效通用的“一站式模型即服务” AI 开发新范式。
+平台能力
+模型调用
+通过 API 调用文本、图像、音视频等模型，接入业务系统或开发工具。
+联网搜索
+接入网页检索、问答增强或搜索智能体，为应用补充实时信息来源。
+全模态知识",产品发布,2,否,智谱AI官方,https://open.bigmodel.cn/dev/howuse/news,,2026-10-27
+60375,Developer tools,"Developer tools A look at how developers can build with our latest audio models, Gemini 3.8 Live, 3.8 Live Extended Thinking, and 3.5 Transcribe.",产品发布,3,是,Google Blog AI,https://blog.google/technology/developers/,,2026-10-27
+60376,Research,"Google Research Learn about Project Suncatcher, how we’re testing hardware survival for space, designing cooling systems for AI chips, and more.",研究前沿,2,否,Google Blog AI,https://blog.google/technology/research/,,2026-10-27
+60377,Gemini,"The latest news about Gemini. Chat to start writing, planning, learning and more with Google AI.",产品发布,2,否,Google Blog AI,https://blog.google/products/gemini/,,2026-10-27
+60378,Your last hardware decision shouldn’t decide what you build next.,"AWS launched TorchNeuron, which developers can use to run their existing PyTorch code natively on AWS Trainium with a configuration change instead of a rewrite. Making it cheaper to move between AI ch",芯片与算力,2,否,Amazon/AWS,https://aws.amazon.com/blogs/aws-insights/your-last-hardware-decision-shouldnt-decide-what-you-build-next/,,2026-10-27
+60379,"Wrong, not broken","Software operations has always asked one question: Is it broken? AI agents change that. Here’s the shift toward measuring correctness at the level of the run, and the thinking behind Amazon CloudWatch",技术突破,1,否,Amazon/AWS,https://aws.amazon.com/blogs/aws-insights/wrong-not-broken/,,2026-10-27
+60380,AWS: Why agentic AI marks an inflection point for enterprise modernization,"Enterprises are achieving 5-80x faster modernization while reducing costs by 90% through agentic AI—a fundamental shift that’s helping companies like BMW, Air Canada, and CSL transform the $2.41 trill",行业应用,2,否,Amazon/AWS,https://aws.amazon.com/blogs/aws-insights/aws-why-agentic-ai-marks-an-inflection-point-for-enterprise-modernization/,,2026-10-27
+60381,The rise of autonomous agents: What enterprise leaders need to know about the next wave of AI,"Autonomous AI agents are evolving beyond chatbots to become independent systems that can reason and complete complex tasks, driving enterprise adoption through improved technology and development tool",行业应用,2,否,Amazon/AWS,https://aws.amazon.com/blogs/aws-insights/the-rise-of-autonomous-agents-what-enterprise-leaders-need-to-know-about-the-next-wave-of-ai/,,2026-10-27
+60382,Why model choice matters: Flexible AI unlocks freedom to innovate,Organizations achieve more effective and efficient results when they can select and use different AI models that precisely match their specific business needs and use cases.,行业应用,1,否,Amazon/AWS,https://aws.amazon.com/blogs/aws-insights/why-model-choice-matters-flexible-ai-unlocks-freedom-to-innovate/,,2026-10-27
+60383,"AWS Documentation update — progress, challenges, and what’s next for 2025","AWS has been making significant improvements to their documentation through content restructuring, increased code samples, enhanced website navigation, and AI integration, while maintaining their comm",产品发布,1,否,Amazon/AWS,https://aws.amazon.com/blogs/aws-insights/aws-documentation-update-progress-challenges-and-whats-next-for-2025/,,2026-10-27
+60384,BrainBox AI makes buildings greener and smarter with AWS Generative AI,"Revolutionizing smart building management, BrainBox AI’s ARIA harnesses generative AI for conversational insights, predictive maintenance, and emissions reduction up to 40% through seamless integratio",行业应用,2,否,Amazon/AWS,https://aws.amazon.com/blogs/aws-insights/brainbox-ai-makes-buildings-greener-and-smarter-with-aws-generative-ai/,,2026-10-27
+60385,20 years in the AWS Cloud – how time flies!,"Celebrating twenty years of innovation in ML and AI technology at AWS. Countless developers, myself included, have embraced cloud computing and actively used its capabilities to accomplish what was pr",企业动态,1,否,Amazon/AWS,https://aws.amazon.com/blogs/aws/20-years-in-the-aws-cloud-how-time-flies/,,2026-10-27
+60386,"AWS Weekly Roundup: Amazon Polly Generative engine, TorchNeuron for Trainium, and more (October 26, 2026)",A few weeks ago I presented to a small group of commercial and technology leaders from Brazilian agribusiness at the AWS office in São Paulo. My talk ran through where generative AI fits across the di,产品发布,1,否,Amazon/AWS,https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/,,2026-10-27
+60387,AWS Continuum for code vulnerabilities is now generally available,"AWS Continuum for code vulnerabilities is a new security service that uses AI to automatically find, validate, and prioritize code vulnerabilities in your environment, then delivers ready-to-review fi",产品发布,2,否,Amazon/AWS,https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/,,2026-10-27
+60388,"AWS Weekly Roundup: Prime Day 2026 by the numbers, Claude Haiku 5.5, Amazon Nova 2.5 Sonic, and more (October 13, 2026)","Some numbers are hard to picture until you sit with them for a moment. Last week we published the Prime Day 2026 metrics, and the one that stuck with me is 2.3 quadrillion: the daily requests Amazon E",产品发布,2,否,Amazon/AWS,https://aws.amazon.com/blogs/aws/aws-weekly-roundup-prime-day-2026-by-the-numbers-claude-haiku-5-5-amazon-nova-2-5-sonic-and-more-october-13-2026/,,2026-10-27
+60389,Build RAG-ready indexes from Amazon S3 with Amazon OpenSearch intelligent ingestion,"Amazon OpenSearch intelligent ingestion is a fully managed, serverless capability that turns documents and structured data in Amazon S3 into RAG-ready, searchable indexes with no pipelines to manage. ",产品发布,1,否,Amazon/AWS,https://aws.amazon.com/blogs/big-data/build-rag-ready-indexes-from-amazon-s3-with-amazon-opensearch-intelligent-ingestion/,,2026-10-27
+60390,Trace security threats in multi-agent pipelines with Amazon OpenSearch Service,"Learn how to trace two invisible threats in a multi-agent AI pipeline, prompt injection propagation and cross-tenant data exfiltration, using Amazon OpenSearch Service and Amazon Bedrock. Instrument e",安全伦理,1,否,Amazon/AWS,https://aws.amazon.com/blogs/big-data/trace-security-threats-in-multi-agent-pipelines-with-amazon-opensearch-service/,,2026-10-27
+60391,Machine Learning,"Do you want to create the greatest-possible worldwide impact in Robotics? Amazon has the world's most exciting treasure trove of robotics challenges. At Amazon Robotics we build high-performance, real",人才市场,1,否,Amazon/AWS,https://www.amazon.science/research-areas/machine-learning,2026,2026-10-27
+60392,Nvidia backs Indian startup helping companies run AI models with fewer GPUs,,投融资,3,是,TechCrunch,https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/,2026-10-27,2026-10-27
+60393,The hottest AI wearables and gadgets you should know about,,产品发布,2,否,TechCrunch,https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/,2026-10-25,2026-10-27
+60394,Opera introduces a new web standard to let users deploy AI locally in their browser,,产品发布,2,否,TechCrunch,https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/,2026-10-27,2026-10-27
+60395,"How OpenAI turned its coding tools into dots, an always-on personal assistant",,产品发布,3,是,TechCrunch,https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/,2026-10-26,2026-10-27
+60396,Cohere says Alibaba’s Qwen model tried to send a file to Beijing,,安全伦理,3,是,TechCrunch,https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/,2026-10-26,2026-10-27
+60397,SUTRADHARA : An Intelligent Orchestrator-Engine Co-design for Tool-based Agentic Inference,"Anish Biswas, Kanishk Goel, Srivarshinee S,Jayashree Mohan, Alind Khare,A. Parayil,Ramachandran Ramjee,Chetan Bansal 2027 Architectural Support for Programming Languages and Operating Systems| April 2",技术突破,2,否,Microsoft,https://www.microsoft.com/en-us/research/publication/sutradhara-an-intelligent-orchestrator-engine-co-design-for-tool-based-agentic-inference/,,2026-10-27
+60398,NI Sampling++: Optimizing Token Order for Fast Discrete Diffusion Sampling with Reinforcement Learning,"Enshu Liu, Theodore Zhengde Zhao, Xuefei Ning,Zinan Lin, Yu Wang 2026 COLM| December 2026",研究前沿,2,否,Microsoft,https://www.microsoft.com/en-us/research/publication/ni-sampling-optimizing-token-order-for-fast-discrete-diffusion-sampling-with-reinforcement-learning/,,2026-10-27
+60399,Language model goal selection differs from humans’ in a self-driven learning task,"Gaia Molinaro, Dave August, Danielle Perszyk, Anne G. E. Collins NeurIPS|
+										December 2026, Vol 39",研究前沿,2,否,Microsoft,https://www.microsoft.com/en-us/research/publication/language-model-goal-selection-differs-from-humans-in-a-self-driven-learning-task/,,2026-10-27
+60400,Object-Centric Residual RL for Zero-Shot Sim-to-Real VLA Enhancement,"Kinam Kim,Namiko Saito,Heecheol Kim, Katsushi Ikeuchi,Yasuyuki Matsushita 2026 10th Annual Conference on Robot Learning| November 2026",研究前沿,2,否,Microsoft,https://www.microsoft.com/en-us/research/publication/object-centric-residual-rl-for-zero-shot-sim-to-real-vla-enhancement/,,2026-10-27
+60401,WorkflowPerturb: Calibrated Stress Tests for Evaluating Multi-Agent Workflow Metrics,"Madhav Kanda,Sharad Agarwal,Rodrigo Fonseca,Alok Kumbhare, Pedro Las-Casas EMNLP Industry Track| October 2026",研究前沿,2,否,Microsoft,https://www.microsoft.com/en-us/research/publication/workflowperturb-calibrated-stress-tests-for-evaluating-multi-agent-workflow-metrics/,,2026-10-27
+60402,RCEM: Robust Conversational Search EMbedder in Distributional Shift,"Kilho Son, P. Hsu,Cha Zhang, Dinei Florencio Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: Industry Track|
+										October 2026",研究前沿,2,否,Microsoft,https://www.microsoft.com/en-us/research/publication/rcem-robust-conversational-search-embedder-in-distributional-shift/,,2026-10-27
+60403,Putting Transformer Theories to the Test,"Awni Altabaa,Tobias Schnabel,Kiran Tomlinson October 2026",研究前沿,2,否,Microsoft,https://www.microsoft.com/en-us/research/publication/putting-transformer-theories-to-the-test/,"arXiv									|
+					October 2026",2026-10-27
+60404,Medical Superintelligence: Foundations and Aspirations,"Xiaoxuan Liu, Mayank Daswani, Christopher Kelly,Harsha Nori, Nicola Ding, Matthew M. Nour,  Emma Rocheteau, Craig Sherstan, Viknesh Sounderajah, Adrian D. Haimovich,Dr. Eric Topol, Mustafa Suleyman, D",研究前沿,3,是,Microsoft,https://www.microsoft.com/en-us/research/publication/medical-superintelligence-foundations-and-aspiration/,,2026-10-27
+60405,Flint-interactive: A language for creating interactive data visualizations,"Flint-interactive gives AI agents a language for creating interactive visualizations. Click a chart, filter data, highlight related content, and explore beyond the view the author originally chose.",产品发布,2,否,Microsoft,https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/,,2026-10-27
+60406,Simulating student learning for better AI tutoring,"StudentSim is a research system for evaluating and improving AI tutoring tools before they are tested with learners. It models how individuals may engage with tutors, giving feedback to improve tutor ",行业应用,2,否,Microsoft,https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/,,2026-10-27
+60407,"Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses","Training AI agents with reinforcement learning can be challenging because their tools, context, and decision-making are managed by complex frameworks. Agent Lightning connects existing agents to RL tr",产品发布,3,是,Microsoft,https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/,,2026-10-27
+60408,Forecasting space weather risks on power grids,Extreme space-weather events can damage power systems on Earth and degrade GPS accuracy and satellite operations. A new machine learning system can predict where damage is likely to occur 30-60 minute,行业应用,2,否,Microsoft,https://www.microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids/,,2026-10-27
+60409,Introducing Quine: An AI research system designed for the complexity of biology,"Biology doesn't operate in silos, and neither should the AI representation of it. Quine is an early-stage research effort to create a multimodal world model of biology. By connecting insights across b",研究前沿,3,是,Microsoft,https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/,,2026-10-27
+60410,"One year in: How Microsoft Research Asia – Singapore is advancing research, partnership and talent for real-world impact","Since launching a year ago, the Microsoft Research Asia — Singapore lab has established a strong foundation, deepened collaboration across government, academia, and industry, and explored how frontier",企业动态,3,是,Microsoft,https://www.microsoft.com/en-us/research/blog/one-year-in-how-microsoft-research-asia-singapore-is-advancing-research-partnership-and-talent-for-real-world-impact/,,2026-10-27
+60411,Offloaded inference for real-world physical AI robotics,"Robots are getting smarter, but how can their hardware match that growth? New Microsoft Research findings show that moving AI inference beyond the robot can improve task success, boost efficiency, and",技术突破,2,否,Microsoft,https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/,,2026-10-27
+60412,Improving synthesis prediction of small molecules at scale with RetroChimera,"Custom-made molecules are advancing medicine, materials, and agriculture, but producing them is slow and expensive. A new Nature paper highlights RetroChimera, a predictive model that helps accelerate",研究前沿,3,是,Microsoft,https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/,,2026-10-27
+60413,GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models,"What if pathology foundation models could do more with less? GigaPath-Flash and GigaTIME-Flash cut computational demands while maintaining strong performance, opening the door to larger studies and br",技术突破,3,是,Microsoft,https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/,,2026-10-27
+60414,Broadening access to Skala creates a faster path to predictive DFT,"Skala 1.1, the updated deep-learning exchange-correlation functional from Microsoft Research, provides greater accuracy, expanded accessibility across the computational chemistry ecosystem, and a livi",技术突破,2,否,Microsoft,https://www.microsoft.com/en-us/research/blog/broadening-access-to-skala-creates-a-faster-path-to-predictive-dft/,,2026-10-27
+60415,Aurora 1.5: Extending open foundation models for weather and Earth-system applications,,产品发布,3,是,Microsoft,https://www.microsoft.com/en-us/research/blog/aurora-1-5-extending-open-foundation-models-for-weather-and-earth-system-applications/,,2026-10-27
+60416,Can we AI our way to a more sustainable world? [Podcast],,行业应用,2,否,Microsoft,https://www.microsoft.com/en-us/research/podcast/can-we-ai-our-way-to-a-more-sustainable-world/,,2026-10-27
+60417,火山方舟,"火山方舟
+方舟提供模型的推理、评测、精调等全流程服务，帮助您快速应用模型服务。同时提供稳定可靠的安全互信方案，保障用户的信息安全。方舟搭载了豆包及业界主流大模型，提供强大的模型能力，帮助您实现业务智能化和商业新增长。",产品发布,2,否,字节跳动AI,https://www.volcengine.com/docs/82379,,2026-10-27
+60418,字节跳动AI,We're sorry but react app doesn't work properly without JavaScript enabled. Please enable it to continue.,企业动态,1,否,字节跳动AI,https://www.volcengine.com/product/doubao,,2026-10-27
+60419,Hacker News,"Hacker News
+new
+|
+past
+|
+comments
+|
+ask
+|
+show
+|
+jobs
+|
+submit
+login
+1.
+Three new discoveries in mathematics, computer science, and physics
+(
+openai.com
+)
+718 points
+by
+jonluca
+8 hours ago
+|
+hide
+|
+31",研究前沿,3,是,Hacker News,https://news.ycombinator.com/,,2026-10-27
+60420,I Used AI to Fake a Scientific Paper. Here’s What Happened,My experiment with an IEEE journal revealed AI’s threats to scholarly publishing,安全伦理,2,否,IEEE Spectrum,https://spectrum.ieee.org/ai-generated-scientific-papers,2m,2026-10-27
+60421,IEEE Xplore Digital Library Adds AI Assistant,The search tool offers summaries and verifiable source links,产品发布,1,否,IEEE Spectrum,https://spectrum.ieee.org/ieee-xplore-digital-library-ai,19h,2026-10-27
+60422,基层演员，AI刀下第 一鬼,,人才市场,1,否,投资界,https://news.pedaily.cn/202610/570942.shtml,2026-10-27 17:19,2026-10-27
+60423,Anthropic员工排队实现财富自由,,人才市场,2,否,投资界,https://news.pedaily.cn/202610/570940.shtml,2026-10-27 17:00,2026-10-27
+60424,Anthropic 的硅谷往事,,企业动态,2,否,投资界,https://news.pedaily.cn/202610/570935.shtml,2026-10-27 16:43,2026-10-27
+60425,强如豆包，闯关商考,,行业应用,2,否,投资界,https://news.pedaily.cn/202610/570933.shtml,2026-10-27 16:33,2026-10-27
+60426,agent是关不住的：即使互相隔离，仍能隔墙传信,,安全伦理,1,否,投资界,https://news.pedaily.cn/202610/570930.shtml,2026-10-27 16:08,2026-10-27
+60427,「抢钱者」联盟：AI巨头资本大战开打,,投融资,4,是,投资界,https://news.pedaily.cn/202610/570926.shtml,2026-10-27 15:45,2026-10-27
+60428,50亿元物理AI与世界模型基金落地南京,,投融资,3,是,投资界,https://news.pedaily.cn/202610/570921.shtml,2026-10-27 13:42,2026-10-27
+60429,"Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo",Included is the ability to limit which applications Siri can directly access.,产品发布,2,否,Ars Technica,https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/,2026-10-26,2026-10-27
+60430,ICE plan to buy robot dogs spurs protest from hundreds of Boston Dynamics employees,US robotics company stands by ICE deal as more than 300 employees warn of risk.,安全伦理,2,否,Ars Technica,https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/,2026-10-26,2026-10-27
+60431,Tesla gave up the EV crown. Now it wants to win the autonomy race.,Tesla hopes autonomy subscriptions can deliver the margins car sales cannot.,企业动态,3,是,Ars Technica,https://arstechnica.com/cars/2026/10/tesla-wants-ai-and-software-to-be-its-next-profit-engine/,2026-10-26,2026-10-27
+60432,I Tested Every Major AI Agent for a Day. Here’s the Best One,,产品发布,2,否,Wired,https://www.wired.com/tag/artificial-intelligence/,ByReece Rogers,2026-10-27
+60433,4 of Google’s Top AI Brains Are Leaving—and Launching Their Own AI Startup,,人才市场,4,是,Wired,https://www.wired.com/tag/machine-learning/,BySteven Levy,2026-10-27
+60434,王的猜想，被 AI 一夜通关,,研究前沿,1,否,APPSO,https://www.ifanr.com/1686064,2026-10-27,2026-10-27
+60435,早报｜苹果回应iPhone Duo内屏开裂/Anthropic公开上市申请，冲击史上最大IPO/小鹏Robotaxi获批L4级示范运营,,企业动态,4,是,APPSO,https://www.ifanr.com/1685979,2026-10-27,2026-10-27
+60436,地铁里的 AI 伪人广告，正在集体霸凌人类,,安全伦理,1,否,APPSO,https://www.ifanr.com/1685809,2026-10-26,2026-10-27
+60437,MiniMax AI,"Models
+LLM
+MiniMax M3.1 Flash
+MiniMax M3
+VIDEO
+MiniMax H3
+SPEECH & MUSIC
+MiniMax Speech 2.8
+MiniMax Music 3.0
+Product
+MiniMax Code
+MiniMax Design
+Audio
+Talkie
+API
+Plan
+Research
+Company
+Intelligence wi",产品发布,1,否,MiniMax,https://www.minimax.io/news,,2026-10-27
+60438,Journal of Machine Learning Research,"JMLR News
+  - 2022.07.20: New [special issue on climate change](/special_issues/climate_change.html).
+- 2022.02.18: New blog post: [Retrospectives from 20 Years of JMLR](/news/2022/retrospectives.html",研究前沿,1,否,JMLR,https://jmlr.org/news.html,,2026-10-27
+60439,Press,"ICML 2026 Press Information
+Resources:
+ICML Logo
+| svg (vector) | png (bitmap) | 
+Press Policy:
+[ICML 2026 Press Pass Application](https://forms.gle/z6RRZVVUgPPMRELt6). The application closed on 26 Ju",研究前沿,1,否,ICML,https://icml.cc/Conferences/2025/Press,,2026-10-27
+60440,Press,"ICLR Press Page
+Media Kit
+- ICLR 2026 [Fact Sheet](https://media.iclr.cc/Conferences/ICLR2026/ICLR2026_Fact_Sheet.pdf)
+- ICLR 2025 [Fact Sheet](https://media.iclr.cc/Conferences/ICLR2025/ICLR2025_Fact",研究前沿,1,否,ICLR,https://iclr.cc/Conferences/2025/Press,,2026-10-27
+60441,Press,"NeurIPS 2026 Press Information
+Media inquiries related to the conference can be made via email at [press@neurips.cc](mailto:press@neurips.cc).
+Press Application
+Make sure that you have a NeurIPS.cc ac",研究前沿,1,否,NeurIPS,https://neurips.cc/Conferences/2025/Press,,2026-10-27
+60442,NeurIPS 2026 Invited Speaker Topics,"Communication Chairs 20262026 Conference The NeurIPS 2026 organizing committee is excited to share details about the upcoming invited talks at this year’s conference. New this year,  the conference is",研究前沿,1,否,NeurIPS,https://blog.neurips.cc/2026/10/25/neurips-2026-invited-speaker-topics/,2026-10-25,2026-10-27
+60443,Updates & Insights,"Whether it’s pushing boundaries in science, helping companies strategically adopt AI or building individuals’ AI capabilities, there’s always something happening at Amii.
+Alberta announces $50M in new",企业动态,3,是,Amii,https://www.amii.ca/updates-insights,,2026-10-27
+60444,Can AI Tell Me If I Have Breast Cancer?,"CBC The Dose- Oct 22, 2026",行业应用,1,否,Amii,https://www.cbc.ca/listen/cbc-podcasts/410-the-dose,,2026-10-27
+60445,The Path to Super Intelligence: Alberta Plan co-author on reinforcement learning & AI-Powered Prosthetics,"TechSurge: Deep Tech VC Podcast- Oct 21, 2026",研究前沿,1,否,Amii,https://www.techsurgepodcast.com/podcasts/patrick-pilarski-alberta-plan-co-author-on-reinforcement-learning-ai-powered-prosthetics,,2026-10-27
+60446,"The case for urgently training 400,000 Canadian teachers on AI","Be Giant- Sep 23, 2026",人才市场,2,否,Amii,https://www.begiant.ca/stories/people/ai-education-teacher-training,,2026-10-27
+60447,Robotics researchers build on Edmonton’s AI legacy,"Taproot- Sep 22, 2026",研究前沿,1,否,Amii,https://edmonton.taproot.news/news/2026/09/22/robotics-researchers-build-on-edmontons-ai-legacy,,2026-10-27
+60448,Mila negotiating new federal funding after being tasked with open-source AI file,"Betakit- Sep 17, 2026",企业动态,2,否,Amii,https://betakit.com/mila-negotiating-new-federal-funding-after-being-tasked-with-open-source-ai-file/,,2026-10-27
+60449,Algonquin College joins national AI workforce readiness consortium,"Algonquin College- Sep 16, 2026",人才市场,1,否,Amii,https://www.algonquincollege.com/news/2026/09/16/algonquin-college-joins-national-ai-workforce-readiness-consortium/,,2026-10-27
+60450,Canada and Germany show what a middle-power AI bet looks like,"Digital Journal- Sep 16, 2026",政策监管,2,否,Amii,https://www.digitaljournal.com/article/canada-and-germany-show-what-a-middle-power-ai-bet-looks-like/,,2026-10-27
+60451,Q&A: Amii CEO explains why Canada’s AI literacy initiative is about agency,"Betakit- Sep 11, 2026",人才市场,1,否,Amii,https://betakit.com/qa-amii-ceo-explains-why-canadas-ai-literacy-initiative-is-about-agency/,,2026-10-27
+60452,"Canada Unveils New National AI Literacy Initiative, Free Lessons Available to All By Year End","CityTV- Sep 10, 2026",政策监管,2,否,Amii,https://youtu.be/Jyx2IPD0bks?si=nWCpI2K5a7f_ueaK,,2026-10-27
+60453,Canada launches National AI Literacy Initiative,"Human Resources Director- Sep 10, 2026",政策监管,2,否,Amii,https://www.hcamag.com/ca/specialization/transformation/canada-launches-national-ai-literacy-initiative/589341,,2026-10-27
+60454,Canada's AI Push,"Real Talk with Ryan Jespersen- Sep 10, 2026",政策监管,1,否,Amii,https://www.youtube.com/watch?v=UBoYUhiaiCU,,2026-10-27
+60455,Canada unveils national AI literacy initiative,"Betakit- Sep 9, 2026",政策监管,2,否,Amii,https://betakit.com/canada-unveils-national-ai-literacy-initiative/,,2026-10-27
+60456,Ottawa puts $13 million into AI literacy,"Digital Journal- Sep 9, 2026",政策监管,2,否,Amii,https://www.digitaljournal.com/article/ottawa-puts-13-million-into-ai-literacy/,,2026-10-27
+60457,Free course covering basics of AI to be available to all Canadians by end of the year,"CBC- Sep 9, 2026",人才市场,2,否,Amii,https://www.cbc.ca/news/politics/ai-essentials-government-courses-solomon-9.7337417,,2026-10-27
+60458,Should universities ban AI? This Canadian AI pioneer explains why they shouldn't,"Toronto Sun- Sep 8, 2026",人才市场,2,否,Amii,https://torontosun.com/news/national/should-universities-ban-ai-this-canadian-ai-pioneer-explains-why-they-shouldnt,,2026-10-27
+60459,Half of you think AI tools belong in the classroom,"The Logic- Aug 31, 2026",人才市场,1,否,Amii,https://thelogic.co/intelligence/subscriber-survey/ai-education-in-canada/?utm_rs=AP_YLLfaB8qTl--7_u2ook-3g,,2026-10-27
+60460,Amii marks a decade of AI4Good bootcamp,"Taproot- Aug 18, 2026",人才市场,1,否,Amii,https://edmonton.taproot.news/briefs/2026/08/18/amii-marks-a-decade-of-ai4good-bootcamp,,2026-10-27
+60461,Intelligence artificielle éthique au Canada : comprendre un écosystème en pleine évolution,"Grand Toronto- Aug 17, 2026",安全伦理,1,否,Amii,https://grandtoronto.ca/intelligence-artificielle-ethique-au-canada/,,2026-10-27
+60462,Core research areasExplore Vector’s AI research focus areas and priorities,Explore Vector’s AI research focus areas and priorities,研究前沿,1,否,Vector Institute,https://vectorinstitute.ai/research-talent/core-research-areas/,,2026-10-27
+60463,"Research TeamConnect with Vector’s world-class faculty, researchers, and scientific leaders","Connect with Vector’s world-class faculty, researchers, and scientific leaders",研究前沿,1,否,Vector Institute,https://vectorinstitute.ai/research-talent/research-team/,,2026-10-27
+60464,"Publications and papersAccess research publications, papers, and open-source AI toolkits","Access research publications, papers, and open-source AI toolkits",研究前沿,1,否,Vector Institute,https://vectorinstitute.ai/research-talent/publications-and-papers/,,2026-10-27
+60465,AI EngineeringEngineering solutions that transform AI research into industry applications,Engineering solutions that transform AI research into industry applications,行业应用,1,否,Vector Institute,https://vectorinstitute.ai/research-talent/ai-engineering/,,2026-10-27
+60466,"StudentsScholarships, internships, and development programs emerging AI professionals","Scholarships, internships, and development programs emerging AI professionals",人才市场,1,否,Vector Institute,https://vectorinstitute.ai/research-talent/students/,,2026-10-27
+60467,"Hire AI TalentConnect with exceptional AI researchers, graduates, and professionals","Connect with exceptional AI researchers, graduates, and professionals",人才市场,1,否,Vector Institute,https://vectorinstitute.ai/research-talent/hire-ai-talent/,,2026-10-27
+60468,Vector Institute awards 100 scholarships to Ontario’s top AI graduate students,,人才市场,1,否,Vector Institute,https://vectorinstitute.ai/insights/ai-research-insights/,,2026-10-27
+60469,The LogicBig businesses are creating their own tests to find the best AI models,Big businesses are creating their own tests to find the best AI models,行业应用,2,否,Vector Institute,https://thelogic.co/news/ai-testing-benchmarks-rbc-manulife/,,2026-10-27
+60470,Full Circle (Deloitte podcast)Ambition interrupted: Building Ai without losing control,Ambition interrupted: Building Ai without losing control,安全伦理,1,否,Vector Institute,https://open.spotify.com/episode/0m7YhvabjIvXme2ort1THf?si=HX1muuLcQxaaNIvPbqpiPQ&nd=1&dlsi=f7ac306bd82c4e02,,2026-10-27
+60471,R&D WorldSelf-driving cars are hitting the streets. Is your lab up next for automation?,Self-driving cars are hitting the streets. Is your lab up next for automation?,行业应用,1,否,Vector Institute,https://www.rdworldonline.com/self-driving-cars-are-hitting-the-streets-is-your-lab-up-next-for-automation/,,2026-10-27
+60472,Betakit‘Canada’s edge in applied AI’ with Nvidia and Waabi leaders,‘Canada’s edge in applied AI’ with Nvidia and Waabi leaders,行业应用,2,否,Vector Institute,https://betakit.com/canadas-edge-in-applied-ai-with-nvidia-and-waabi-leaders/,,2026-10-27
+60473,University of Toronto NewsAI used to ‘democratize’ how we predict the weather,AI used to ‘democratize’ how we predict the weather,行业应用,2,否,Vector Institute,https://www.utoronto.ca/news/ai-used-democratize-how-we-predict-weather,,2026-10-27
+60474,Venture BeatThe rise of prompt ops: Tackling hidden AI costs from bad inputs and context bloat,The rise of prompt ops: Tackling hidden AI costs from bad inputs and context bloat,技术突破,1,否,Vector Institute,https://venturebeat.com/ai/the-rise-of-prompt-ops-tackling-hidden-ai-costs-from-bad-inputs-and-context-bloat,,2026-10-27
+60475,BetakitMost Canadian companies are walking the AI adoption race: report,Most Canadian companies are walking the AI adoption race: report,行业应用,2,否,Vector Institute,https://betakit.com/most-canadian-companies-are-walking-the-ai-adoption-race-report/,,2026-10-27
+60476,Toronto Star‘AI is Toronto’s hidden opportunity:’ Experts discuss how AI will reshape the workplace and transform Canadian industries,‘AI is Toronto’s hidden opportunity:’ Experts discuss how AI will reshape the workplace and transform Canadian industries,行业应用,2,否,Vector Institute,https://www.thestar.com/business/ai-is-torontos-hidden-opportunity-experts-discuss-how-ai-will-reshape-the-workplace-and-transform/article_7a2b98a3-4ee5-4140-b350-9b735ff0226b.html,,2026-10-27
+60477,Toronto StarIn the fast-paced AI sector – ‘key to our economic destiny’ – Canada is moving in slow motion,In the fast-paced AI sector – ‘key to our economic destiny’ – Canada is moving in slow motion,行业应用,2,否,Vector Institute,https://www.thestar.com/business/opinion/in-the-fast-paced-ai-sector-key-to-our-economic-destiny-canada-is-moving-in/article_d40b1566-40b9-49ac-929a-18f276ecdadb.html,,2026-10-27
+60478,Contact us,"We’d love to talk about AI research, issues, and trends. Email us with your inquiries.",企业动态,1,否,Vector Institute,https://vectorinstitute.ai/insights/newsroom/,,2026-10-27
+60479,百度智能云-“芯云模体”新全栈AI云,"最新活动
+产品
+解决方案
+千帆社区
+AI原生应用商店
+企业服务
+云市场
+合作与生态
+开发者
+服务与支持
+了解智能云
+备案
+文档
+管理控制台",产品发布,1,否,百度文心,https://cloud.baidu.com/article/ai,,2026-10-27
+60480,快速开始,"你可以通过 Kimi API 调用 Kimi K3.1 Pro 等模型。调用时，可以选择
+[Chat Completions API](/docs/api/chat)、
+[Responses API](/docs/api/responses)或
+[Messages API](/docs/api/messages)。创建 API Key、选择模型并配置
+base_url 后，即可直接通过 HTTP ",产品发布,1,否,月之暗面Kimi,https://platform.moonshot.cn/docs,,2026-10-27
+60481,Foundation Model MiniCPM,"Small but powerful, hybrid thinking with 512K context",技术突破,2,否,面壁智能,https://www.modelbest.cn/,,2026-10-27
+60482,"AI Video Generator for Text, Image & Reference Videos","Dedicated to create
+Vidu App
+An all-in-one collaborative creation app that brings imagination to life, anytime, anywhere.
+Product Plans
+Flexible plans tailored to your needs. Individual plans empower ",产品发布,1,否,Vidu AI,https://www.vidu.com/,,2026-10-27
+60483,AI&大模型,"AI&大模型
+ 收录了AI&大模型频道下的 17001 篇内容 
+关注 AIGC，跟踪科技公司、科研机构和IT产业在人工智能方向的最新动态，挖掘人工智能技术应用场景和商业化落地案例，重点关注该技术在金融、教育、医疗、交通、智慧城市等方向的应用。
+- 全部
+- 自动驾驶
+- 计算机视觉
+- 生成式 AI
+- AI 工程化
+- 机器学习/深度学习
+- 自然语言处理
+- 具身智能
+- 芯片&算力
+- 其",行业应用,1,否,InfoQ,https://www.infoq.cn/topic/AI,,2026-10-27
+60484,Kling AI: Next-Generation AI Creative Studio,"Kling AI Home
+创意圈
+资产
+Omni
+生成
+灵动画布
+全部工具",产品发布,1,否,快手可灵,https://kling.kuaishou.com/,,2026-10-27
+60485,"07:47 ETInfosys accompagne Syngenta dans sa transformation mondiale vers SAP S/4HANAInfosys (NSE: INFY) (BSE: INFY) (NYSE: INFY) , leader mondial du conseil et des services technologiques « AI-first », annonce aujourd'hui le...","Infosys (NSE: INFY) (BSE: INFY) (NYSE: INFY) , leader mondial du conseil et des services technologiques « AI-first », annonce aujourd'hui le...",企业动态,1,否,PR Newswire,http://www.prnewswire.com/news-releases/infosys-accompagne-syngenta-dans-sa-transformation-mondiale-vers-sap-s4hana-302920668.html,,2026-10-27
+60486,"07:36 ETInfosys schließt die weltweite SAP-S/4HANA-Umstellung für den Pflanzenschutzbereich von Syngenta erfolgreich abInfosys (NSE: INFY) (BSE: INFY) (NYSE: INFY), ein weltweit führender Anbieter von AI-first-Unternehmensberatung und Technologiedienstleistungen,...","Infosys (NSE: INFY) (BSE: INFY) (NYSE: INFY), ein weltweit führender Anbieter von AI-first-Unternehmensberatung und Technologiedienstleistungen,...",企业动态,1,否,PR Newswire,http://www.prnewswire.com/news-releases/infosys-schlieWt-die-weltweite-sap-s4hana-umstellung-fur-den-pflanzenschutzbereich-von-syngenta-erfolgreich-ab-302920659.html,,2026-10-27
+60487,"07:31 ETInfosys Successfully Delivers Syngenta's Global SAP S/4HANA Transformation for Crop Protection BusinessInfosys (NSE: INFY) (BSE: INFY) (NYSE: INFY), a global leader in AI-first business consulting and technology services, today announced the successful ...","Infosys (NSE: INFY) (BSE: INFY) (NYSE: INFY), a global leader in AI-first business consulting and technology services, today announced the successful ...",企业动态,3,是,PR Newswire,http://www.prnewswire.com/news-releases/infosys-successfully-delivers-syngentas-global-sap-s4hana-transformation-for-crop-protection-business-302920656.html,,2026-10-27
+60488,04:00 ETROKAE liefert seinen 10 000. humanoiden Roboterarm mit Kraftregelung ausROKAE Robotics (HKEX: 3752) hat seinen 10 000. humanoiden Roboterarm mit Kraftregelung ausgeliefert und damit einen Meilenstein beim kommerziellen...,ROKAE Robotics (HKEX: 3752) hat seinen 10 000. humanoiden Roboterarm mit Kraftregelung ausgeliefert und damit einen Meilenstein beim kommerziellen...,行业应用,2,否,PR Newswire,http://www.prnewswire.com/news-releases/rokae-liefert-seinen-10-000-humanoiden-roboterarm-mit-kraftregelung-aus-302918545.html,,2026-10-27
+60489,"04:00 ETROKAE entrega su brazo robótico humanoide número 10.000 con control de fuerzaROKAE Robotics (HKEX: 3752) ha entregado su brazo humanoide número 10.000 con control de fuerza, lo que supone un hito en el despliegue comercial de...","ROKAE Robotics (HKEX: 3752) ha entregado su brazo humanoide número 10.000 con control de fuerza, lo que supone un hito en el despliegue comercial de...",行业应用,2,否,PR Newswire,http://www.prnewswire.com/news-releases/rokae-entrega-su-brazo-robotico-humanoide-numero-10-000-con-control-de-fuerza-302918366.html,,2026-10-27
+60490,"04:00 ETROKAE livre son 10 000e bras humanoïde contrôlé par la forceROKAE Robotics (HKEX : 3752) a livré son 10 000e bras humanoïde contrôlé par la force, marquant une étape décisive dans le déploiement commercial de...","ROKAE Robotics (HKEX : 3752) a livré son 10 000e bras humanoïde contrôlé par la force, marquant une étape décisive dans le déploiement commercial de...",行业应用,2,否,PR Newswire,http://www.prnewswire.com/news-releases/rokae-livre-son-10-000e-bras-humanoide-controle-par-la-force-302918327.html,,2026-10-27
+60491,"Oct 26, 2026, 12:00 ETROKAE delivers its 10,000th humanoid force-controlled armROKAE Robotics (HKEX: 3752) has delivered its 10,000th humanoid force-controlled arm, marking a milestone in the commercial deployment of robotic...","ROKAE Robotics (HKEX: 3752) has delivered its 10,000th humanoid force-controlled arm, marking a milestone in the commercial deployment of robotic...",行业应用,2,否,PR Newswire,http://www.prnewswire.com/news-releases/rokae-delivers-its-10-000th-humanoid-force-controlled-arm-302918206.html,,2026-10-27
+60492,"Oct 26, 2026, 11:30 ETFF EAI Robotics Ecosystem Completed its Acquisition of the Robotics Business of Faraday Future, Establish Nasdaq-Listed Humanoid and Bionic Robotics PlatformFF EAI Robotics Ecosystem Inc. (""FFR"") (NASDAQ: FFR), a U.S.-based Embodied AI robotics company, and Faraday Future Intel","FF EAI Robotics Ecosystem Inc. (""FFR"") (NASDAQ: FFR), a U.S.-based Embodied AI robotics company, and Faraday Future Intelligent Electric Inc....",企业动态,2,否,PR Newswire,http://www.prnewswire.com/news-releases/ff-eai-robotics-ecosystem-completed-its-acquisition-of-the-robotics-business-of-faraday-future-establish-nasdaq-listed-humanoid-and-bionic-robotics-platform-302919475.html,,2026-10-27
+60493,"Oct 26, 2026, 08:00 ETNetSuite Advances Vision for an Autonomous SuiteSuiteWorld -- Oracle NetSuite, the #1 AI Cloud ERP, today announced new AI capabilities that help organizations apply business expertise, automate...","SuiteWorld -- Oracle NetSuite, the #1 AI Cloud ERP, today announced new AI capabilities that help organizations apply business expertise, automate...",产品发布,2,否,PR Newswire,http://www.prnewswire.com/news-releases/netsuite-advances-vision-for-an-autonomous-suite-302919139.html,,2026-10-27
+60494,"Oct 26, 2026, 08:00 ETAUTOCRYPT Highlights V2X Security Technologies and C-ITS Research Initiatives at ITS World Congress 2026AUTOCRYPT, a leading Physical AI security solutions provider, showcased its comprehensive Vehicle-to-Everything (V2X) security solutions, automotive...","AUTOCRYPT, a leading Physical AI security solutions provider, showcased its comprehensive Vehicle-to-Everything (V2X) security solutions, automotive...",行业应用,1,否,PR Newswire,http://www.prnewswire.com/news-releases/autocrypt-highlights-v2x-security-technologies-and-c-its-research-initiatives-at-its-world-congress-2026-302917770.html,,2026-10-27
+60495,"Oct 26, 2026, 07:05 ETCyngn Completes Inaugural SOC 2 Type II Examination with Zero Exceptions, Launches Enterprise Trust CenterCyngn (NASDAQ: CYN) today announced the successful completion of its SOC 2 Type II examination, with zero exceptions identified during the...","Cyngn (NASDAQ: CYN) today announced the successful completion of its SOC 2 Type II examination, with zero exceptions identified during the...",企业动态,2,否,PR Newswire,http://www.prnewswire.com/news-releases/cyngn-completes-inaugural-soc-2-type-ii-examination-with-zero-exceptions-launches-enterprise-trust-center-302918815.html,,2026-10-27
+60496,"Apr 13, 2026, 10:00 ETLucid Software integrates real-time visual context into ChatGPT with MCP server app","Lucid Software, the leader in AI-driven work acceleration, today announced the launch of its Lucid app for ChatGPT, which enables users to search, summarize, and generate Lucid documents directly in..",产品发布,3,是,PR Newswire,https://www.prnewswire.com/news-releases/telecommunications-latest-news/,,2026-10-27
+60497,"Jun 12, 2026, 13:05 ETRelativity Acquires Gavel to Extend its AI Platform for Legal Data Intelligence into Microsoft Word","Relativity, a legal data intelligence company, today announced its acquisition of Gavel, an AI-native legal technology company whose solutions are used by thousands of legal professionals to draft,...",企业动态,3,是,PR Newswire,https://www.prnewswire.com/news-releases/consumer-technology-latest-news/,,2026-10-27
+60498,"09:05 ETDFIN Announces Venue® MCP Connector, Bringing Secure AI Access to High-Stakes Deal WorkflowsDonnelley Financial Solutions (NYSE: DFIN), a leading global provider of financial regulatory and compliance solutions and the top SEC filing agent,...","Donnelley Financial Solutions (NYSE: DFIN), a leading global provider of financial regulatory and compliance solutions and the top SEC filing agent,...",产品发布,1,否,PR Newswire,https://www.prnewswire.com/news-releases/dfin-announces-venue-mcp-connector-bringing-secure-ai-access-to-high-stakes-deal-workflows-302920124.html,,2026-10-27
+60499,"09:05 ETStrider Names Vassili Patrikis Chief Technology & AI OfficerStrider Technologies, Inc. (""Strider""), the leading provider of strategic intelligence, today announced that Vassili Patrikis, former Chief AI & Data ...","Strider Technologies, Inc. (""Strider""), the leading provider of strategic intelligence, today announced that Vassili Patrikis, former Chief AI & Data ...",人才市场,1,否,PR Newswire,https://www.prnewswire.com/news-releases/strider-names-vassili-patrikis-chief-technology--ai-officer-302919798.html,,2026-10-27
+60500,"09:03 ET96% of Enterprises Say Their Networks Are Slowing Down AIEnterprises are spending heavily to deploy AI, but the networks connecting that infrastructure are struggling to keep up. Nearly all respondents...","Enterprises are spending heavily to deploy AI, but the networks connecting that infrastructure are struggling to keep up. Nearly all respondents...",芯片与算力,2,否,PR Newswire,https://www.prnewswire.com/news-releases/96-of-enterprises-say-their-networks-are-slowing-down-ai-302919508.html,,2026-10-27
+60501,"09:01 ETVensure Employer Solutions Launches AI Orchestrator to Help SMBs Manage the Digital WorkforceVensure Employer Solutions, a leading provider of HR/HCM technology, managed services, and global business process outsourcing, today announced the...","Vensure Employer Solutions, a leading provider of HR/HCM technology, managed services, and global business process outsourcing, today announced the...",产品发布,2,否,PR Newswire,https://www.prnewswire.com/news-releases/vensure-employer-solutions-launches-ai-orchestrator-to-help-smbs-manage-the-digital-workforce-302919850.html,,2026-10-27
+60502,"09:00 ET78% of Enterprises Have Pulled Permissions From an AI Agent Already in ProductionSeventy-eight percent of CISOs and CSOs say their organizations have pulled permissions from an AI agent already running in production, according to...","Seventy-eight percent of CISOs and CSOs say their organizations have pulled permissions from an AI agent already running in production, according to...",安全伦理,3,是,PR Newswire,https://www.prnewswire.com/news-releases/78-of-enterprises-have-pulled-permissions-from-an-ai-agent-already-in-production-302920128.html,,2026-10-27
+60503,"09:00 ETVirtusa Named a Global Leader in the 2026 ISG Provider Lens® Agentic AI Services ReportVirtusa, a global AI-native engineering services company, today announced it has been named a Leader in the ISG Provider Lens® Agentic AI Services...","Virtusa, a global AI-native engineering services company, today announced it has been named a Leader in the ISG Provider Lens® Agentic AI Services...",企业动态,1,否,PR Newswire,https://www.prnewswire.com/news-releases/virtusa-named-a-global-leader-in-the-2026-isg-provider-lens-agentic-ai-services-report-302920619.html,,2026-10-27
+60504,"09:00 ETTredence Named as an Industry Leader in ISG Provider Lens® Agentic AI ServicesTredence, a leading AI and data science company, has been recognized as a Leader in the inaugural 2026 ISG Provider Lens® Agentic AI Services...","Tredence, a leading AI and data science company, has been recognized as a Leader in the inaugural 2026 ISG Provider Lens® Agentic AI Services...",企业动态,1,否,PR Newswire,https://www.prnewswire.com/news-releases/tredence-named-as-an-industry-leader-in-isg-provider-lens-agentic-ai-services-302920640.html,,2026-10-27
+60505,"09:00 ETInsight Partners Launches Empower, a Structured Path for Global 2000 CIOs to Prepare for Board and Advisory RolesInsight Partners, a leading AI and software investor, today announced Empower, a program that helps Global 2000 CIOs plan and prepare for board...","Insight Partners, a leading AI and software investor, today announced Empower, a program that helps Global 2000 CIOs plan and prepare for board...",企业动态,3,是,PR Newswire,https://www.prnewswire.com/news-releases/insight-partners-launches-empower-a-structured-path-for-global-2000-cios-to-prepare-for-board-and-advisory-roles-302919855.html,,2026-10-27
+60506,"09:00 ETOmnilert Introduces Dual-AI Platform to Deliver Context-Aware, Tailored Gun Detection for CustomersOmnilert, the leading provider of AI-powered gun detection and automated emergency response technology, today introduced a next-generation dual-AI...","Omnilert, the leading provider of AI-powered gun detection and automated emergency response technology, today introduced a next-generation dual-AI...",产品发布,1,否,PR Newswire,https://www.prnewswire.com/news-releases/omnilert-introduces-dual-ai-platform-to-deliver-context-aware-tailored-gun-detection-for-customers-302920363.html,,2026-10-27
+60507,"09:00 ETiboss Named a Leader in the GigaOm Radar for Zero Trust Network AccessSecurity teams need AI defenses, data protection, and application control on one platform, with Zero Trust Network Access built into that same stack. ...","Security teams need AI defenses, data protection, and application control on one platform, with Zero Trust Network Access built into that same stack. ...",安全伦理,1,否,PR Newswire,https://www.prnewswire.com/news-releases/iboss-named-a-leader-in-the-gigaom-radar-for-zero-trust-network-access-302920382.html,,2026-10-27
+60508,"08:42 ETSymbolic Mind Collaborates With Intel to Bring AI Training, Not Just Inference, to CPU-Based Server InfrastructureSymbolic Mind, Inc., an enterprise AI platform company, today announced plans to bring Charm AI to enterprises that need to train and run models...","Symbolic Mind, Inc., an enterprise AI platform company, today announced plans to bring Charm AI to enterprises that need to train and run models...",企业动态,2,否,PR Newswire,https://www.prnewswire.com/news-releases/symbolic-mind-collaborates-with-intel-to-bring-ai-training-not-just-inference-to-cpu-based-server-infrastructure-302919727.html,,2026-10-27
+60509,"08:30 ETCato Networks Launches Cato AI Endpoint to Secure AI Use Beyond the BrowserCato Networks, the converged network and security cloud for the AI era, today announced the launch of Cato AI Endpoint, a new endpoint client that...","Cato Networks, the converged network and security cloud for the AI era, today announced the launch of Cato AI Endpoint, a new endpoint client that...",产品发布,3,是,PR Newswire,https://www.prnewswire.com/news-releases/cato-networks-launches-cato-ai-endpoint-to-secure-ai-use-beyond-the-browser-302919573.html,,2026-10-27
+60510,"09:00 ET82% of Procurement Leaders Say AI and Digital Fluency Will Be the Most Needed Skill in 2030. Only 28% Say Their Teams Are ReadyProcurement teams are facing a critical training and capability gap that threatens businesses' ability to reduce costs, drive productivity and...","Procurement teams are facing a critical training and capability gap that threatens businesses' ability to reduce costs, drive productivity and...",人才市场,2,否,PR Newswire,https://www.prnewswire.com/news-releases/82-of-procurement-leaders-say-ai-and-digital-fluency-will-be-the-most-needed-skill-in-2030-only-28-say-their-teams-are-ready-302919896.html,,2026-10-27
+60511,08:58 ETAMPERA AND IMPERIAL COLLEGE LONDON PARTNER TO DEVELOP PHYSICS-GROUNDED AI PLATFORM FOR ADVANCED ENERGY SYSTEMSAdvanced energy company AMPERA today announced a strategic ~$9 million / £7 million multi-year partnership with global research leader Imperial...,Advanced energy company AMPERA today announced a strategic ~$9 million / £7 million multi-year partnership with global research leader Imperial...,企业动态,2,否,PR Newswire,https://www.prnewswire.com/news-releases/ampera-and-imperial-college-london-partner-to-develop-physics-grounded-ai-platform-for-advanced-energy-systems-302920762.html,,2026-10-27
+60512,"14:30 ISTShoppers Are Turning Chargebacks Into a Customer Service Hotline, Justt Chargeback Benchmark Report FindsConsumers are less and less disputing credit card charges with the line ""I didn't make this purchase."" Justt, the AI-native pioneer in chargeback...","Consumers are less and less disputing credit card charges with the line ""I didn't make this purchase."" Justt, the AI-native pioneer in chargeback...",行业应用,1,否,PR Newswire,https://www.prnewswire.com/il/news-releases/shoppers-are-turning-chargebacks-into-a-customer-service-hotline-justt-chargeback-benchmark-report-finds-302919550.html,,2026-10-27
+60513,"26 Oct, 2026, 18:16 ISTAkeyless Recognized in the 2026 Gartner® Magic Quadrant™ for Privileged Access ManagementAkeyless, a Runtime Identity Security company protecting enterprise systems and data by securing AI agents, machines, and human identities, today...","Akeyless, a Runtime Identity Security company protecting enterprise systems and data by securing AI agents, machines, and human identities, today...",安全伦理,1,否,PR Newswire,https://www.prnewswire.com/il/news-releases/akeyless-recognized-in-the-2026-gartner-magic-quadrant-for-privileged-access-management-302919581.html,,2026-10-27
+60514,"26 Oct, 2026, 15:00 ISTConifers Named in AI SOC Agents Category in the Gartner® Hype Cycle™ for AI-Driven Cybersecurity, 2026Conifers, developer of the CognitiveSOC™ agentic AI SOC platform, today announced that it has been named a Sample Vendor for AI SOC Agents in the...","Conifers, developer of the CognitiveSOC™ agentic AI SOC platform, today announced that it has been named a Sample Vendor for AI SOC Agents in the...",行业应用,1,否,PR Newswire,https://www.prnewswire.com/il/news-releases/conifers-named-in-ai-soc-agents-category-in-the-gartner-hype-cycle-for-ai-driven-cybersecurity-2026-302919328.html,,2026-10-27
+60515,"26 Oct, 2026, 14:30 ISTDario Expands Contract with a Leading Regional Grocery Retailer, Adding Women's Digital Health and Clinical Care ProgramDarioHealth Corp. (NASDAQ: DRIO) (the ""Company"", ""DarioHealth"" or ""Dario""), a leading AI-powered healthcare technology company transforming the...","DarioHealth Corp. (NASDAQ: DRIO) (the ""Company"", ""DarioHealth"" or ""Dario""), a leading AI-powered healthcare technology company transforming the...",行业应用,1,否,PR Newswire,https://www.prnewswire.com/il/news-releases/dario-expands-contract-with-a-leading-regional-grocery-retailer-adding-womens-digital-health-and-clinical-care-program-302917540.html,,2026-10-27
+60516,"26 Oct, 2026, 14:00 ISTEvogene to Participate in Upcoming BIO-Europe in Germany and Drug Discovery Chemistry Europe in SpainEvogene Ltd. (NASDAQ: EVGN) (TASE: EVGN), pioneering company in computational chemistry specializing in AI-based generative design of small molecules ...","Evogene Ltd. (NASDAQ: EVGN) (TASE: EVGN), pioneering company in computational chemistry specializing in AI-based generative design of small molecules ...",企业动态,1,否,PR Newswire,https://www.prnewswire.com/il/news-releases/evogene-to-participate-in-upcoming-bio-europe-in-germany-and-drug-discovery-chemistry-europe-in-spain-302919154.html,,2026-10-27
+60517,"26 Oct, 2026, 13:00 ISTCompugen to Release Third Quarter 2026 Results on Monday, November 9, 2026Compugen Ltd. (NASDAQ: CGEN) (TASE: CGEN), a clinical-stage cancer immunotherapy company and a pioneer in computational drug target discovery powered ...","Compugen Ltd. (NASDAQ: CGEN) (TASE: CGEN), a clinical-stage cancer immunotherapy company and a pioneer in computational drug target discovery powered ...",企业动态,1,否,PR Newswire,https://www.prnewswire.com/il/news-releases/compugen-to-release-third-quarter-2026-results-on-monday-november-9-2026-302919100.html,,2026-10-27
+60518,"26 Oct, 2026, 03:00 ISTTin Men Capital leads US$7.4M Series A for Vision AI startup Ailytics to expand across APAC, US and GulfAilytics, a vision AI startup that turns existing industrial CCTV into a real-time safety and operations layer, has raised US$7.4 million in a Series ...","Ailytics, a vision AI startup that turns existing industrial CCTV into a real-time safety and operations layer, has raised US$7.4 million in a Series ...",投融资,2,否,PR Newswire,https://www.prnewswire.com/il/news-releases/tin-men-capital-leads-us7-4m-series-a-for-vision-ai-startup-ailytics-to-expand-across-apac-us-and-gulf-302918676.html,,2026-10-27
+60519,Understanding the beginning of advertising on ChatGPT,"Sorelle Friedler, 																				Emma Lurie, 																				Danaé Metaxa October 26, 2026",行业应用,3,是,布鲁金斯学会,https://www.brookings.edu/articles/understanding-the-beginning-of-advertising-on-chatgpt/,"October 26, 2026",2026-10-27
+60520,Featured Insights and Perspectives,"[Featured Topics](#)
+- Artificial Intelligence
+- CEO Agenda
+- Cost Management
+[Capabilities](#)
+- Artificial Intelligence
+- Generative AI
+- AI Agents
+- Responsible AI
+- Business Resilience
+- Business ",行业应用,1,否,波士顿咨询BCG,https://www.bcg.com/publications,"October 27, 2026",2026-10-27
