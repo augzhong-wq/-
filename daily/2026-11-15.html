@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人工智能动态简报 - 2026年11月15日</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "SimSun", "宋体", "Microsoft YaHei", serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 40px 50px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .header-line { border-top: 3px solid #8B0000; margin-bottom: 30px; }
+        .report-title {
+            text-align: center;
+            color: #8B0000;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            margin-bottom: 5px;
+        }
+        .report-subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+        .report-meta {
+            text-align: center;
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .section-divider { border-top: 2px solid #8B0000; margin: 25px 0 20px; }
+        .category-title {
+            color: #8B0000;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .category-divider { border-top: 1px solid #ccc; margin-bottom: 15px; }
+        .article-item {
+            margin-bottom: 18px;
+            padding-bottom: 15px;
+            border-bottom: 1px dotted #e0e0e0;
+        }
+        .article-item:last-child { border-bottom: none; }
+        .article-header { margin-bottom: 5px; }
+        .importance { color: #DAA520; font-size: 13px; margin-right: 5px; }
+        .article-title { font-weight: bold; color: #003366; font-size: 15px; }
+        .article-summary {
+            font-size: 14px;
+            color: #444;
+            line-height: 1.7;
+            margin: 5px 0;
+            text-indent: 2em;
+        }
+        .article-meta { font-size: 12px; color: #999; }
+        .source-link {
+            color: #003366;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+        .source-link:hover { text-decoration: underline; }
+        .footer-section {
+            border-top: 2px solid #8B0000;
+            margin-top: 30px;
+            padding-top: 15px;
+        }
+        .footer-title { color: #8B0000; font-size: 14px; font-weight: bold; margin-bottom: 8px; }
+        .footer-text { font-size: 13px; color: #666; line-height: 1.6; }
+        @media (max-width: 600px) {
+            .container { padding: 20px 15px; margin: 10px; }
+            .report-title { font-size: 22px; }
+        }
+        
+.highlights-section {
+    background: #fdf6f0;
+    border-left: 4px solid #8B0000;
+    padding: 15px 20px;
+    margin: 20px 0;
+}
+.highlights-title {
+    color: #8B0000;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.highlights-list {
+    list-style: none;
+    padding: 0;
+}
+.highlights-list li {
+    padding: 4px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-line"></div>
+        
+<h1 class="report-title">人工智能动态简报</h1>
+<p class="report-subtitle">AI DAILY INTELLIGENCE BRIEF</p>
+<div class="report-meta">
+    2026年11月15日 星期日 &nbsp;&nbsp; 第319期
+</div>
+
+
+<div class="highlights-section">
+    <h2 class="highlights-title">【本期要点】</h2>
+    <ul class="highlights-list">
+        
+        <li>▸ 智谱发布GLM-5.3及ZCode全栈体系，支持1M上下文，主攻编程与网络安全能力。</li>
+        
+        <li>▸ AI智能体初创公司LangChain估值达30亿美元，资本市场持续看好智能体开发框架赛道。</li>
+        
+        <li>▸ 马斯克旗下SpaceX计划投入超740亿美元建设超级算力设施，拓展AI算力布局。</li>
+        
+        <li>▸ 黄仁勋宣布告别，业界担忧AI初创企业融资环境受到显著影响。</li>
+        
+        <li>▸ 腾讯辟谣裁员50%传闻，创业板今年最大规模IPO落地。</li>
+        
+    </ul>
+</div>
+
+
+<div class="section-divider"></div>
+
+
+
+
+    
+    
+    <div class="category-section">
+        <h2 class="category-title">一、技术突破</h2>
+        <div class="category-divider"></div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">谷歌发布SIMA 2智能体，可在虚拟3D世界中游玩、推理并学习</span>
+            </div>
+            <p class="article-summary">Alphabet旗下谷歌发布SIMA 2智能体，可在虚拟3D世界中与用户共同游玩、推理和学习，体现其在具身智能与通用智能体方向的研究进展。</p>
+            <div class="article-meta">
+                来源：Apple | 2026-11-15
+                <a href="https://machinelearning.apple.com/research/large-scale-rnns" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">微软发布Agent Lightning v1.0，3500行代码实现轻量级智能体强化学习框架</span>
+            </div>
+            <p class="article-summary">微软推出Agent Lightning v1.0，以约3500行代码构建轻量级智能体强化学习框架，可将现有智能体接入强化学习训练流程，解决工具调用、上下文管理与决策过程由复杂框架掌控带来的训练难题，降低智能体强化学习门槛。</p>
+            <div class="article-meta">
+                来源：Microsoft | 2026-11-15
+                <a href="https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">微软研究：将AI推理移出机器人本体可提升任务成功率与效率</span>
+            </div>
+            <p class="article-summary">微软研究结果显示，把AI推理环节从机器人硬件转移至外部计算平台，可提升任务成功率与运行效率，为物理AI机器人在硬件能力受限条件下实现更智能表现提供新路径。</p>
+            <div class="article-meta">
+                来源：Microsoft | 2026-11-15
+                <a href="https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">微软发布Aurora 1.5，扩展天气与地球系统开放基础模型</span>
+            </div>
+            <p class="article-summary">微软发布Aurora 1.5，进一步扩展面向天气与地球系统应用的开放基础模型，提升模型在相关场景的适用能力，为气象预报和地球系统研究提供开放基础支撑。</p>
+            <div class="article-meta">
+                来源：Microsoft | 2026-11-15
+                <a href="https://www.microsoft.com/en-us/research/blog/aurora-1-5-extending-open-foundation-models-for-weather-and-earth-system-applications/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">TIER IV开源端到端自动驾驶技术，可适配不同地图信息与传感器配置</span>
+            </div>
+            <p class="article-summary">TIER IV发布并开源端到端自动驾驶技术，可适配多种地图信息与传感器配置，依托其主导的Autoware开源软件生态，降低自动驾驶系统开发与部署门槛。</p>
+            <div class="article-meta">
+                来源：PR Newswire | 2026-11-15
+                <a href="http://www.prnewswire.com/news-releases/tier-iv-unveils-end-to-end-autonomous-driving-adaptable-to-map-information-and-sensor-configurations-302935963.html" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    
+    
+    <div class="category-section">
+        <h2 class="category-title">二、产品发布</h2>
+        <div class="category-divider"></div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★</span>
+                <span class="article-title">黄仁勋离职重创AI初创融资，风投与创始人称资金缺口显著</span>
+            </div>
+            <p class="article-summary">据TechCrunch报道，英伟达CEO黄仁勋的离职在AI初创企业融资领域形成重大缺口，风险投资机构与创始人均表示，其离任对AI创业生态的资金供给造成明显冲击，具体影响幅度尚待进一步评估。</p>
+            <div class="article-meta">
+                来源：Anthropic | 2026-11-15
+                <a href="https://claude.com/blog" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★</span>
+                <span class="article-title">高盛报告：政府债务、人口结构与AI驱动慈善格局变化，财富客户调整资本配置</span>
+            </div>
+            <p class="article-summary">高盛AI研究发布新报告，分析在政府债务、人口结构及AI驱动的慈善格局变化背景下，高盛财富客户如何配置资本，周度通讯同步提供相关洞察。</p>
+            <div class="article-meta">
+                来源：Apple | 2026-11-15
+                <a href="https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★</span>
+                <span class="article-title">谷歌发布 Gemini 4 Hydrogen 模型：主打日常编程与智能体工作流，百万 Token 输入 1.5 美元</span>
+            </div>
+            <p class="article-summary"></p>
+            <div class="article-meta">
+                来源：IT之家 | 2026-11-15
+                <a href="https://www.ithome.com/1/026/446.htm" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★</span>
+                <span class="article-title">李飞飞世界模型正式开放，一句话即可生成重庆山城场景</span>
+            </div>
+            <p class="article-summary">李飞飞团队的世界模型正式对外开放，用户通过一句话指令即可生成重庆山城场景，展示出较强的空间与场景生成能力。</p>
+            <div class="article-meta">
+                来源：APPSO | 2026-11-13
+                <a href="https://www.ifanr.com/1689379" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★</span>
+                <span class="article-title">谷歌发布Gemini 4新模型并面向全体用户开放，AI大模型竞争进一步升温</span>
+            </div>
+            <p class="article-summary">据APPSO报道，谷歌刚刚推出Gemini 4新模型，并首次实现人人可用。此举标志谷歌在大模型产品化与用户覆盖上进一步提速，或将加剧与OpenAI等厂商的竞争，具体性能指标尚未披露。</p>
+            <div class="article-meta">
+                来源：APPSO | 2026-11-13
+                <a href="https://www.ifanr.com/1689267" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">马斯克等十余家顶尖团队联合，年产2000万亿Token成本降70%，比亚迪第1900万辆下线</span>
+            </div>
+            <p class="article-summary">量子位资讯汇总：斯坦福、哈佛、康奈尔等十余家顶尖团队联合，马斯克亦签名；年产2000万亿Token、成本下降70%；官方App功能可自由组合调用；250名三甲医院医生联合评测；比亚迪第1900万辆新能源汽车在西安工厂下线，规模优势正转化为技术与品牌价值。</p>
+            <div class="article-meta">
+                来源：机器之心 | 2026-11-15
+                <a href="https://www.jiqizhixin.com/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">Product Build and deploy enter...</span>
+            </div>
+            <p class="article-summary">Product Build and deploy enterprise agents, workflows and apps faster, with control over your models, data and infrastructure.</p>
+            <div class="article-meta">
+                来源：Mistral AI | 2026-11-15
+                <a href="https://mistral.ai/news?category=research" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">AI 接管手机迈出关键一步：谷歌 Gemini 自动化应用名单曝光，当前共计 134 款</span>
+            </div>
+            <p class="article-summary"></p>
+            <div class="article-meta">
+                来源：IT之家 | 2026-11-15
+                <a href="https://www.ithome.com/1/026/752.htm" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">你好 我是 ZCode</span>
+            </div>
+            <p class="article-summary">GLM模型
+新一代大模型全栈技术体系
+GLM-5.3
+GLM-5.3
+GLM-5.3：前沿编程能力与涌现的网络安全能力。面向复杂软件工程与长程智能体任务，支持 1M 上下文。
+GLM-5V-Turbo
+迈向原生多模态的Agent基座
+GLM-5-Turbo
+专为龙虾场景打造的</p>
+            <div class="article-meta">
+                来源：智谱AI官方 | 2026-11-15
+                <a href="https://zhipu.ai/news" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">The agentic launches that stay...</span>
+            </div>
+            <p class="article-summary">The agentic launches that stayed with me last week had nothing to do with how capable a model is. They were about reach. AWS Step Functions, which alr</p>
+            <div class="article-meta">
+                来源：Amazon/AWS | 2026-11-15
+                <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    
+    
+    <div class="category-section">
+        <h2 class="category-title">三、企业动态</h2>
+        <div class="category-divider"></div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★★</span>
+                <span class="article-title">投资界24h：黄仁勋宣布告别，腾讯辟谣裁员50%，创业板今年最大IPO落地</span>
+            </div>
+            <p class="article-summary">黄仁勋宣布告别；腾讯辟谣裁员50%的传闻；创业板迎来今年最大规模IPO。</p>
+            <div class="article-meta">
+                来源：投资界 | 2026-11-13 08:47
+                <a href="https://news.pedaily.cn/202611/571790.shtml" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★★</span>
+                <span class="article-title">马斯克裁撤整个多模态团队</span>
+            </div>
+            <p class="article-summary">马斯克裁掉了整个多模态团队，具体裁员规模及后续业务安排尚未披露。</p>
+            <div class="article-meta">
+                来源：投资界 | 2026-11-13 07:20
+                <a href="https://news.pedaily.cn/202611/571780.shtml" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★</span>
+                <span class="article-title">黄仁勋最激进 AI 赌局的“刹车手”：英伟达临时 CEO 克雷斯曾力主削减 2500 亿美元 OpenAI 豪赌</span>
+            </div>
+            <p class="article-summary"></p>
+            <div class="article-meta">
+                来源：IT之家 | 2026-11-15
+                <a href="https://www.ithome.com/1/026/478.htm" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★</span>
+                <span class="article-title">英伟达员工内网投票超97%请命，希望黄仁勋回归担任CEO</span>
+            </div>
+            <p class="article-summary">英伟达员工在内网发起投票，超过97%的参与者希望黄仁勋回归出任CEO，员工称“英伟达就是黄仁勋”。</p>
+            <div class="article-meta">
+                来源：投资界 | 2026-11-14 10:55
+                <a href="https://news.pedaily.cn/202611/571849.shtml" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★</span>
+                <span class="article-title">黄仁勋辞职背后：Anthropic的4000万美元捐款流向引发关注</span>
+            </div>
+            <p class="article-summary">黄仁勋辞职事件背后，Anthropic一笔4000万美元捐款的流向受到关注，报道追问该笔资金的接收方。</p>
+            <div class="article-meta">
+                来源：投资界 | 2026-11-14 10:51
+                <a href="https://news.pedaily.cn/202611/571848.shtml" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★</span>
+                <span class="article-title">黄仁勋自嘲“人渣”引英伟达员工集体喊话求回归，管理层人事动向受关注</span>
+            </div>
+            <p class="article-summary">据APPSO报道，英伟达首席执行官黄仁勋在内部场合自嘲为“人渣”，引发员工集体喊话希望其回归管理一线。事件反映公司高层人事安排与治理动态受到内部高度关注，具体背景及后续影响尚待进一步披露。</p>
+            <div class="article-meta">
+                来源：APPSO | 2026-11-13
+                <a href="https://www.ifanr.com/1689360" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">NVIDIA Expands Open Source Commitment With OpenShell Contribution and New AI Infrastructure</span>
+            </div>
+            <p class="article-summary"></p>
+            <div class="article-meta">
+                来源：NVIDIA | 2026-11-15
+                <a href="https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">黄仁勋仍为英伟达最大个人股东，豆包工作接入多款第三方模型，微信“看一看”测试短剧入口</span>
+            </div>
+            <p class="article-summary">据APPSO早报，黄仁勋仍为英伟达最大个人股东；豆包工作已接入多款第三方模型；微信“看一看”正测试短剧入口。三条动态分别涉及英伟达股权结构、AI办公平台生态扩展及微信内容分发形态调整。</p>
+            <div class="article-meta">
+                来源：APPSO | 2026-11-13
+                <a href="https://www.ifanr.com/1689292" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    
+    
+    <div class="category-section">
+        <h2 class="category-title">四、政策监管</h2>
+        <div class="category-divider"></div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★★</span>
+                <span class="article-title">智谱发布GLM-5.3及ZCode全栈体系，支持1M上下文主攻编程与网安</span>
+            </div>
+            <p class="article-summary">智谱AI推出新一代大模型全栈技术体系，核心模型GLM-5.3面向复杂软件工程与长程智能体任务，支持1M上下文，具备前沿编程与涌现的网络安全能力；同步发布原生多模态Agent基座GLM-5V-Turbo及深度优化工具调用与长链路执行的GLM-5-Turbo，并推出ZCode。</p>
+            <div class="article-meta">
+                来源：欧盟AI Office | 2026-11-15
+                <a href="https://digital-strategy.ec.europa.eu/en/news/commission-invites-views-draft-revised-election-guidelines-under-digital-services-act" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★★</span>
+                <span class="article-title">AI智能体初创LangChain估值达30亿美元</span>
+            </div>
+            <p class="article-summary">据TechCrunch报道，AI智能体初创公司LangChain估值达到30亿美元，反映资本市场对智能体开发框架赛道的持续看好，具体融资轮次与金额未在标题信息中披露。</p>
+            <div class="article-meta">
+                来源：EU AI Act | 2026-11-15
+                <a href="https://digital-strategy.ec.europa.eu/en/library/first-harmonised-standard-supporting-ai-act-published-official-journal" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★</span>
+                <span class="article-title">Asian governments react to Nvidia CEO Jensen Huang’s exit</span>
+            </div>
+            <p class="article-summary"></p>
+            <div class="article-meta">
+                来源：TechCrunch | 2026-11-14
+                <a href="https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">亚洲多国政府就英伟达CEO黄仁勋离职作出反应</span>
+            </div>
+            <p class="article-summary">据TechCrunch报道，亚洲多国政府对英伟达CEO黄仁勋离职一事作出回应，涉及区域AI产业政策与供应链布局等关切，具体表态内容有待进一步披露。</p>
+            <div class="article-meta">
+                来源：EU AI Act | 2026-11-15
+                <a href="https://digital-strategy.ec.europa.eu/en/library/requirements-qualified-independent-external-evaluators-general-purpose-ai-models" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">谷歌反垄断案避免拆分，Anthropic以每本书3000美元和解训练诉讼</span>
+            </div>
+            <p class="article-summary">谷歌在反垄断案中免于被拆分；OpenAI接近达成期待已久的治理结构变更；Anthropic就训练数据版权诉讼达成和解，按每本书3000美元向作者支付赔偿。新研究引发业界担忧。</p>
+            <div class="article-meta">
+                来源：Georgetown CSET | 2026-11-15
+                <a href="https://cset.georgetown.edu/newsletters/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">加拿大推出国家人工智能素养计划，年底前向全民提供免费课程</span>
+            </div>
+            <p class="article-summary">据CityTV 9月10日报道，加拿大公布国家人工智能素养计划，将于今年年底前向所有人提供免费课程。该计划旨在提升公众AI认知与应用能力，是加拿大国家级AI普及教育的重要举措。</p>
+            <div class="article-meta">
+                来源：Amii | 2026-11-15
+                <a href="https://youtu.be/Jyx2IPD0bks?si=nWCpI2K5a7f_ueaK" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">加拿大启动国家人工智能素养计划，面向全民免费开放AI课程</span>
+            </div>
+            <p class="article-summary">据Human Resources Director 9月10日报道，加拿大正式启动国家人工智能素养计划。计划以免费课程形式向全体公众开放，重点提升劳动力AI技能，服务国家AI战略与人力资源发展需求。</p>
+            <div class="article-meta">
+                来源：Amii | 2026-11-15
+                <a href="https://www.hcamag.com/ca/specialization/transformation/canada-launches-national-ai-literacy-initiative/589341" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">加拿大发布国家人工智能素养计划，年底前免费课程覆盖全民</span>
+            </div>
+            <p class="article-summary">据Betakit 9月9日报道，加拿大发布国家人工智能素养计划，承诺年底前向所有人提供免费课程。该计划聚焦全民AI基础能力建设，体现加拿大在AI教育普及方面的政策布局。</p>
+            <div class="article-meta">
+                来源：Amii | 2026-11-15
+                <a href="https://betakit.com/canada-unveils-national-ai-literacy-initiative/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">布鲁金斯学会探讨美中AI安全对话下一步走向</span>
+            </div>
+            <p class="article-summary">布鲁金斯学会发布分析，聚焦美中人工智能安全对话的后续走向，梳理双方沟通机制现状与分歧，并就下一阶段对话议题与推进路径提出观察。</p>
+            <div class="article-meta">
+                来源：布鲁金斯学会 | November232026
+                <a href="https://www.brookings.edu/events/what-is-next-for-the-us-china-ai-safety-dialogue/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    
+    
+    <div class="category-section">
+        <h2 class="category-title">五、投融资</h2>
+        <div class="category-divider"></div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">AI agent startup LangChain hits $3B valuation</span>
+            </div>
+            <p class="article-summary"></p>
+            <div class="article-meta">
+                来源：TechCrunch | 2026-11-13
+                <a href="https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    
+    
+    <div class="category-section">
+        <h2 class="category-title">六、研究前沿</h2>
+        <div class="category-divider"></div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★</span>
+                <span class="article-title">An agent that plays, reasons, ...</span>
+            </div>
+            <p class="article-summary">An agent that plays, reasons, and learns with you in virtual 3D worlds.</p>
+            <div class="article-meta">
+                来源：Alphabet/Google | 2026-11-15
+                <a href="https://deepmind.google/research/projects/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">谷歌研究：跨领域研究成果赋能数十亿用户，共享工具推动领域进步</span>
+            </div>
+            <p class="article-summary">Alphabet旗下谷歌研究表示，其团队依托跨领域研究进展构建影响数十亿人的工具与技术，共享研究成果与工具以推动领域进步是其核心方法。</p>
+            <div class="article-meta">
+                来源：Apple | 2026-11-15
+                <a href="https://machinelearning.apple.com/research/the-super-weight" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">Our teams leverage research de...</span>
+            </div>
+            <p class="article-summary">Our teams leverage research developments across domains to build tools and technology that impact billions of people. Sharing our learnings and tools</p>
+            <div class="article-meta">
+                来源：Alphabet/Google | 2026-11-15
+                <a href="https://research.google/resources/our-projects/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">微软研究揭示价值型模仿学习中交互作用的表征权衡，成果入选NeurIPS 2026</span>
+            </div>
+            <p class="article-summary">微软研究人员在NeurIPS 2026发表论文，系统分析价值型模仿学习中交互何时有益，揭示其表征权衡机制。研究为理解交互式学习与模仿学习的适用边界提供理论依据，对强化学习与智能体训练具有参考价值。</p>
+            <div class="article-meta">
+                来源：Microsoft | 2026-11-15
+                <a href="https://www.microsoft.com/en-us/research/publication/when-does-interaction-help-representational-tradeoffs-in-value-based-imitation-learning/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">微软推出AI研究系统Quine，构建生物学多模态世界模型</span>
+            </div>
+            <p class="article-summary">微软发布早期研究项目Quine，旨在构建面向生物学复杂性的多模态世界模型，通过跨生物层级连接洞察，打破学科壁垒，推动AI对生物系统的整体性表征，为生命科学研究提供新工具。</p>
+            <div class="article-meta">
+                来源：Microsoft | 2026-11-15
+                <a href="https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    
+    
+    <div class="category-section">
+        <h2 class="category-title">七、行业应用</h2>
+        <div class="category-divider"></div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">扫码关注量子位
+信息少传80%</span>
+            </div>
+            <p class="article-summary">扫码关注量子位
+信息少传80%，准确率反而提高
+老黄出轨认错、再曝婚外恋
+最早量产的亲自泼冷水
+两位CTO，关起门来吵架
+Momenta世界模型上车
+理想今年最后一场发布会，自研电池芯片全部上车
+斯坦福伯克利宗师组团，贝索斯红杉抢着送钱
+擎天柱将复制FSD训练思路
+FSD一年增长70万付费用户
+电池</p>
+            <div class="article-meta">
+                来源：量子位 | 昨天 14:29
+                <a href="https://www.qbitai.com/category/auto" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">扫码关注量子位
+马斯克也签名了
+斯坦福、哈佛、康奈尔……十余家顶尖团队齐坐一桌了
+童年的纸飞机</span>
+            </div>
+            <p class="article-summary">扫码关注量子位
+马斯克也签名了
+斯坦福、哈佛、康奈尔……十余家顶尖团队齐坐一桌了
+童年的纸飞机，现在终于飞回我手里～
+年产2000万亿Token，成本狂降70%
+狂揽3000万播放量
+官方App功能均可自由组合调用
+一个时代结束了
+12.9 北京，来MEET2027现场
+250名国内顶尖三甲医院医生</p>
+            <div class="article-meta">
+                来源：量子位 | 昨天 18:08
+                <a href="https://www.qbitai.com/category/%e8%b5%84%e8%ae%af" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">In a new report, read how Gold...</span>
+            </div>
+            <p class="article-summary">In a new report, read how Goldman Sachs Wealth clients are allocating capital amid a changing philanthropic landscape driven by government debt, demog</p>
+            <div class="article-meta">
+                来源：Goldman Sachs AI研究 | 2026-11-15
+                <a href="https://www.goldmansachs.com/insights" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">FAA将AI辅助工具扩展至全美空域，用于管理空中交通拥堵</span>
+            </div>
+            <p class="article-summary">美国联邦航空管理局将该AI工具的应用范围扩大至全美空域，以缓解空中交通拥堵。航空公司对该工具表示赞赏，但空中交通管制员工会未参与相关决策过程。</p>
+            <div class="article-meta">
+                来源：Ars Technica | 2026-11-13
+                <a href="https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">Character.AI濒临破产，AI陪伴赛道却悄然实现高盈利</span>
+            </div>
+            <p class="article-summary">Character.AI面临破产困境，而AI陪伴类产品整体却在低调中实现可观盈利，赛道分化明显。</p>
+            <div class="article-meta">
+                来源：投资界 | 2026-11-13 07:17
+                <a href="https://news.pedaily.cn/202611/571779.shtml" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">微软探索合成企业数据评估路径，提升Copilot企业级AI置信度</span>
+            </div>
+            <p class="article-summary">微软研究从合成企业数据评估出发，探索在保护敏感信息前提下模拟真实组织复杂性，以评估Microsoft Copilot的企业级表现。该方法旨在解决真实企业数据含敏感信息难以用于测试的问题，提升AI置信度评估的可行性。</p>
+            <div class="article-meta">
+                来源：Microsoft | 2026-11-15
+                <a href="https://www.microsoft.com/en-us/research/blog/from-synthetic-enterprise-data-evaluations-to-real-microsoft-copilot-ai-confidence/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">微软研发机器学习系统，可提前30至60分钟预测电网空间天气风险</span>
+            </div>
+            <p class="article-summary">针对极端空间天气可能损毁电力系统、降低GPS精度并干扰卫星运行的问题，微软开发新型机器学习系统，能够提前30至60分钟预测电网受损位置，为电力部门争取应急处置窗口，提升基础设施抗风险能力。</p>
+            <div class="article-meta">
+                来源：Microsoft | 2026-11-15
+                <a href="https://www.microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">KeyBanc调查：AI原生软件公司增长领先，但经济效益尚未同步改善</span>
+            </div>
+            <p class="article-summary">KeyBanc资本市场发布第17份年度AI调查报告，显示AI原生软件公司在增长指标上领先，但更强的经济性尚未随之显现，反映行业增长与盈利质量之间仍存在落差。</p>
+            <div class="article-meta">
+                来源：PR Newswire | 2026-11-15
+                <a href="https://www.prnewswire.com/news-releases/ai-native-software-companies-lead-on-growth-but-stronger-economics-have-not-yet-followed-302939303.html" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    
+    
+    <div class="category-section">
+        <h2 class="category-title">八、人才市场</h2>
+        <div class="category-divider"></div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★★</span>
+                <span class="article-title">Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say</span>
+            </div>
+            <p class="article-summary"></p>
+            <div class="article-meta">
+                来源：TechCrunch | 2026-11-13
+                <a href="https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">Gartner 预测：到 2030 年全球将因 AI 净增加约 170 万个工作岗位</span>
+            </div>
+            <p class="article-summary"></p>
+            <div class="article-meta">
+                来源：IT之家 | 2026-11-15
+                <a href="https://www.ithome.com/1/027/427.htm" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">谷歌4名顶尖AI人才离职，将创办自己的AI初创公司</span>
+            </div>
+            <p class="article-summary">谷歌4名核心AI研究人员离职，计划共同创立一家新的AI初创企业，具体业务方向尚未披露。</p>
+            <div class="article-meta">
+                来源：Wired | BySteven Levy
+                <a href="https://www.wired.com/tag/machine-learning/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    
+    
+    <div class="category-section">
+        <h2 class="category-title">九、安全伦理</h2>
+        <div class="category-divider"></div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★</span>
+                <span class="article-title">OpenAI董事警告AI“接管”社会或仅剩数月，风险路径从奖励黑客延伸至人类灭绝</span>
+            </div>
+            <p class="article-summary">OpenAI一名董事会成员对AI“接管”社会的时间窗口表示担忧，认为可能仅剩数月。该研究者梳理出一条从AI奖励黑客行为到潜在人类灭绝的风险演化路径。</p>
+            <div class="article-meta">
+                来源：Ars Technica | 2026-11-13
+                <a href="https://arstechnica.com/ai/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">前 OpenAI 研究员：当前活着的人最有可能死于 AI 失控</span>
+            </div>
+            <p class="article-summary"></p>
+            <div class="article-meta">
+                来源：IT之家 | 2026-11-15
+                <a href="https://www.ithome.com/1/027/419.htm" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">NVIDIA Technical Blog</span>
+            </div>
+            <p class="article-summary">- 
+        
+        Trustworthy AI / CybersecurityInside NVIDIA Sentry: Secure AI Agents at Runtime
+- 
+        
+        Agentic</p>
+            <div class="article-meta">
+                来源：NVIDIA | Nov 13, 2026
+                <a href="https://developer.nvidia.com/blog" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">微软发现“Lazarus”后门技术，可重编程AI模型休眠神经元触发恶意指令</span>
+            </div>
+            <p class="article-summary">微软研究人员发现名为“Lazarus”的后门技术，能重编程AI模型中的休眠神经元，使正常AI智能体在收到隐藏指令时执行恶意命令。该发现揭示AI智能体供应链安全新风险，对模型安全防护提出警示。</p>
+            <div class="article-meta">
+                来源：Microsoft | 2026-11-15
+                <a href="https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">微软推出PDD Kit工具，可对AI智能体编写的全栈Web应用进行形式化验证</span>
+            </div>
+            <p class="article-summary">微软发布PDD Kit，通过生成形式化规范并测试，帮助确认AI智能体编写的全栈Web应用符合开发者意图。该工具针对AI生成代码难以逐行人工审查的问题，提升智能体编程的可验证性与可靠性。</p>
+            <div class="article-meta">
+                来源：Microsoft | 2026-11-15
+                <a href="https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">Anyday Security推出ExploitTotal，数分钟内免费生成可用漏洞利用</span>
+            </div>
+            <p class="article-summary">Anyday Security上线免费平台ExploitTotal.ai，可在补丁发布后数分钟内由AI生成可用的漏洞利用代码，供防御方使用，旨在应对AI驱动攻击者时代的安全挑战。</p>
+            <div class="article-meta">
+                来源：PR Newswire | 2026-11-15
+                <a href="https://www.prnewswire.com/il/news-releases/anyday-security-launches-exploittotal-to-provide-defenders-free-ai-built-working-exploits-in-minutes-from-patch-release-302936558.html" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    
+    
+    <div class="category-section">
+        <h2 class="category-title">十、芯片与算力</h2>
+        <div class="category-divider"></div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★★</span>
+                <span class="article-title">超 740 亿美元砸向 AI：马斯克的 SpaceX 不光造火箭，还要建超级算力帝国</span>
+            </div>
+            <p class="article-summary"></p>
+            <div class="article-meta">
+                来源：IT之家 | 2026-11-15
+                <a href="https://www.ithome.com/1/026/455.htm" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★★</span>
+                <span class="article-title">智能车参考：信息少传80%准确率反升，Momenta世界模型上车、FSD年增70万付费用户</span>
+            </div>
+            <p class="article-summary">量子位智能车参考栏目汇总行业动态：信息少传80%而准确率提高；Momenta世界模型实现上车；特斯拉FSD一年增长70万付费用户；理想自研电池芯片全部上车；宁德时代电池上车；擎天柱将复制FSD训练思路，汽车竞争正回归。</p>
+            <div class="article-meta">
+                来源：MIT Technology Review | 2026-11-15
+                <a href="https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">AWS周报：GPT-6.1 Terra上线Bedrock，Step Functions升级为智能体工具</span>
+            </div>
+            <p class="article-summary">AWS发布周报，GPT-6.1 Terra已上线Bedrock平台；Step Functions可编排超220项AWS服务，现升级为智能体工具。上周智能体相关发布的核心在于覆盖范围而非模型能力本身。</p>
+            <div class="article-meta">
+                来源：Apple | 2026-11-15
+                <a href="https://machinelearning.apple.com/research/mlx-distributed-inference" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">AI InfrastructureDemand &amp; inst...</span>
+            </div>
+            <p class="article-summary">AI InfrastructureDemand &amp; installed base Bottoms-up demand forecast for AI accelerators and high-bandwidth memory across Nvidia, AMD, Google, AWS, Met</p>
+            <div class="article-meta">
+                来源：SemiAnalysis | 2026-11-15
+                <a href="https://semianalysis.com/" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+        <div class="article-item">
+            <div class="article-header">
+                <span class="importance">★★★</span>
+                <span class="article-title">Bentaus部署DriveNets高性能AI网络架构，AI令牌生产能耗降低30%</span>
+            </div>
+            <p class="article-summary">能源优先型NeoCloud服务商Bentaus联合DriveNets部署高性能AI网络架构，结合AMD GPU用于AI令牌生产，实现能耗降低30%，为AI算力基础设施绿色化提供参考。</p>
+            <div class="article-meta">
+                来源：PR Newswire | 2026-11-15
+                <a href="https://www.prnewswire.com/il/news-releases/bentaus-an-energy-first-neocloud-deploys-drivenets-high-performance-ai-fabric-with-amd-gpus-to-produce-ai-tokens-with-30-less-energy-302937017.html" target="_blank" class="source-link">[原文]</a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+
+<div class="footer-section">
+    <div class="footer-title">【编辑说明】</div>
+    <p class="footer-text">
+        本期共监测79个信息源，
+        采集1288条动态，
+        精选60条报送。
+        数据采集时间：北京时间15:00。
+    </p>
+    <p class="footer-text" style="margin-top: 5px; font-size: 12px; color: #aaa;">
+        生成时间：2026-11-15 14:44 UTC
+    </p>
+</div>
+
+    </div>
+</body>
+</html>
